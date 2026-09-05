@@ -46,23 +46,24 @@ function escapeAttr(value) {
 }
 
 async function loadDirectory() {
-  try {
-    const live = await fetch(LIVE_PATH, { cache: "no-store" });
-    if (live.ok) {
-      directory = await live.json();
-      usingSample = false;
+  const candidates = [
+    [LIVE_PATH, false],
+    [SAMPLE_PATH, true],
+  ];
+
+  for (const [path, isSample] of candidates) {
+    try {
+      const response = await fetch(path, { cache: "no-store" });
+      if (!response.ok) continue;
+      directory = await response.json();
+      usingSample = isSample;
       return;
+    } catch {
+      /* try next candidate */
     }
-  } catch {
-    /* fall through to sample */
   }
 
-  const sample = await fetch(SAMPLE_PATH, { cache: "no-store" });
-  if (!sample.ok) {
-    throw new Error("Could not load member data.");
-  }
-  directory = await sample.json();
-  usingSample = true;
+  throw new Error("Could not load member data.");
 }
 
 function populateComplexFilter() {
