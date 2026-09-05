@@ -1,1 +1,2 @@
-streamlit
+# Optional: local static hosting helpers
+# No Python packages required — use: python3 -m http.server 8000

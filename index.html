@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="147th Orem YSA Ward member directory — apartment pods and roommates."
+    />
+    <title>147th Orem YSA · Ward Directory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,700&family=Figtree:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="atmosphere" aria-hidden="true">
+      <div class="sky"></div>
+      <div class="ridge ridge-far"></div>
+      <div class="ridge ridge-near"></div>
+      <div class="haze"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <p class="wordmark">147th Orem YSA</p>
+        <nav class="header-nav" aria-label="Primary">
+          <a href="#directory">Directory</a>
+          <a href="#how-to-update">Update data</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-brand">
+        <div class="hero-copy">
+          <p class="hero-kicker">Young Single Adult Ward · Orem</p>
+          <h1 id="hero-brand">147th Orem YSA</h1>
+          <p class="hero-lede">
+            A private apartment directory for roommates, addresses, and faces —
+            kept for Relief Society use.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#directory">Browse apartments</a>
+            <a class="btn btn-ghost" href="#how-to-update">Add real members</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="directory" class="directory" aria-labelledby="directory-title">
+        <div class="section-head">
+          <div>
+            <h2 id="directory-title">Apartment pods</h2>
+            <p class="section-lede">
+              Members grouped by address so you can find a whole roommate pod at
+              once.
+            </p>
+          </div>
+          <div class="stats" id="stats" aria-live="polite"></div>
+        </div>
+
+        <div class="toolbar">
+          <label class="search-field">
+            <span class="sr-only">Search members or addresses</span>
+            <input
+              id="search"
+              type="search"
+              placeholder="Search name, calling, complex, or unit…"
+              autocomplete="off"
+            />
+          </label>
+          <label class="filter-field">
+            <span class="sr-only">Filter by complex</span>
+            <select id="complex-filter">
+              <option value="">All complexes</option>
+            </select>
+          </label>
+        </div>
+
+        <p class="sample-banner" id="sample-banner" hidden>
+          Showing sample placeholder members. Replace
+          <code>data/members.json</code> with your ward roster from the Church
+          Directory to go live.
+        </p>
+
+        <div id="pod-list" class="pod-list"></div>
+        <p id="empty-state" class="empty-state" hidden>
+          No apartments match that search.
+        </p>
+      </section>
+
+      <section id="how-to-update" class="howto" aria-labelledby="howto-title">
+        <h2 id="howto-title">Keep the directory current</h2>
+        <p class="section-lede">
+          The official roster lives in the Church Directory. This site reads a
+          local JSON file so personal data stays under your control.
+        </p>
+        <ol class="howto-steps">
+          <li>
+            Open
+            <a
+              href="https://directory.churchofjesuschrist.org/266485"
+              target="_blank"
+              rel="noopener noreferrer"
+              >directory.churchofjesuschrist.org/266485</a
+            >
+            while signed in.
+          </li>
+          <li>
+            Copy
+            <code>data/members.sample.json</code> to
+            <code>data/members.json</code> and replace each apartment pod with
+            real names, addresses, and photo URLs.
+          </li>
+          <li>
+            Keep <code>members.json</code> private — it is gitignored so ward
+            PII is not committed by default.
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Maintained by the Relief Society Secretary · 147th Orem YSA Ward · Unit
+        266485
+      </p>
+      <p class="footer-note">
+        For ward use only. Do not publish member addresses or photos publicly.
+      </p>
+    </footer>
+
+    <dialog id="member-dialog" class="member-dialog">
+      <form method="dialog" class="dialog-inner">
+        <button type="submit" class="dialog-close" aria-label="Close">×</button>
+        <div id="dialog-body"></div>
+      </form>
+    </dialog>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
