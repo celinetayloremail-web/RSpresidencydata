@@ -358,10 +358,12 @@ a {
   border: 1px solid var(--line);
   border-radius: 14px;
   background: rgba(251, 253, 251, 0.8);
-  padding: 0.7rem 1rem;
+  padding: 0.75rem 1rem;
   font: inherit;
+  line-height: 1.25;
   color: var(--ink);
   outline: none;
+  vertical-align: middle;
 }
 
 .search-field input:focus,
