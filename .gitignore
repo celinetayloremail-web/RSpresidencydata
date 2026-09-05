@@ -1,5 +1,9 @@
 .streamlit/secrets.toml
 
+# Real ward member PII — keep local / private only
+data/members.json
+data/photos/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

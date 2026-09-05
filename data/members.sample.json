@@ -1,0 +1,246 @@
+{
+  "ward": {
+    "name": "147th Orem YSA Ward",
+    "shortName": "147th Orem YSA",
+    "unitNumber": "266485",
+    "stake": "Orem Utah YSA Stake",
+    "directoryUrl": "https://directory.churchofjesuschrist.org/266485",
+    "note": "SAMPLE DATA ONLY — replace with members.json from your authorized Church Directory access. Names and photos below are fictional placeholders."
+  },
+  "apartments": [
+    {
+      "id": "campus-view-204",
+      "complex": "Campus View",
+      "unit": "204",
+      "address": "1230 N 900 E",
+      "city": "Orem, UT 84097",
+      "members": [
+        {
+          "id": "m-001",
+          "preferredName": "Celine",
+          "fullName": "Celine Taylor",
+          "photoUrl": "",
+          "phone": "",
+          "email": "",
+          "callings": ["Relief Society Secretary"]
+        },
+        {
+          "id": "m-002",
+          "preferredName": "Maya",
+          "fullName": "Maya Ellison",
+          "photoUrl": "",
+          "phone": "",
+          "email": "",
+          "callings": ["Sunday School Teacher"]
+        },
+        {
+          "id": "m-003",
+          "preferredName": "Priya",
+          "fullName": "Priya Nguyen",
+          "photoUrl": "",
+          "phone": "",
+          "email": "",
+          "callings": []
+        },
+        {
+          "id": "m-004",
+          "preferredName": "Hannah",
+          "fullName": "Hannah Brooks",
+          "photoUrl": "",
+          "phone": "",
+          "email": "",
+          "callings": ["Music Chair"]
+        }
+      ]
+    },
+    {
+      "id": "campus-view-311",
+      "complex": "Campus View",
+      "unit": "311",
+      "address": "1230 N 900 E",
+      "city": "Orem, UT 84097",
+      "members": [
+        {
+          "id": "m-005",
+          "preferredName": "Sofia",
+          "fullName": "Sofia Ramirez",
+          "photoUrl": "",
+          "phone": "",
+          "email": "",
+          "callings": ["Relief Society President"]
+        },
+        {
+          "id": "m-006",
+          "preferredName": "Jade",
+          "fullName": "Jade Park",
+          "photoUrl": "",
+          "phone": "",
+          "email": "",
+          "callings": ["Relief Society Counselor"]
+        },
+        {
+          "id": "m-007",
+          "preferredName": "Avery",
+          "fullName": "Avery Collins",
+          "photoUrl": "",
+          "phone": "",
+          "email": "",
+          "callings": []
+        }
+      ]
+    },
+    {
+      "id": "alpine-village-b12",
+      "complex": "Alpine Village",
+      "unit": "B12",
+      "address": "1480 S State St",
+      "city": "Orem, UT 84097",
+      "members": [
+        {
+          "id": "m-008",
+          "preferredName": "Nora",
+          "fullName": "Nora Whitfield",
+          "photoUrl": "",
+          "phone": "",
+          "email": "",
+          "callings": ["Ward Mission Leader"]
+        },
+        {
+          "id": "m-009",
+          "preferredName": "Quinn",
+          "fullName": "Quinn Hart",
+          "photoUrl": "",
+          "phone": "",
+          "email": "",
+          "callings": []
+        },
+        {
+          "id": "m-010",
+          "preferredName": "Isla",
+          "fullName": "Isla Bennett",
+          "photoUrl": "",
+          "phone": "",
+          "email": "",
+          "callings": ["Activities Committee"]
+        },
+        {
+          "id": "m-011",
+          "preferredName": "Reese",
+          "fullName": "Reese Delgado",
+          "photoUrl": "",
+          "phone": "",
+          "email": "",
+          "callings": []
+        }
+      ]
+    },
+    {
+      "id": "the-ridge-508",
+      "complex": "The Ridge",
+      "unit": "508",
+      "address": "700 W University Pkwy",
+      "city": "Orem, UT 84058",
+      "members": [
+        {
+          "id": "m-012",
+          "preferredName": "Lila",
+          "fullName": "Lila Ortega",
+          "photoUrl": "",
+          "phone": "",
+          "email": "",
+          "callings": ["Primary Teacher"]
+        },
+        {
+          "id": "m-013",
+          "preferredName": "Emme",
+          "fullName": "Emme Foster",
+          "photoUrl": "",
+          "phone": "",
+          "email": "",
+          "callings": []
+        }
+      ]
+    },
+    {
+      "id": "the-ridge-612",
+      "complex": "The Ridge",
+      "unit": "612",
+      "address": "700 W University Pkwy",
+      "city": "Orem, UT 84058",
+      "members": [
+        {
+          "id": "m-014",
+          "preferredName": "Tessa",
+          "fullName": "Tessa Kim",
+          "photoUrl": "",
+          "phone": "",
+          "email": "",
+          "callings": ["Choir Director"]
+        },
+        {
+          "id": "m-015",
+          "preferredName": "Blair",
+          "fullName": "Blair Jensen",
+          "photoUrl": "",
+          "phone": "",
+          "email": "",
+          "callings": []
+        },
+        {
+          "id": "m-016",
+          "preferredName": "Sloane",
+          "fullName": "Sloane Carter",
+          "photoUrl": "",
+          "phone": "",
+          "email": "",
+          "callings": ["FHE Group Leader"]
+        },
+        {
+          "id": "m-017",
+          "preferredName": "Wren",
+          "fullName": "Wren Adler",
+          "photoUrl": "",
+          "phone": "",
+          "email": "",
+          "callings": []
+        }
+      ]
+    },
+    {
+      "id": "uvu-commons-15a",
+      "complex": "UVU Commons",
+      "unit": "15A",
+      "address": "800 W 1200 S",
+      "city": "Orem, UT 84058",
+      "members": [
+        {
+          "id": "m-018",
+          "preferredName": "Gia",
+          "fullName": "Gia Morales",
+          "photoUrl": "",
+          "phone": "",
+          "email": "",
+          "callings": []
+        },
+        {
+          "id": "m-019",
+          "preferredName": "Eden",
+          "fullName": "Eden Walsh",
+          "photoUrl": "",
+          "phone": "",
+          "email": "",
+          "callings": ["Temple & Family History"]
+        },
+        {
+          "id": "m-020",
+          "preferredName": "Maren",
+          "fullName": "Maren Price",
+          "photoUrl": "",
+          "phone": "",
+          "email": "",
+          "callings": []
+        }
+      ]
+    }
+  ]
+}
