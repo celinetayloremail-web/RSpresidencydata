@@ -27,7 +27,7 @@
 
     <section id="gate" class="gate" aria-labelledby="gate-title">
       <div class="gate-card">
-        <p class="hero-kicker">Provo YSA · Unit 266485</p>
+        <p class="hero-kicker">Provo YSA</p>
         <h1 id="gate-title">147th Ward</h1>
         <p class="gate-lede">
           Private leader directory. Enter the ward leader password to view and
@@ -36,13 +36,24 @@
         <form id="gate-form" class="gate-form">
           <label>
             <span>Your name</span>
-            <input id="leader-name" type="text" autocomplete="name" required placeholder="e.g. Celine Taylor" />
+            <input id="leader-name" type="text" autocomplete="name" required placeholder="e.g. Jane Doe." />
           </label>
           <label>
             <span>Leader password</span>
-            <input id="leader-password" type="password" autocomplete="current-password" required />
+            <span class="password-field">
+              <input id="leader-password" type="password" autocomplete="current-password" required />
+              <button
+                type="button"
+                id="toggle-password"
+                class="password-toggle"
+                aria-label="Show password"
+                aria-pressed="false"
+              >
+                Show
+              </button>
+            </span>
           </label>
-          <button class="btn btn-primary" type="submit">Enter directory</button>
+          <button class="btn btn-primary" type="submit" id="enter-directory">Enter directory</button>
           <p id="gate-error" class="gate-error" hidden>Incorrect password.</p>
         </form>
         <p class="gate-note">
@@ -195,7 +206,7 @@
       </main>
 
       <footer class="site-footer">
-        <p>Provo YSA 147th Ward · Unit 266485 · For Church use only</p>
+        <p>Provo YSA 147th Ward · For Church use only</p>
         <p class="footer-note">Confidential member information. Do not redistribute.</p>
       </footer>
     </div>
@@ -207,7 +218,6 @@
       </div>
     </dialog>
 
-    <script src="pdf-import.js" type="module"></script>
     <script src="app.js" type="module"></script>
   </body>
 </html>

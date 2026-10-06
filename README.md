@@ -1,6 +1,6 @@
 # 147th Ward Private Directory
 
-Password-gated apartment directory for **Provo YSA 147th Ward** (unit 266485).
+Password-gated apartment directory for **Provo YSA 147th Ward**.
 
 Built for ward leaders (Relief Society / Elders Quorum / bishopric). Member phones, emails, and addresses are confidential — keep hosting private.
 

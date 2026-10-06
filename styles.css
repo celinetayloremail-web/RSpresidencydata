@@ -195,6 +195,32 @@ textarea {
   outline: none;
 }
 
+.password-field {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.45rem;
+  align-items: center;
+}
+
+.password-field input {
+  min-width: 0;
+}
+
+.password-toggle {
+  min-height: 2.85rem;
+  padding: 0 0.9rem;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: rgba(251, 253, 251, 0.9);
+  color: var(--sage-deep);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.password-toggle:hover {
+  border-color: var(--moss);
+}
+
 .field textarea {
   min-height: 6rem;
   resize: vertical;
