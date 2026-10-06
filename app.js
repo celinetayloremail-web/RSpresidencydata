@@ -856,18 +856,29 @@ function importSummary(file, incoming) {
   const total = allMembers().length;
   if (kind === "report") {
     const bits = [];
-    if (incoming.meta?.budget) bits.push("budget");
-    if (incoming.meta?.latestConverts?.length) bits.push(`${incoming.meta.latestConverts.length} converts`);
+    if (incoming.meta?.budget && /budget/i.test(file.name)) bits.push("budget");
+    else if (incoming.meta?.budgetImport || /budget/i.test(file.name)) bits.push("budget");
     if (incoming.meta?.birthdayImportCount) bits.push(`${incoming.meta.birthdayImportCount} birthdays`);
     if (incoming.meta?.ministeringImportCount) bits.push(`${incoming.meta.ministeringImportCount} ministering`);
     if (incoming.meta?.movedInImportCount) bits.push(`${incoming.meta.movedInImportCount} moved in`);
-    if (incoming.meta?.movedOutRecords?.length) bits.push(`${incoming.meta.movedOutRecords.length} moved out`);
-    if (incoming.meta?.lostMembers?.length) bits.push(`${incoming.meta.lostMembers.length} lost`);
+    if (incoming.meta?.movedOutImportCount != null && /moved\s*out/i.test(file.name)) {
+      bits.push(`${incoming.meta.movedOutRecords?.length || 0} moved out`);
+    }
+    if (/lost/i.test(file.name) && incoming.meta?.lostMembers?.length) {
+      bits.push(`${incoming.meta.lostMembers.length} lost`);
+    }
+    if (/covenant/i.test(file.name) && incoming.meta?.latestConverts?.length) {
+      bits.push(`${incoming.meta.latestConverts.length} converts`);
+    }
+    if (/quarterly/i.test(file.name) && incoming.meta?.quarterlyConvertStats) bits.push("quarterly stats");
+    if (/serving\s*missionar/i.test(file.name) && incoming.meta?.servingMissionaries) {
+      bits.push("serving missionaries");
+    }
     if (incoming.meta?.organizationsImportCount) bits.push(`${incoming.meta.organizationsImportCount} callings`);
     if (incoming.meta?.callingsImportCount) bits.push(`${incoming.meta.callingsImportCount} callings`);
-    if (incoming.meta?.servingMissionaries) bits.push("serving missionaries");
-    if (incoming.meta?.quarterlyConvertStats) bits.push("quarterly stats");
-    return `Merged ${file.name}${bits.length ? ` (${bits.join(", ")})` : ""} · ${total} members`;
+    // Fallback: note report merge without listing inherited meta
+    if (!bits.length) bits.push("report fields");
+    return `Merged ${file.name} (${bits.join(", ")}) · ${total} members`;
   }
   return `Updated directory from ${file.name} · ${total} members total`;
 }
