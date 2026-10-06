@@ -786,7 +786,7 @@ async function handleDataUpload(file) {
     populateFilters();
     updateLastEdited();
     renderAll();
-    els.importStatus.textContent = `Imported ${directory.meta.memberCount || allMembers().length} members from ${file.name}.`;
+    els.importStatus.textContent = `Updated directory from ${file.name} · ${allMembers().length} members total.`;
   } catch (err) {
     console.error(err);
     els.importStatus.textContent = `Import failed: ${err.message || err}`;
