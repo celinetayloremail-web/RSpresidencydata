@@ -874,6 +874,9 @@ function importSummary(file, incoming) {
     if (/serving\s*missionar/i.test(file.name) && incoming.meta?.servingMissionaries) {
       bits.push("serving missionaries");
     }
+    if (/assigned\s*missionar/i.test(file.name) && incoming.meta?.assignedMissionaryImportCount) {
+      bits.push(`${incoming.meta.assignedMissionaryImportCount} assigned missionaries`);
+    }
     if (incoming.meta?.organizationsImportCount) bits.push(`${incoming.meta.organizationsImportCount} callings`);
     if (incoming.meta?.callingsImportCount) bits.push(`${incoming.meta.callingsImportCount} callings`);
     // Fallback: note report merge without listing inherited meta

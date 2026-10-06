@@ -105,6 +105,16 @@ def find_member(idx: dict[str, dict], last: str, first: str):
     return None
 
 
+def clean_calling(calling: str) -> str:
+    calling = re.split(
+        r"\d{2}\.\d+|Apt\s|\(\d|PROVO|Provo|Orem|Individual|UNITED STATES|\+\d",
+        calling,
+        maxsplit=1,
+    )[0]
+    calling = re.sub(r"\s+", " ", calling).strip(" -–,")
+    return calling
+
+
 def parse_org_callings(pdf_path: Path) -> list[tuple[str, str, str]]:
     """Return list of (last, first, calling)."""
     rows: list[tuple[str, str, str]] = []
@@ -141,8 +151,7 @@ def parse_org_callings(pdf_path: Path) -> list[tuple[str, str, str]]:
                             if i + 1 < len(lines):
                                 nxt = lines[i + 1]
                                 if any(h in nxt for h in CALLING_LINE_HINTS) and "," not in nxt[:20]:
-                                    calling = re.split(r"\d{2}\.\d+|Apt |\(\d", nxt)[0].strip()
-                                    calling = calling.replace("Individual", "").strip()
+                                    calling = clean_calling(nxt)
                             if calling:
                                 rows.append((last, first, calling))
                             i += 1
@@ -153,8 +162,7 @@ def parse_org_callings(pdf_path: Path) -> list[tuple[str, str, str]]:
                     if i + 1 < len(lines):
                         nxt = lines[i + 1]
                         if any(h in nxt for h in CALLING_LINE_HINTS):
-                            calling = re.split(r"\d{2}\.\d+|Apt |\(\d", nxt)[0].strip()
-                            calling = re.sub(r"\s+Individual.*$", "", calling).strip()
+                            calling = clean_calling(nxt)
                     if calling:
                         rows.append((last, first, calling))
                 i += 1
@@ -271,20 +279,31 @@ def parse_assigned_missionaries(pdf_path: Path) -> list[dict]:
     with pdfplumber.open(pdf_path) as pdf:
         text = "\n".join((p.extract_text() or "") for p in pdf.pages)
     missionaries = []
-    # Elder Name / email pairs
-    for m in re.finditer(
-        r"Elder\s+([A-Za-zÀ-ÿ'’\-]+(?:\s+[A-Za-zÀ-ÿ'’\-]+)+)\s+(?:Elder\s+([A-Za-zÀ-ÿ'’\-]+(?:\s+[A-Za-zÀ-ÿ'’\-]+)+))?",
-        text,
-    ):
-        pass
     emails = re.findall(r"[A-Za-z0-9._%+\-]+@missionary\.org", text)
-    # Explicit known parse from sample
-    names = re.findall(r"Elder\s+([A-Z][a-zA-ZÀ-ÿ'’\-]+(?:\s+[A-Z][a-zA-ZÀ-ÿ'’\-]+)+)", text)
+    # Prefer personal emails (not numeric companionship mailbox)
+    personal_emails = [e for e in emails if not re.match(r"^\d+@", e)]
+    # Names may appear on one line: "Elder A Elder B"
+    names = re.findall(
+        r"Elder\s+([A-Z][a-zA-ZÀ-ÿ'’\-]+(?:\s+[A-Z][a-zA-ZÀ-ÿ'’\-]+)*?)(?=\s+Elder\b|\s+[a-z0-9._%+\-]+@|\s*$)",
+        text,
+    )
+    if len(names) < 2:
+        # Fallback: split on "Elder " tokens
+        parts = re.split(r"\bElder\s+", text)
+        names = []
+        for part in parts[1:]:
+            m = re.match(r"([A-Z][a-zA-ZÀ-ÿ'’\-]+(?:\s+[A-Z][a-zA-ZÀ-ÿ'’\-]+){1,4})", part)
+            if m:
+                names.append(m.group(1).strip())
     # dedupe preserving order
     seen = set()
     uniq_names = []
     for n in names:
-        if n in seen:
+        n = re.sub(r"\s+", " ", n).strip()
+        # Drop if it accidentally still contains another Elder
+        if " Elder " in n:
+            continue
+        if n in seen or len(n.split()) < 2:
             continue
         seen.add(n)
         uniq_names.append(n)
@@ -292,7 +311,7 @@ def parse_assigned_missionaries(pdf_path: Path) -> list[dict]:
         parts = full.split()
         first = " ".join(parts[:-1])
         last = parts[-1]
-        email = emails[i] if i < len(emails) else ""
+        email = personal_emails[i] if i < len(personal_emails) else ""
         missionaries.append(
             {
                 "id": mid_for(f"Elder {full}"),
@@ -315,7 +334,7 @@ def parse_assigned_missionaries(pdf_path: Path) -> list[dict]:
                     "returnedMissionary": False,
                     "inactive": False,
                     "doNotContact": False,
-                    "superSolid": True,
+                    "solid": True,
                 },
                 "ministering": {"role": "", "companions": [], "ministeringTo": []},
                 "notes": "Utah Provo Mission companionship assigned to the ward.",

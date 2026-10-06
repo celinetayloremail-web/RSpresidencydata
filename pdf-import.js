@@ -176,7 +176,12 @@ export function classifyReport(filename, text = "") {
   if (/members?\s*moved\s*out|moved\s*out/.test(n) || /^Members Moved Out/m.test(head)) return "moved-out";
   if (/finding\s*lost|lost\s*member/.test(n) || /^Finding Lost Members/m.test(head)) return "lost";
   if (/quarterly\s*report/.test(n) || /^Quarterly Report/m.test(head)) return "quarterly";
-  if (/serving\s*missionar/.test(n) || /Serving Missionaries/.test(head)) return "serving-missionaries";
+  if (/serving\s*missionar/.test(n) || (/Serving Missionaries/.test(head) && !/Assigned Missionaries/.test(head))) {
+    return "serving-missionaries";
+  }
+  if (/assigned\s*missionar/.test(n) || /^Assigned Missionaries/m.test(head)) {
+    return "assigned-missionaries";
+  }
 
   // Organizations.pdf (calling table) vs Organizations … Ward Directory and Map (roster)
   if (
@@ -894,9 +899,94 @@ function importOrgDirectoryCallings(dir, lines, fileName) {
 function isOrgSubsetDirectory(fileName) {
   const n = normalizeFileKey(fileName);
   return (
-    /elders\s*quorum|relief\s*society|sunday\s*school|temple|ward\s*missionar|young\s*single|other\s*callings|organizations\s*147|assigned\s*missionar/.test(n)
-    && /directory|map|ward/.test(n)
+    /elders\s*quorum|relief\s*society|sunday\s*school|temple|ward\s*missionar|young\s*single|other\s*callings|organizations\s*147|assigned\s*missionar|bishopric|aaronic\s*priesthood|priests\s*quorum/.test(n)
+    && /directory|map|ward|quorum|bishopric|missionar/.test(n)
   );
+}
+
+function importAssignedMissionaries(dir, text, fileName) {
+  const emails = [...text.matchAll(/[A-Za-z0-9._%+\-]+@missionary\.org/g)].map((m) => m[0]);
+  const personalEmails = emails.filter((e) => !/^\d+@/.test(e));
+  const companionship = emails.find((e) => /^\d+@/.test(e)) || "";
+  let names = [];
+  const seen = new Set();
+  // "Elder A B Elder C D" on one line
+  for (const m of text.matchAll(
+    /Elder\s+([A-Z][a-zA-ZÀ-ÿ'’\-]+(?:\s+[A-Z][a-zA-ZÀ-ÿ'’\-]+)*?)(?=\s+Elder\b|\s+[a-z0-9._%+\-]+@|\s*$)/g
+  )) {
+    const full = m[1].replace(/\s+/g, " ").trim();
+    if (seen.has(full) || full.split(/\s+/).length < 2 || / Elder /.test(full)) continue;
+    seen.add(full);
+    names.push(full);
+  }
+  if (names.length < 2) {
+    names = [];
+    for (const part of text.split(/\bElder\s+/).slice(1)) {
+      const m = part.match(/^([A-Z][a-zA-ZÀ-ÿ'’\-]+(?:\s+[A-Z][a-zA-ZÀ-ÿ'’\-]+){1,4})/);
+      if (!m) continue;
+      const full = m[1].replace(/\s+/g, " ").trim();
+      if (seen.has(full) || full.split(/\s+/).length < 2) continue;
+      seen.add(full);
+      names.push(full);
+    }
+  }
+  const members = allMembersFrom(dir);
+  const byName = new Map(members.map((m) => [m.fullName.toLowerCase(), m]));
+  let added = 0;
+  names.forEach((full, i) => {
+    const parts = full.split(/\s+/);
+    const first = parts.slice(0, -1).join(" ");
+    const last = parts[parts.length - 1];
+    const fullName = `Elder ${full}`;
+    const email = personalEmails[i] || "";
+    const existing = byName.get(fullName.toLowerCase());
+    if (existing) {
+      if (email && !existing.email) existing.email = email;
+      if (!(existing.callings || []).includes("Assigned Full-Time Missionary")) {
+        existing.callings = [...(existing.callings || []), "Assigned Full-Time Missionary"];
+      }
+      return;
+    }
+    const member = normalizeMember({
+      id: hashId(fullName.toLowerCase(), "m"),
+      lastName: last,
+      legalFirst: first,
+      preferredName: `Elder ${parts[0]}`,
+      fullName,
+      photoUrl: "",
+      phone: "",
+      email,
+      address: "Utah Provo Mission Office, 85 N 600 E, Provo UT 84606",
+      street: "85 N 600 E",
+      unit: "—",
+      complex: "Assigned Missionaries",
+      city: "Provo UT 84606",
+      coords: "40.235083, -111.647792",
+      callings: ["Assigned Full-Time Missionary"],
+      notes: "Utah Provo Mission companionship assigned to the ward.",
+      flags: { solid: true },
+      livesAtOldMill: false,
+    });
+    members.push(member);
+    added += 1;
+  });
+  // Drop bad combined Elder names from earlier buggy imports
+  const cleaned = members.filter(
+    (m) => !(m.fullName.startsWith("Elder ") && / Elder /.test(m.fullName))
+  );
+  dir.apartments = groupApartments(cleaned);
+  dir.mission = {
+    ...(dir.mission || {}),
+    name: "Utah Provo Mission",
+    office: "85 N 600 E, Provo UT 84606",
+    phone: "+1 801-377-1490",
+    assignedCompanionshipEmail: companionship || dir.mission?.assignedCompanionshipEmail || "",
+  };
+  dir.meta = dir.meta || {};
+  dir.meta.assignedMissionaryImportCount = names.length;
+  dir.meta.assignedMissionariesAdded = added;
+  touchReportSource(dir, fileName);
+  return dir;
 }
 
 function applySpecializedReport(previous, kind, text, lines, file) {
@@ -922,6 +1012,8 @@ function applySpecializedReport(previous, kind, text, lines, file) {
       return importQuarterly(dir, text, file.name);
     case "serving-missionaries":
       return importServingMissionaries(dir, text, file.name);
+    case "assigned-missionaries":
+      return importAssignedMissionaries(dir, text, file.name);
     case "organizations-table":
       return importOrganizationsTable(dir, text, file.name);
     default:

@@ -3,18 +3,18 @@
     "name": "Provo YSA 147th Ward",
     "shortName": "147th Ward",
     "stake": "Provo Utah YSA 10th Stake",
-    "source": "147th Ward Directory + Organizations + Missionary PDFs (10-05-26)",
+    "source": "147th Ward Directory + Bishopric + Aaronic + Assigned Missionaries + Organizations (10-05-26)",
     "sourceDate": "2026-10-05",
     "note": "Parsed from Church Directory PDFs. For Church use only — confidential.",
     "unitNumber": "266485",
     "stakeNumber": "511455"
   },
   "meta": {
-    "lastEditedBy": "PDF Report Import",
-    "lastEditedAt": "2026-10-06T09:00:00-06:00",
+    "lastEditedBy": "Directory Supplement Import",
+    "lastEditedAt": "2026-10-06T15:05:46+00:00",
     "memberCount": 198,
-    "apartmentCount": 98,
-    "photoCount": 41,
+    "apartmentCount": 99,
+    "photoCount": 43,
     "latestConverts": [
       "Kathryn Henley",
       "Marti Smith",
@@ -969,16 +969,20 @@
       }
     ],
     "reportSources": [
+      "147th Ward Directory and Map 10-05-26 24db.pdf",
+      "Aaronic Priesthood Quorums · Ward Directory and Map 6f69.pdf",
+      "Assigned Missionaries · Ward Directory and Map e02c.pdf",
+      "Bishopric · Ward Directory and Map 1150.pdf",
       "Budget.pdf",
       "Covenant Path Progress.pdf",
       "Elders Birthday List.pdf",
-      "Ministering Brothers.pdf",
-      "Ministering Sisters.pdf",
+      "Finding Lost Members.pdf",
       "Members Moved In.pdf",
       "Members Moved Out.pdf",
-      "Finding Lost Members.pdf",
-      "Quarterly Report.pdf",
-      "Organizations / EQ / RS / SS / Temple / Ward Missionaries / YSA / Other Callings PDFs"
+      "Ministering Brothers.pdf",
+      "Ministering Sisters.pdf",
+      "Organizations / EQ / RS / SS / Temple / Ward Missionaries / YSA / Other Callings PDFs",
+      "Quarterly Report.pdf"
     ]
   },
   "mission": {
@@ -991,9 +995,9 @@
   "apartments": [
     {
       "id": "apt-e984247bc9",
-      "complex": "Bishopric / Leaders",
+      "complex": "0",
       "unit": "—",
-      "address": "Bishop household",
+      "address": "0",
       "city": "",
       "members": [
         {
@@ -1008,7 +1012,7 @@
           "address": "0, Lori",
           "street": "0",
           "unit": "",
-          "complex": "Bishopric / Leaders",
+          "complex": "0",
           "city": "",
           "coords": "40.296150, -111.639893",
           "callings": [
@@ -1020,8 +1024,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -1029,63 +1033,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "M",
           "birthday": "1963-01-29",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
-          "covenantPath": {
-            "baptized": false,
-            "confirmed": false,
-            "endowed": false,
-            "latestConvert": false,
-            "notes": ""
-          },
-          "moved": {
-            "status": "in",
-            "date": "2026-03-16",
-            "notes": ""
-          },
-          "lostMember": false,
-          "livesAtOldMill": false
-        },
-        {
-          "id": "m-b08e519f4f",
-          "lastName": "Berrett",
-          "legalFirst": "Lori",
-          "preferredName": "Lori",
-          "fullName": "Lori Berrett",
-          "photoUrl": "",
-          "phone": "(214) 529-0512",
-          "email": "loriberrett@sbcglobal.net",
-          "address": "Bishop household",
-          "street": "Bishop household",
-          "unit": "—",
-          "complex": "Bishopric / Leaders",
-          "city": "",
-          "coords": "40.296150, -111.639893",
-          "callings": [],
-          "languages": [],
-          "flags": {
-            "returnedMissionary": false,
-            "inactive": false,
-            "doNotContact": false,
-            "endowed": false,
-            "solid": false
-          },
-          "ministering": {
-            "role": "sister",
-            "companions": [],
-            "ministeringTo": [
-              "m-0dc015cd94",
-              "m-d236133983",
-              "m-811f6ca418"
-            ]
-          },
-          "notes": "",
-          "gender": "F",
-          "birthday": "",
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -1133,8 +1083,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -1142,11 +1092,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2003-05-01",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -1192,8 +1140,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -1201,11 +1149,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -1251,8 +1197,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -1260,11 +1206,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2004-11-28",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -1301,8 +1245,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -1310,11 +1254,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2004-01-17",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -1363,8 +1305,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "brother",
@@ -1377,11 +1319,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "M",
           "birthday": "2001-12-18",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -1427,8 +1367,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -1436,11 +1376,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -1486,8 +1424,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -1495,11 +1433,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -1545,8 +1481,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -1554,11 +1490,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -1604,8 +1538,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -1613,11 +1547,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "1996-01-03",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -1665,8 +1597,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -1674,11 +1606,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -1724,8 +1654,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -1733,11 +1663,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -1783,8 +1711,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -1792,11 +1720,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -1833,8 +1759,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -1842,11 +1768,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -1892,8 +1816,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -1901,11 +1825,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "1992-08-13",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -1951,8 +1873,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -1960,11 +1882,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -2005,16 +1925,15 @@
           "city": "Orem UT 84058-3130",
           "coords": "40.285536, -111.699158",
           "callings": [
-            "Relief Society Secretary",
-            "Relief Society Secretary Orem UT 84058-3130"
+            "Relief Society Secretary"
           ],
           "languages": [],
           "flags": {
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -2022,11 +1941,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -2072,8 +1989,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -2081,11 +1998,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2003-05-28",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -2131,8 +2046,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -2140,11 +2055,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -2192,8 +2105,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -2201,11 +2114,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "M",
           "birthday": "2001-10-08",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -2242,8 +2153,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -2251,11 +2162,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2002-07-29",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -2294,8 +2203,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -2303,11 +2212,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "1999-01-16",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -2346,8 +2253,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -2355,11 +2262,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2002-03-23",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -2407,8 +2312,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -2416,11 +2321,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -2460,8 +2363,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "sister",
@@ -2474,11 +2377,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -2519,8 +2420,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -2528,11 +2429,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -2578,8 +2477,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -2587,11 +2486,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -2639,8 +2536,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -2648,11 +2545,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "M",
           "birthday": "2003-09-27",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -2689,8 +2584,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -2698,11 +2593,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2004-04-23",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -2739,8 +2632,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -2748,11 +2641,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2003-12-20",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -2789,8 +2680,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -2798,11 +2689,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2003-10-17",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -2850,8 +2739,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -2859,11 +2748,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -2902,8 +2789,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -2911,11 +2798,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": true,
             "confirmed": true,
@@ -2952,8 +2837,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -2961,11 +2846,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -3011,8 +2894,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -3020,11 +2903,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -3063,8 +2944,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -3072,11 +2953,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -3122,8 +3001,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "sister",
@@ -3136,11 +3015,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -3177,8 +3054,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -3186,11 +3063,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -3236,8 +3111,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -3245,11 +3120,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -3295,8 +3168,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "sister",
@@ -3309,11 +3182,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -3359,8 +3230,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -3368,11 +3239,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2005-01-28",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -3409,8 +3278,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -3418,11 +3287,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2003-06-20",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -3459,8 +3326,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -3468,11 +3335,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -3518,8 +3383,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -3527,11 +3392,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -3570,8 +3433,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "sister",
@@ -3585,11 +3448,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -3628,8 +3489,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -3637,11 +3498,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -3678,8 +3537,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "sister",
@@ -3693,11 +3552,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -3743,8 +3600,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -3752,11 +3609,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2004-08-20",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -3802,8 +3657,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -3811,11 +3666,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2005-06-27",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -3861,8 +3714,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -3870,11 +3723,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -3923,8 +3774,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -3932,11 +3783,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -3975,8 +3824,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -3984,11 +3833,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -4034,8 +3881,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -4043,11 +3890,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2003-10-29",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -4084,8 +3929,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -4093,11 +3938,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2004-01-03",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -4134,8 +3977,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -4143,11 +3986,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2005-02-03",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -4184,8 +4025,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -4193,11 +4034,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2003-02-23",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -4243,8 +4082,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -4252,11 +4091,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -4293,8 +4130,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -4302,11 +4139,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2002-04-12",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -4352,8 +4187,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -4361,11 +4196,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -4402,8 +4235,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -4411,11 +4244,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -4461,8 +4292,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -4470,11 +4301,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -4511,8 +4340,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -4520,11 +4349,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -4570,8 +4397,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -4579,11 +4406,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -4629,8 +4454,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -4638,11 +4463,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -4679,8 +4502,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -4688,11 +4511,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -4731,8 +4552,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -4740,11 +4561,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -4783,8 +4602,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "sister",
@@ -4797,11 +4616,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -4847,8 +4664,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "sister",
@@ -4862,11 +4679,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": true,
             "confirmed": true,
@@ -4912,8 +4727,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "sister",
@@ -4926,11 +4741,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -4976,8 +4789,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -4985,11 +4798,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -5026,8 +4837,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -5035,11 +4846,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -5078,8 +4887,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "sister",
@@ -5092,11 +4901,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -5142,8 +4949,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -5151,11 +4958,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -5201,8 +5006,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -5210,11 +5015,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -5260,8 +5063,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -5269,11 +5072,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -5310,8 +5111,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "sister",
@@ -5326,11 +5127,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -5367,8 +5166,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -5376,11 +5175,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -5426,8 +5223,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "sister",
@@ -5442,11 +5239,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -5492,8 +5287,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -5501,11 +5296,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -5544,8 +5337,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -5553,11 +5346,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -5594,8 +5385,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -5603,11 +5394,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -5655,8 +5444,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -5664,11 +5453,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -5707,8 +5494,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -5716,11 +5503,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -5766,8 +5551,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -5775,11 +5560,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -5818,8 +5601,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "sister",
@@ -5832,11 +5615,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -5875,8 +5656,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "sister",
@@ -5890,11 +5671,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -5931,8 +5710,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "sister",
@@ -5946,11 +5725,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -5987,8 +5764,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "sister",
@@ -6002,11 +5779,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -6052,8 +5827,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -6061,11 +5836,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -6102,8 +5875,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -6111,11 +5884,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2003-05-05",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -6165,8 +5936,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -6174,11 +5945,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -6215,8 +5984,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -6224,11 +5993,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -6265,8 +6032,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "sister",
@@ -6279,11 +6046,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": true,
             "confirmed": true,
@@ -6322,8 +6087,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -6331,11 +6096,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -6374,8 +6137,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -6383,11 +6146,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -6424,8 +6185,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -6433,11 +6194,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -6474,8 +6233,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -6483,11 +6242,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -6524,8 +6281,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -6533,11 +6290,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2005-06-24",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -6576,8 +6331,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "sister",
@@ -6591,11 +6346,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": true,
             "confirmed": true,
@@ -6643,8 +6396,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -6652,11 +6405,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -6702,8 +6453,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "brother",
@@ -6717,11 +6468,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2002-11-18",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -6760,8 +6509,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -6769,11 +6518,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2003-08-22",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -6819,8 +6566,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -6828,11 +6575,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -6878,8 +6623,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "sister",
@@ -6893,11 +6638,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -6936,8 +6679,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "sister",
@@ -6951,11 +6694,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -7001,8 +6742,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -7010,11 +6751,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -7060,8 +6799,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "sister",
@@ -7075,11 +6814,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -7127,8 +6864,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -7136,11 +6873,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -7188,8 +6923,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "brother",
@@ -7205,11 +6940,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2002-06-06",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -7255,8 +6988,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -7264,11 +6997,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2003-12-05",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -7307,8 +7038,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -7316,11 +7047,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "M",
           "birthday": "2003-03-16",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -7357,8 +7086,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -7366,11 +7095,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -7416,8 +7143,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -7425,11 +7152,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -7475,8 +7200,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -7484,11 +7209,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -7525,8 +7248,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -7534,11 +7257,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -7575,8 +7296,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -7584,11 +7305,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -7634,8 +7353,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "brother",
@@ -7649,11 +7368,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2004-10-12",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -7699,8 +7416,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -7708,11 +7425,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2002-02-04",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -7751,8 +7466,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -7760,11 +7475,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "M",
           "birthday": "2005-04-04",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -7801,8 +7514,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -7810,11 +7523,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2006-07-29",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -7851,8 +7562,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -7860,11 +7571,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2004-06-07",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -7912,8 +7621,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -7921,11 +7630,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "M",
           "birthday": "2000-09-11",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -7973,8 +7680,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -7982,11 +7689,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "M",
           "birthday": "2001-12-28",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -8032,8 +7737,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -8041,11 +7746,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2001-08-25",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -8091,8 +7794,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -8100,11 +7803,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2003-08-03",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -8152,8 +7853,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -8161,11 +7862,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "M",
           "birthday": "2002-07-31",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -8202,8 +7901,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -8211,11 +7910,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2000-04-18",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -8252,8 +7949,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -8261,11 +7958,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2003-05-22",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -8315,8 +8010,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -8324,11 +8019,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "M",
           "birthday": "1998-07-02",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -8374,8 +8067,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -8383,11 +8076,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2003-11-20",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -8424,8 +8115,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -8433,11 +8124,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2002-11-04",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -8474,8 +8163,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -8483,11 +8172,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2005-08-22",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -8533,8 +8220,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -8542,11 +8229,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2002-01-27",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -8592,8 +8277,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -8601,11 +8286,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -8644,8 +8327,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -8653,11 +8336,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -8696,8 +8377,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -8705,11 +8386,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2004-06-05",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -8757,8 +8436,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "brother",
@@ -8774,11 +8453,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2003-08-20",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -8826,8 +8503,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -8835,11 +8512,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2002-11-05",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -8878,8 +8553,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "brother",
@@ -8892,11 +8567,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "M",
           "birthday": "2002-03-02",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -8945,8 +8618,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "brother",
@@ -8959,11 +8632,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "M",
           "birthday": "2001-08-21",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -9009,8 +8680,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "brother",
@@ -9024,11 +8695,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "1998-08-04",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -9067,8 +8736,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "brother",
@@ -9082,11 +8751,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "M",
           "birthday": "2004-03-19",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -9123,8 +8790,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -9132,11 +8799,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2007-05-29",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -9184,8 +8849,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -9193,11 +8858,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "M",
           "birthday": "1994-02-10",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -9234,8 +8897,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -9243,11 +8906,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2002-12-14",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -9293,8 +8954,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -9302,11 +8963,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "1999-06-16",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -9343,8 +9002,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -9352,11 +9011,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2000-08-21",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -9393,8 +9050,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -9402,11 +9059,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2002-04-24",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -9443,8 +9098,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -9452,11 +9107,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -9495,8 +9148,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -9504,11 +9157,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2004-05-16",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -9554,8 +9205,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "sister",
@@ -9569,11 +9220,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -9610,8 +9259,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "brother",
@@ -9627,11 +9276,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2006-03-12",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -9670,8 +9317,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "sister",
@@ -9685,11 +9332,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -9728,8 +9373,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -9737,11 +9382,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -9778,8 +9421,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -9787,11 +9430,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -9839,8 +9480,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -9848,11 +9489,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "M",
           "birthday": "2005-12-14",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -9889,8 +9528,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -9898,11 +9537,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2004-02-16",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -9948,8 +9585,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -9957,11 +9594,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2005-04-05",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -9998,8 +9633,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -10007,11 +9642,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2005-06-07",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -10048,8 +9681,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -10057,11 +9690,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2004-03-12",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -10107,8 +9738,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "brother",
@@ -10123,11 +9754,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2005-09-07",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -10173,8 +9802,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "brother",
@@ -10187,11 +9816,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2004-07-14",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -10237,8 +9864,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "brother",
@@ -10251,11 +9878,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "1998-03-05",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -10292,8 +9917,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -10301,11 +9926,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2001-06-02",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -10344,8 +9967,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -10353,11 +9976,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "M",
           "birthday": "2002-03-03",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -10394,8 +10015,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "brother",
@@ -10410,11 +10031,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2003-10-29",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -10462,8 +10081,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -10471,11 +10090,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -10521,8 +10138,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "brother",
@@ -10536,11 +10153,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2002-11-01",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -10579,8 +10194,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "brother",
@@ -10594,11 +10209,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "M",
           "birthday": "2002-09-04",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -10638,8 +10251,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "brother",
@@ -10652,11 +10265,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2002-10-26",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -10693,8 +10304,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "brother",
@@ -10707,11 +10318,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2004-02-06",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -10757,8 +10366,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -10766,11 +10375,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2002-08-14",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -10807,8 +10414,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -10816,11 +10423,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2002-12-11",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -10859,8 +10464,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -10868,11 +10473,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "M",
           "birthday": "2003-03-15",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -10909,8 +10512,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -10918,11 +10521,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2001-03-28",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -10970,8 +10571,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "sister",
@@ -10986,11 +10587,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -11036,8 +10635,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -11045,11 +10644,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "1997-06-20",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -11095,8 +10692,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -11104,11 +10701,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -11156,8 +10751,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -11165,11 +10760,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "ward-directory",
           "gender": "M",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "ward-directory",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -11206,8 +10799,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -11215,11 +10808,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2004-12-01",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -11265,8 +10856,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -11274,11 +10865,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2003-01-13",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -11324,8 +10913,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -11333,11 +10922,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -11383,8 +10970,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "brother",
@@ -11397,11 +10984,9 @@
             ]
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2003-09-18",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -11447,8 +11032,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -11456,11 +11041,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -11471,6 +11054,180 @@
           "moved": {
             "status": "",
             "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
+        }
+      ]
+    },
+    {
+      "id": "apt-b541b75252",
+      "complex": "Assigned Missionaries",
+      "unit": "—",
+      "address": "85 N 600 E",
+      "city": "Provo UT 84606",
+      "members": [
+        {
+          "id": "m-3ab7687536",
+          "lastName": "Hansen",
+          "legalFirst": "Christian Martin",
+          "preferredName": "Elder Christian",
+          "fullName": "Elder Christian Martin Hansen",
+          "photoUrl": "data/photos/m-3ab7687536.jpg",
+          "phone": "",
+          "email": "christian.m.hansen@missionary.org",
+          "address": "Utah Provo Mission Office, 85 N 600 E, Provo UT 84606",
+          "street": "85 N 600 E",
+          "unit": "—",
+          "complex": "Assigned Missionaries",
+          "city": "Provo UT 84606",
+          "coords": "40.235083, -111.647792",
+          "callings": [
+            "Assigned Full-Time Missionary"
+          ],
+          "languages": [],
+          "flags": {
+            "returnedMissionary": false,
+            "inactive": false,
+            "doNotContact": false,
+            "solid": true,
+            "endowed": false
+          },
+          "ministering": {
+            "role": "",
+            "companions": [],
+            "ministeringTo": []
+          },
+          "notes": "Utah Provo Mission companionship assigned to the ward. Companionship email: 500668894@missionary.org",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
+        },
+        {
+          "id": "m-53634ba058",
+          "lastName": "Van Gogh",
+          "legalFirst": "Theodoor",
+          "preferredName": "Elder Theodoor",
+          "fullName": "Elder Theodoor Van Gogh",
+          "photoUrl": "data/photos/m-53634ba058.jpg",
+          "phone": "",
+          "email": "theodoor.van.gogh@missionary.org",
+          "address": "Utah Provo Mission Office, 85 N 600 E, Provo UT 84606",
+          "street": "85 N 600 E",
+          "unit": "—",
+          "complex": "Assigned Missionaries",
+          "city": "Provo UT 84606",
+          "coords": "40.235083, -111.647792",
+          "callings": [
+            "Assigned Full-Time Missionary"
+          ],
+          "languages": [],
+          "flags": {
+            "returnedMissionary": false,
+            "inactive": false,
+            "doNotContact": false,
+            "solid": true,
+            "endowed": false
+          },
+          "ministering": {
+            "role": "",
+            "companions": [],
+            "ministeringTo": []
+          },
+          "notes": "Utah Provo Mission companionship assigned to the ward. Companionship email: 500668894@missionary.org",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
+        }
+      ]
+    },
+    {
+      "id": "apt-ad57f2cc95",
+      "complex": "Bishopric / Leaders",
+      "unit": "—",
+      "address": "Bishop household",
+      "city": "",
+      "members": [
+        {
+          "id": "m-b08e519f4f",
+          "lastName": "Berrett",
+          "legalFirst": "Lori",
+          "preferredName": "Lori",
+          "fullName": "Lori Berrett",
+          "photoUrl": "",
+          "phone": "(214) 529-0512",
+          "email": "loriberrett@sbcglobal.net",
+          "address": "Bishop household",
+          "street": "Bishop household",
+          "unit": "—",
+          "complex": "Bishopric / Leaders",
+          "city": "",
+          "coords": "40.296150, -111.639893",
+          "callings": [],
+          "languages": [],
+          "flags": {
+            "returnedMissionary": false,
+            "inactive": false,
+            "doNotContact": false,
+            "solid": false,
+            "endowed": false
+          },
+          "ministering": {
+            "role": "sister",
+            "companions": [],
+            "ministeringTo": [
+              "m-0dc015cd94",
+              "m-d236133983",
+              "m-811f6ca418"
+            ]
+          },
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "in",
+            "date": "2026-03-16",
             "notes": ""
           },
           "lostMember": false,
@@ -11501,16 +11258,15 @@
           "city": "Orem UT",
           "coords": "40.315890, -111.703222",
           "callings": [
-            "Relief Society Activity Committee Member",
-            "Relief Society Activity Committee Member Orem UT"
+            "Relief Society Activity Committee Member"
           ],
           "languages": [],
           "flags": {
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -11518,11 +11274,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -11568,8 +11322,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -11577,11 +11331,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -11618,8 +11370,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -11627,11 +11379,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2003-04-08",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -11668,8 +11418,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -11677,11 +11427,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "1959-11-09",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -11718,8 +11466,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -11727,11 +11475,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -11768,8 +11514,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -11777,11 +11523,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -11818,8 +11562,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -11827,11 +11571,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2003-11-06",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -11868,8 +11610,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -11877,11 +11619,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2004-09-27",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -11920,8 +11660,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -11929,11 +11669,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "F",
           "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -11974,8 +11712,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -11983,11 +11721,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "2000-12-25",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -12024,8 +11760,8 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "endowed": false,
-            "solid": false
+            "solid": false,
+            "endowed": false
           },
           "ministering": {
             "role": "",
@@ -12033,11 +11769,9 @@
             "ministeringTo": []
           },
           "notes": "",
+          "photoSource": "missing",
           "gender": "M",
           "birthday": "1996-02-20",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
           "covenantPath": {
             "baptized": false,
             "confirmed": false,
@@ -12048,119 +11782,6 @@
           "moved": {
             "status": "in",
             "date": "2026-03-22",
-            "notes": ""
-          },
-          "lostMember": false,
-          "livesAtOldMill": false
-        }
-      ]
-    },
-    {
-      "id": "apt-assigned-missionaries",
-      "complex": "Assigned Missionaries",
-      "unit": "—",
-      "address": "85 N 600 E",
-      "city": "Provo UT 84606",
-      "members": [
-        {
-          "id": "m-3ab7687536",
-          "lastName": "Hansen",
-          "legalFirst": "Christian Martin",
-          "preferredName": "Elder Christian",
-          "fullName": "Elder Christian Martin Hansen",
-          "photoUrl": "",
-          "phone": "",
-          "email": "christian.m.hansen@missionary.org",
-          "address": "Utah Provo Mission Office, 85 N 600 E, Provo UT 84606",
-          "street": "85 N 600 E",
-          "unit": "—",
-          "complex": "Assigned Missionaries",
-          "city": "Provo UT 84606",
-          "coords": "40.235083, -111.647792",
-          "callings": [
-            "Assigned Full-Time Missionary"
-          ],
-          "languages": [],
-          "flags": {
-            "returnedMissionary": false,
-            "inactive": false,
-            "doNotContact": false,
-            "endowed": false,
-            "solid": true
-          },
-          "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
-          },
-          "notes": "Utah Provo Mission companionship assigned to the ward. Companionship email: 500668894@missionary.org",
-          "gender": "M",
-          "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
-          "covenantPath": {
-            "baptized": false,
-            "confirmed": false,
-            "endowed": false,
-            "latestConvert": false,
-            "notes": ""
-          },
-          "moved": {
-            "status": "",
-            "date": "",
-            "notes": ""
-          },
-          "lostMember": false,
-          "livesAtOldMill": false
-        },
-        {
-          "id": "m-53634ba058",
-          "lastName": "Van Gogh",
-          "legalFirst": "Theodoor",
-          "preferredName": "Elder Theodoor",
-          "fullName": "Elder Theodoor Van Gogh",
-          "photoUrl": "",
-          "phone": "",
-          "email": "theodoor.van.gogh@missionary.org",
-          "address": "Utah Provo Mission Office, 85 N 600 E, Provo UT 84606",
-          "street": "85 N 600 E",
-          "unit": "—",
-          "complex": "Assigned Missionaries",
-          "city": "Provo UT 84606",
-          "coords": "40.235083, -111.647792",
-          "callings": [
-            "Assigned Full-Time Missionary"
-          ],
-          "languages": [],
-          "flags": {
-            "returnedMissionary": false,
-            "inactive": false,
-            "doNotContact": false,
-            "endowed": false,
-            "solid": true
-          },
-          "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
-          },
-          "notes": "Utah Provo Mission companionship assigned to the ward. Companionship email: 500668894@missionary.org",
-          "gender": "M",
-          "birthday": "",
-          "endowed": false,
-          "notEndowed": true,
-          "photoSource": "missing",
-          "covenantPath": {
-            "baptized": false,
-            "confirmed": false,
-            "endowed": false,
-            "latestConvert": false,
-            "notes": ""
-          },
-          "moved": {
-            "status": "",
-            "date": "",
             "notes": ""
           },
           "lostMember": false,
