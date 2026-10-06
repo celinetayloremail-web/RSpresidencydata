@@ -292,29 +292,299 @@ export async function parseDirectoryPdf(file) {
 
 export function mergeDirectory(previous, incoming) {
   const prevMembers = previous.apartments.flatMap((a) => a.members);
-  const byName = new Map(
-    prevMembers.map((m) => [m.fullName.toLowerCase(), m])
-  );
+  const incomingMembers = incoming.apartments.flatMap((a) => a.members);
+  const byPrevName = new Map(prevMembers.map((m) => [m.fullName.toLowerCase(), m]));
+  const byPrevId = new Map(prevMembers.map((m) => [m.id, m]));
 
-  for (const apt of incoming.apartments) {
-    apt.members = apt.members.map((m) => {
-      const prev = byName.get(m.fullName.toLowerCase());
-      if (!prev) return m;
-      return {
-        ...m,
-        id: prev.id || m.id,
-        preferredName: prev.preferredName || m.preferredName,
-        photoUrl: prev.photoUrl || m.photoUrl,
-        languages: prev.languages?.length ? prev.languages : m.languages,
-        flags: { ...m.flags, ...prev.flags },
-        ministering: prev.ministering || m.ministering,
-        notes: prev.notes || "",
-        // Prefer fresh contact fields from PDF, fall back to previous
-        phone: m.phone || prev.phone || "",
-        email: m.email || prev.email || "",
-        callings: m.callings?.length ? m.callings : prev.callings || [],
-      };
+  // Full roster replace when import is large (typical Church Directory PDF/JSON dump)
+  const fullReplace = incomingMembers.length >= Math.max(20, prevMembers.length * 0.5);
+
+  const upserted = new Map();
+
+  const mergeOne = (incomingMember, prev) => {
+    if (!prev) return normalizeMember(incomingMember);
+    return normalizeMember({
+      ...incomingMember,
+      id: prev.id || incomingMember.id,
+      preferredName: prev.preferredName || incomingMember.preferredName,
+      photoUrl: prev.photoUrl?.startsWith("data:")
+        ? prev.photoUrl
+        : incomingMember.photoUrl || prev.photoUrl || "",
+      photoSource: prev.photoUrl?.startsWith("data:")
+        ? "leader-upload"
+        : incomingMember.photoUrl
+          ? incomingMember.photoSource || "ward-directory"
+          : prev.photoSource || "missing",
+      languages: prev.languages?.length ? prev.languages : incomingMember.languages,
+      gender: prev.gender || incomingMember.gender || "",
+      birthday: prev.birthday || incomingMember.birthday || "",
+      flags: { ...defaultFlags(), ...incomingMember.flags, ...prev.flags },
+      ministering: prev.ministering || incomingMember.ministering,
+      notes: prev.notes || "",
+      covenantPath: {
+        ...defaultCovenant(),
+        ...incomingMember.covenantPath,
+        ...prev.covenantPath,
+      },
+      moved: prev.moved || incomingMember.moved || { status: "", date: "", notes: "" },
+      lostMember: prev.lostMember ?? incomingMember.lostMember ?? false,
+      phone: incomingMember.phone || prev.phone || "",
+      email: incomingMember.email || prev.email || "",
+      callings: incomingMember.callings?.length
+        ? incomingMember.callings
+        : prev.callings || [],
+      address: incomingMember.address || prev.address || "",
+      street: incomingMember.street || prev.street || "",
+      unit: incomingMember.unit || prev.unit || "",
+      complex: incomingMember.complex || prev.complex || "",
+      city: incomingMember.city || prev.city || "",
     });
+  };
+
+  if (fullReplace) {
+    for (const m of incomingMembers) {
+      const prev = byPrevName.get(m.fullName.toLowerCase()) || byPrevId.get(m.id);
+      upserted.set(m.fullName.toLowerCase(), mergeOne(m, prev));
+    }
+  } else {
+    // Partial CSV/JSON: keep previous roster and upsert rows
+    for (const m of prevMembers) {
+      upserted.set(m.fullName.toLowerCase(), normalizeMember(m));
+    }
+    for (const m of incomingMembers) {
+      const key = m.fullName.toLowerCase();
+      const prev = upserted.get(key) || byPrevName.get(key);
+      upserted.set(key, mergeOne(m, prev));
+    }
   }
-  return incoming;
+
+  const members = [...upserted.values()];
+  const apartments = groupApartments(members);
+
+  return {
+    ward: {
+      ...previous.ward,
+      ...incoming.ward,
+      stake: "Provo Utah YSA 10th Stake",
+      stakeNumber: "511455",
+      unitNumber: "266485",
+      name: "Provo YSA 147th Ward",
+    },
+    meta: {
+      ...previous.meta,
+      ...incoming.meta,
+      memberCount: members.length,
+      apartmentCount: apartments.length,
+      latestConverts: previous.meta?.latestConverts || [],
+      budget: previous.meta?.budget || incoming.meta?.budget,
+      findingLostNotes: previous.meta?.findingLostNotes || "",
+    },
+    mission: previous.mission || incoming.mission,
+    apartments,
+  };
+}
+
+function defaultFlags() {
+  return {
+    returnedMissionary: false,
+    inactive: false,
+    doNotContact: false,
+    solid: false,
+    endowed: false,
+  };
+}
+
+function defaultCovenant() {
+  return {
+    baptized: false,
+    confirmed: false,
+    endowed: false,
+    latestConvert: false,
+    notes: "",
+  };
+}
+
+function normalizeMember(m) {
+  const flags = { ...defaultFlags(), ...(m.flags || {}) };
+  if ("superSolid" in flags) {
+    flags.solid = flags.solid || flags.superSolid;
+    delete flags.superSolid;
+  }
+  return {
+    ...m,
+    gender: m.gender || "",
+    birthday: m.birthday || "",
+    photoSource: m.photoSource || (m.photoUrl ? "ward-directory" : "missing"),
+    flags,
+    covenantPath: { ...defaultCovenant(), ...(m.covenantPath || {}), endowed: flags.endowed },
+    moved: m.moved || { status: "", date: "", notes: "" },
+    lostMember: Boolean(m.lostMember),
+    ministering: m.ministering || { role: "", companions: [], ministeringTo: [] },
+    languages: m.languages || [],
+    callings: m.callings || [],
+  };
+}
+
+function emptyMemberFromRow(row) {
+  const fullName = row.fullName || `${row.preferredName || row.legalFirst || ""} ${row.lastName || ""}`.trim();
+  const lastName = row.lastName || fullName.split(" ").slice(-1)[0] || "";
+  const legalFirst = row.legalFirst || row.preferredName || fullName.replace(lastName, "").trim();
+  return normalizeMember({
+    id: row.id || `m-${Math.abs(hashCode(fullName.toLowerCase())).toString(16)}`,
+    lastName,
+    legalFirst,
+    preferredName: row.preferredName || legalFirst.split(" ")[0] || lastName,
+    fullName,
+    photoUrl: row.photoUrl || "",
+    phone: row.phone || "",
+    email: row.email || "",
+    address: row.address || "",
+    street: row.street || row.address || "",
+    unit: row.unit || "—",
+    complex: row.complex || "Imported",
+    city: row.city || "",
+    coords: row.coords || "",
+    callings: parseList(row.callings),
+    languages: parseList(row.languages),
+    gender: row.gender === "M" || row.gender === "F" ? row.gender : "",
+    birthday: row.birthday || "",
+    notes: row.notes || "",
+  });
+}
+
+function parseList(value) {
+  if (Array.isArray(value)) return value.filter(Boolean);
+  if (!value) return [];
+  return String(value)
+    .split(/[;,|]/)
+    .map((s) => s.trim())
+    .filter(Boolean);
+}
+
+function hashCode(str) {
+  let h = 0;
+  for (let i = 0; i < str.length; i += 1) h = (h * 31 + str.charCodeAt(i)) >>> 0;
+  return h;
+}
+
+function groupFromMembers(members) {
+  return groupApartments(members.map(normalizeMember));
+}
+
+export async function parseDirectoryFile(file) {
+  const name = file.name.toLowerCase();
+  if (name.endsWith(".json") || file.type === "application/json") {
+    const text = await file.text();
+    const data = JSON.parse(text);
+    if (data.apartments) {
+      data.apartments = data.apartments.map((apt) => ({
+        ...apt,
+        members: (apt.members || []).map(normalizeMember),
+      }));
+      return data;
+    }
+    if (Array.isArray(data)) {
+      const members = data.map(emptyMemberFromRow);
+      return {
+        ward: {
+          name: "Provo YSA 147th Ward",
+          shortName: "147th Ward",
+          unitNumber: "266485",
+          stake: "Provo Utah YSA 10th Stake",
+          stakeNumber: "511455",
+          source: file.name,
+          sourceDate: new Date().toISOString().slice(0, 10),
+        },
+        meta: {
+          lastEditedAt: new Date().toISOString(),
+          memberCount: members.length,
+        },
+        apartments: groupFromMembers(members),
+      };
+    }
+    throw new Error("JSON must contain apartments[] or an array of members.");
+  }
+
+  if (name.endsWith(".csv") || file.type === "text/csv") {
+    const text = await file.text();
+    const rows = parseCsv(text);
+    if (!rows.length) throw new Error("CSV had no rows.");
+    const members = rows.map(emptyMemberFromRow);
+    return {
+      ward: {
+        name: "Provo YSA 147th Ward",
+        shortName: "147th Ward",
+        unitNumber: "266485",
+        stake: "Provo Utah YSA 10th Stake",
+        stakeNumber: "511455",
+        source: file.name,
+        sourceDate: new Date().toISOString().slice(0, 10),
+      },
+      meta: {
+        lastEditedAt: new Date().toISOString(),
+        memberCount: members.length,
+      },
+      apartments: groupFromMembers(members),
+    };
+  }
+
+  // Default: PDF
+  return parseDirectoryPdf(file);
+}
+
+function parseCsv(text) {
+  const lines = text.replace(/^\uFEFF/, "").split(/\r?\n/).filter((l) => l.trim());
+  if (!lines.length) return [];
+  const headers = splitCsvLine(lines[0]).map((h) => h.trim());
+  return lines.slice(1).map((line) => {
+    const cols = splitCsvLine(line);
+    const row = {};
+    headers.forEach((h, i) => {
+      row[h] = cols[i] ?? "";
+    });
+    // normalize common header aliases
+    return {
+      fullName: row.fullName || row.name || row.Name || "",
+      preferredName: row.preferredName || row.preferred || row.Nickname || "",
+      legalFirst: row.legalFirst || row.firstName || row.First || "",
+      lastName: row.lastName || row.Last || "",
+      phone: row.phone || row.Phone || "",
+      email: row.email || row.Email || "",
+      address: row.address || row.Address || "",
+      street: row.street || "",
+      unit: row.unit || row.Unit || row.Apt || "",
+      complex: row.complex || row.Complex || "",
+      city: row.city || row.City || "",
+      callings: row.callings || row.Calling || "",
+      languages: row.languages || row.Languages || "",
+      gender: row.gender || row.Gender || "",
+      birthday: row.birthday || row.Birthday || row.birthdate || "",
+      notes: row.notes || row.Notes || "",
+      photoUrl: row.photoUrl || "",
+    };
+  });
+}
+
+function splitCsvLine(line) {
+  const out = [];
+  let cur = "";
+  let inQuotes = false;
+  for (let i = 0; i < line.length; i += 1) {
+    const ch = line[i];
+    if (ch === '"') {
+      if (inQuotes && line[i + 1] === '"') {
+        cur += '"';
+        i += 1;
+      } else {
+        inQuotes = !inQuotes;
+      }
+    } else if (ch === "," && !inQuotes) {
+      out.push(cur);
+      cur = "";
+    } else {
+      cur += ch;
+    }
+  }
+  out.push(cur);
+  return out;
 }

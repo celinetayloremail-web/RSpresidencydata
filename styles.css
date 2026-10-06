@@ -474,12 +474,208 @@ textarea {
   line-height: 1;
 }
 
-.sym-rm { background: #2a4a3b; color: #fff; }
-.sym-lang { background: #4d6f8a; color: #fff; font-size: 0.85rem; }
-.sym-calling { background: #c4a574; color: #1c2a24; }
-.sym-solid { background: #3f6b56; color: #fff; }
+.sym-rm { background: #0f7a58; color: #fff; }
+.sym-lang { background: #1f8fc9; color: #fff; font-size: 0.78rem; }
+.sym-calling { background: #ffb703; color: #14352c; }
+.sym-solid { background: #1fa97a; color: #fff; }
+.sym-endowed { background: #0b6e4f; color: #fff; }
+.sym-not-endowed { background: #d7e8e1; color: #2f5a4c; }
 .sym-inactive { background: #d7ddd8; color: #53575b; }
-.sym-dnc { background: #9b3b3b; color: #fff; }
+.sym-dnc { background: #d64545; color: #fff; }
+
+.stake-line {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.member-gender {
+  display: block;
+  font-size: 0.68rem;
+  color: var(--muted);
+}
+
+.photo-source {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.panel-section {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1rem 1.25rem 3rem;
+}
+
+.today-chip {
+  margin: 0;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(31, 169, 122, 0.12);
+  color: var(--sage-deep);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.birthday-list,
+.simple-list,
+.ministering-list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.bday-card,
+.simple-row,
+.ministering-card {
+  text-align: left;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.78);
+  padding: 0.85rem 1rem;
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
+}
+
+.bday-card {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.bday-sister {
+  background: #ffe4ef;
+  border-color: #f5b6c8;
+}
+
+.bday-elder {
+  background: #e3efff;
+  border-color: #b7cdf5;
+}
+
+.bday-unknown {
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.simple-row {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.simple-row em {
+  display: block;
+  color: var(--muted);
+  font-style: normal;
+  font-size: 0.88rem;
+}
+
+.avatar.tiny {
+  width: 42px;
+  height: 42px;
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.budget-table {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.budget-head,
+.budget-row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.budget-head {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.budget-row input {
+  min-height: 2.5rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.45rem 0.65rem;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.game-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.game-controls select {
+  min-height: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  padding: 0.45rem 0.75rem;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.game-card {
+  width: min(360px, 100%);
+  height: 280px;
+  perspective: 1000px;
+  cursor: pointer;
+  margin-bottom: 0.75rem;
+}
+
+.game-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.55s;
+  transform-style: preserve-3d;
+}
+
+.game-card.flipped .game-card-inner {
+  transform: rotateY(180deg);
+}
+
+.game-face {
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.92);
+  backface-visibility: hidden;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.game-back {
+  transform: rotateY(180deg);
+}
+
+.game-avatar {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 0.75rem;
+  font-size: 2rem;
+}
+
+.linked-box {
+  padding: 0.75rem;
+  border-radius: 12px;
+  background: rgba(31, 169, 122, 0.08);
+}
+
+.linked-box p {
+  margin: 0.25rem 0;
+}
+
 
 .pod-list {
   display: flex;

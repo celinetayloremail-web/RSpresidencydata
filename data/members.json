@@ -2,17 +2,51 @@
   "ward": {
     "name": "Provo YSA 147th Ward",
     "shortName": "147th Ward",
-    "stake": "Provo YSA",
+    "stake": "Provo Utah YSA 10th Stake",
     "source": "147th Ward Directory + Organizations + Missionary PDFs (10-05-26)",
     "sourceDate": "2026-10-05",
-    "note": "Parsed from Church Directory PDFs. For Church use only — confidential."
+    "note": "Parsed from Church Directory PDFs. For Church use only — confidential.",
+    "unitNumber": "266485",
+    "stakeNumber": "511455"
   },
   "meta": {
     "lastEditedBy": "PDF Import",
     "lastEditedAt": "2026-10-05T12:00:00-06:00",
     "memberCount": 197,
     "apartmentCount": 98,
-    "photoCount": 41
+    "photoCount": 41,
+    "latestConverts": [],
+    "budget": {
+      "notes": "",
+      "categories": [
+        {
+          "name": "Activities",
+          "planned": 0,
+          "spent": 0
+        },
+        {
+          "name": "Relief Society",
+          "planned": 0,
+          "spent": 0
+        },
+        {
+          "name": "Elders Quorum",
+          "planned": 0,
+          "spent": 0
+        },
+        {
+          "name": "Missionary",
+          "planned": 0,
+          "spent": 0
+        },
+        {
+          "name": "Other",
+          "planned": 0,
+          "spent": 0
+        }
+      ]
+    },
+    "findingLostNotes": ""
   },
   "mission": {
     "name": "Utah Provo Mission",
@@ -53,14 +87,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         }
       ]
     },
@@ -94,14 +148,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         }
       ]
     },
@@ -133,14 +207,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         }
       ]
     },
@@ -172,14 +266,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         },
         {
           "id": "m-d8ea0eaeea",
@@ -202,14 +316,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         }
       ]
     },
@@ -244,14 +378,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         }
       ]
     },
@@ -283,14 +437,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         }
       ]
     },
@@ -322,14 +496,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         }
       ]
     },
@@ -361,14 +555,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         }
       ]
     },
@@ -400,14 +614,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         }
       ]
     },
@@ -441,14 +675,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         }
       ]
     },
@@ -480,14 +734,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         }
       ]
     },
@@ -519,14 +793,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         },
         {
           "id": "m-73640f47e5",
@@ -549,14 +843,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         }
       ]
     },
@@ -588,14 +902,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -627,14 +961,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -668,14 +1022,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         }
       ]
     },
@@ -707,14 +1081,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         }
       ]
     },
@@ -746,14 +1140,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -787,14 +1201,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-0362302728",
@@ -817,14 +1251,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-dee2ff8629",
@@ -849,14 +1303,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-9b6829e7c3",
@@ -881,14 +1355,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -922,14 +1416,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-11bb149e5d",
@@ -955,14 +1469,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-c2625ebfcd",
@@ -989,14 +1523,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -1028,14 +1582,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -1069,14 +1643,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-2c3fbeecb6",
@@ -1099,14 +1693,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-e16a59f65e",
@@ -1129,14 +1743,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-8de53ed28c",
@@ -1159,14 +1793,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -1200,14 +1854,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-802d36a954",
@@ -1232,14 +1906,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-e78775d114",
@@ -1262,14 +1956,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -1301,14 +2015,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-12f4ebb4ff",
@@ -1333,14 +2067,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -1372,14 +2126,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-1a65f54c85",
@@ -1402,14 +2176,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -1441,14 +2235,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -1480,14 +2294,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -1519,14 +2353,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-4ebc6b2615",
@@ -1549,14 +2403,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-c9c3bcf3e4",
@@ -1579,14 +2453,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -1618,14 +2512,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-ba422a303c",
@@ -1650,14 +2564,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-87e5c8342f",
@@ -1682,14 +2616,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-f6206408c0",
@@ -1712,14 +2666,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -1751,14 +2725,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -1790,14 +2784,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -1829,14 +2843,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -1871,14 +2905,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-68cecc5366",
@@ -1903,14 +2957,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -1942,14 +3016,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-5c19c4a969",
@@ -1972,14 +3066,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-60e56f174b",
@@ -2002,14 +3116,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-07ab486f93",
@@ -2032,14 +3166,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -2071,14 +3225,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-26f54071e2",
@@ -2101,14 +3275,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -2140,14 +3334,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-8d418377cb",
@@ -2170,14 +3384,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -2209,14 +3443,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-ee8bc28b11",
@@ -2239,14 +3493,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -2278,14 +3552,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -2317,14 +3611,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-99c4c75ad6",
@@ -2347,14 +3661,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-4319ecb299",
@@ -2379,14 +3713,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-82430a9e99",
@@ -2411,14 +3765,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -2450,14 +3824,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -2489,14 +3883,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -2528,14 +3942,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-6e6a0d060c",
@@ -2558,14 +3992,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-36cf4fb9c0",
@@ -2590,14 +4044,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -2629,14 +4103,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -2668,14 +4162,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -2707,14 +4221,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-13838c3bac",
@@ -2737,14 +4271,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-c54503c3d5",
@@ -2767,14 +4321,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -2806,14 +4380,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -2845,14 +4439,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-5acf9b0590",
@@ -2877,14 +4491,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-a2a0a13192",
@@ -2907,14 +4541,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -2948,14 +4602,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-a9108cd7d6",
@@ -2980,14 +4654,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -3019,14 +4713,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-0258477e8f",
@@ -3051,14 +4765,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-9bdb1c5cf5",
@@ -3083,14 +4817,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-d236133983",
@@ -3113,14 +4867,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-811f6ca418",
@@ -3143,14 +4917,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -3182,14 +4976,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-3c55fbf091",
@@ -3212,14 +5026,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -3255,14 +5089,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-a2c10109dd",
@@ -3285,14 +5139,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-6db2076aa0",
@@ -3315,14 +5189,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-70d051f02f",
@@ -3347,14 +5241,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-9e960fcf65",
@@ -3379,14 +5293,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-689561059a",
@@ -3409,14 +5343,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-819eac79aa",
@@ -3439,14 +5393,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-1b88761a56",
@@ -3469,14 +5443,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-03fdb41b5a",
@@ -3501,14 +5495,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -3542,14 +5556,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         }
       ]
     },
@@ -3581,14 +5615,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-783afe025c",
@@ -3613,14 +5667,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -3652,14 +5726,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -3691,14 +5785,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-43db0d7ca6",
@@ -3723,14 +5837,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -3762,14 +5896,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -3801,14 +5955,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -3842,14 +6016,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -3883,14 +6077,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -3922,14 +6136,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-9383f206a1",
@@ -3954,14 +6188,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-f649bf9098",
@@ -3984,14 +6238,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -4023,14 +6297,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -4062,14 +6356,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-1fc950434b",
@@ -4092,14 +6406,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-f864b2816e",
@@ -4122,14 +6456,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -4161,14 +6515,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -4200,14 +6574,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-ddc1c0e07c",
@@ -4232,14 +6626,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-341ece63b0",
@@ -4262,14 +6676,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-1775c6cc5a",
@@ -4292,14 +6726,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -4333,14 +6787,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -4374,14 +6848,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -4413,14 +6907,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -4452,14 +6966,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -4493,14 +7027,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-0cf10732db",
@@ -4523,14 +7077,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-ab753ec1d6",
@@ -4553,14 +7127,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -4596,14 +7190,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -4635,14 +7249,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-c228f9e811",
@@ -4665,14 +7299,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-b8e91255a4",
@@ -4695,14 +7349,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -4734,14 +7408,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -4773,14 +7467,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-12198a6edb",
@@ -4805,14 +7519,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-dda3c28d38",
@@ -4837,14 +7571,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -4878,14 +7632,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -4919,14 +7693,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-f044af235b",
@@ -4951,14 +7745,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -4993,14 +7807,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -5032,14 +7866,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-5fd71c1bc3",
@@ -5064,14 +7918,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-235b60d0ba",
@@ -5094,14 +7968,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -5135,14 +8029,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-3a993dae02",
@@ -5165,14 +8079,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -5204,14 +8138,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-6c8ac76ff9",
@@ -5234,14 +8188,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-dac9b28167",
@@ -5264,14 +8238,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-5dae7a336c",
@@ -5294,14 +8288,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-6315556d09",
@@ -5326,14 +8340,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -5365,14 +8399,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-86ebba318a",
@@ -5395,14 +8449,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-90fe229b61",
@@ -5427,14 +8501,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-7d7a4266a9",
@@ -5459,14 +8553,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-6050f87196",
@@ -5489,14 +8603,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -5530,14 +8664,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-a66baea119",
@@ -5560,14 +8714,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -5599,14 +8773,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-ec8a934e48",
@@ -5629,14 +8823,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-fb39df3663",
@@ -5659,14 +8873,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -5698,14 +8932,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -5737,14 +8991,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -5776,14 +9050,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-250bb31bd6",
@@ -5806,14 +9100,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-b90578cbfd",
@@ -5838,14 +9152,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-f0857f03ca",
@@ -5868,14 +9202,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -5909,14 +9263,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -5948,14 +9322,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-54ffa130d8",
@@ -5980,14 +9374,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-56811c0fc9",
@@ -6012,14 +9426,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-748ccd656f",
@@ -6042,14 +9476,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -6081,14 +9535,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-825abb3dfb",
@@ -6111,14 +9585,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-04913ae9ab",
@@ -6143,14 +9637,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-7aade04fe9",
@@ -6173,14 +9687,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -6214,14 +9748,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -6253,14 +9807,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -6292,14 +9866,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -6333,14 +9927,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "ward-directory",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         },
         {
           "id": "m-dd98605806",
@@ -6363,14 +9977,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -6402,14 +10036,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -6441,14 +10095,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": true
         }
       ]
     },
@@ -6480,14 +10154,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         }
       ]
     },
@@ -6519,14 +10213,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         }
       ]
     },
@@ -6560,14 +10274,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         }
       ]
     },
@@ -6599,14 +10333,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         },
         {
           "id": "m-cb456ce0f6",
@@ -6629,14 +10383,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         },
         {
           "id": "m-8ee3df9bfa",
@@ -6659,14 +10433,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         },
         {
           "id": "m-02b52504c7",
@@ -6689,14 +10483,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         },
         {
           "id": "m-865783497f",
@@ -6719,14 +10533,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         },
         {
           "id": "m-3ddfc6dbdd",
@@ -6749,14 +10583,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         },
         {
           "id": "m-3c8cb847b8",
@@ -6779,14 +10633,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         },
         {
           "id": "m-c06bff2a8b",
@@ -6811,14 +10685,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         },
         {
           "id": "m-0427d78d03",
@@ -6845,14 +10739,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         },
         {
           "id": "m-c206e2b305",
@@ -6875,14 +10789,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": false
+            "endowed": false,
+            "solid": false
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": ""
+          "notes": "",
+          "gender": "",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         }
       ]
     },
@@ -6916,14 +10850,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": true
+            "endowed": false,
+            "solid": true
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": "Utah Provo Mission companionship assigned to the ward. Companionship email: 500668894@missionary.org"
+          "notes": "Utah Provo Mission companionship assigned to the ward. Companionship email: 500668894@missionary.org",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         },
         {
           "id": "m-53634ba058",
@@ -6948,14 +10902,34 @@
             "returnedMissionary": false,
             "inactive": false,
             "doNotContact": false,
-            "superSolid": true
+            "endowed": false,
+            "solid": true
           },
           "ministering": {
             "role": "",
             "companions": [],
             "ministeringTo": []
           },
-          "notes": "Utah Provo Mission companionship assigned to the ward. Companionship email: 500668894@missionary.org"
+          "notes": "Utah Provo Mission companionship assigned to the ward. Companionship email: 500668894@missionary.org",
+          "gender": "M",
+          "birthday": "",
+          "endowed": false,
+          "notEndowed": true,
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "",
+            "date": "",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
         }
       ]
     }
