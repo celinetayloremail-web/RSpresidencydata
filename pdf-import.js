@@ -419,10 +419,40 @@ function touchReportSource(dir, fileName) {
 }
 
 function importBudget(dir, text, fileName) {
-  const flat = text.replace(/\n/g, " ");
-  const spentM = flat.match(/\$(\d+\.\d{2})\s*Spent\s*of\s*\$(\d+\.\d{2})/);
-  const spentVal = spentM ? Number(spentM[1]) : 0;
-  const plannedVal = spentM ? Number(spentM[2]) : 0;
+  const flat = text.replace(/\n/g, " ").replace(/\s+/g, " ");
+  const patterns = [
+    /\$(\d+(?:,\d{3})*(?:\.\d{2})?)\s*Spent\s*of\s*\$(\d+(?:,\d{3})*(?:\.\d{2})?)/i,
+    /Spent\s*(?:of\s*)?\$(\d+(?:,\d{3})*(?:\.\d{2})?).*?\$(\d+(?:,\d{3})*(?:\.\d{2})?)/i,
+    /\$(\d+(?:,\d{3})*(?:\.\d{2})?)\s+of\s+\$(\d+(?:,\d{3})*(?:\.\d{2})?)/i,
+  ];
+  let spentVal = null;
+  let plannedVal = null;
+  for (const re of patterns) {
+    const m = flat.match(re);
+    if (!m) continue;
+    // Prefer pattern where first is spent and second planned when "Spent of" ordering
+    if (/Spent\s*of/i.test(m[0]) || /\$[\d.,]+\s+Spent/i.test(flat)) {
+      spentVal = Number(m[1].replace(/,/g, ""));
+      plannedVal = Number(m[2].replace(/,/g, ""));
+    } else if (/of\s*\$/.test(m[0])) {
+      spentVal = Number(m[1].replace(/,/g, ""));
+      plannedVal = Number(m[2].replace(/,/g, ""));
+    } else {
+      spentVal = Number(m[1].replace(/,/g, ""));
+      plannedVal = Number(m[2].replace(/,/g, ""));
+    }
+    break;
+  }
+  // Also try adjacent money amounts near "Spent"
+  if (spentVal == null) {
+    const near = flat.match(/\$(\d+(?:,\d{3})*(?:\.\d{2})?)[^$]{0,40}Spent[^$]{0,40}\$(\d+(?:,\d{3})*(?:\.\d{2})?)/i)
+      || flat.match(/Spent[^$]{0,20}\$(\d+(?:,\d{3})*(?:\.\d{2})?)[^$]{0,40}\$(\d+(?:,\d{3})*(?:\.\d{2})?)/i);
+    if (near) {
+      spentVal = Number(near[1].replace(/,/g, ""));
+      plannedVal = Number(near[2].replace(/,/g, ""));
+    }
+  }
+
   dir.meta = dir.meta || {};
   const categories = dir.meta.budget?.categories?.length
     ? dir.meta.budget.categories.map((c) => ({ ...c }))
@@ -434,17 +464,23 @@ function importBudget(dir, text, fileName) {
         { name: "Other", planned: 0, spent: 0 },
       ];
   const rs = categories.find((c) => /relief society/i.test(c.name));
-  if (rs) {
+  if (rs && spentVal != null && plannedVal != null) {
     rs.planned = plannedVal;
     rs.spent = spentVal;
-  } else {
+  } else if (!rs && spentVal != null && plannedVal != null) {
     categories.unshift({ name: "Relief Society", planned: plannedVal, spent: spentVal });
   }
+  const parsed = spentVal != null && plannedVal != null;
   dir.meta.budget = {
     asOf: new Date().toISOString().slice(0, 10),
-    notes: `Imported from ${fileName}. Update other categories as needed.`,
+    notes: parsed
+      ? `Imported from ${fileName}. Update other categories as needed.`
+      : `Imported from ${fileName}; amounts not detected in PDF text — previous values kept. Update manually if needed.`,
     categories,
   };
+  dir.meta.budgetImport = parsed
+    ? { spent: spentVal, planned: plannedVal }
+    : { spent: null, planned: null, parseFailed: true };
   touchReportSource(dir, fileName);
   return dir;
 }
