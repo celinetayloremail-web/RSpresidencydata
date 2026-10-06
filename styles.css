@@ -636,8 +636,9 @@ textarea {
 }
 
 .dialog-inner {
-  padding: 1.35rem 1.35rem 1.5rem;
+  padding: 1.6rem 1.35rem 1.5rem;
   position: relative;
+  overflow: hidden;
 }
 
 .dialog-close {
@@ -649,6 +650,7 @@ textarea {
   font-size: 1.55rem;
   color: var(--muted);
   cursor: pointer;
+  z-index: 2;
 }
 
 .dialog-avatar {
@@ -656,7 +658,7 @@ textarea {
   height: 92px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 0.85rem;
+  margin: 0.2rem 0 0.85rem;
   background: linear-gradient(145deg, #c9d8cf, #8fad9b);
 }
 
