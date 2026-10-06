@@ -1,8 +1,9 @@
 .streamlit/secrets.toml
 
-# Real ward member PII — keep local / private only
-data/members.json
-data/photos/
+# Local-only overrides (baseline roster + org photos are committed for private ward use)
+data/members.local.json
+.env
+.leader-session
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
