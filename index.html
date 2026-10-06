@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="147th Orem YSA Ward member directory — apartment pods and roommates."
+      content="Provo YSA 147th Ward private directory — apartments, ministering, callings."
     />
-    <title>147th Orem YSA · Ward Directory</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <title>147th Ward · Private Directory</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,122 +25,189 @@
       <div class="haze"></div>
     </div>
 
-    <header class="site-header">
-      <div class="header-inner">
-        <p class="wordmark">147th Orem YSA</p>
-        <nav class="header-nav" aria-label="Primary">
-          <a href="#directory">Directory</a>
-          <a href="#how-to-update">Update data</a>
-        </nav>
+    <section id="gate" class="gate" aria-labelledby="gate-title">
+      <div class="gate-card">
+        <p class="hero-kicker">Provo YSA · Unit 266485</p>
+        <h1 id="gate-title">147th Ward</h1>
+        <p class="gate-lede">
+          Private leader directory. Enter the ward leader password to view and
+          edit confidential member information.
+        </p>
+        <form id="gate-form" class="gate-form">
+          <label>
+            <span>Your name</span>
+            <input id="leader-name" type="text" autocomplete="name" required placeholder="e.g. Celine Taylor" />
+          </label>
+          <label>
+            <span>Leader password</span>
+            <input id="leader-password" type="password" autocomplete="current-password" required />
+          </label>
+          <button class="btn btn-primary" type="submit">Enter directory</button>
+          <p id="gate-error" class="gate-error" hidden>Incorrect password.</p>
+        </form>
+        <p class="gate-note">
+          For Church use only. Do not share this password or publish member
+          contact details.
+        </p>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="hero" aria-labelledby="hero-brand">
-        <div class="hero-copy">
-          <p class="hero-kicker">Young Single Adult Ward · Orem</p>
-          <h1 id="hero-brand">147th Orem YSA</h1>
-          <p class="hero-lede">
-            A private apartment directory for roommates, addresses, and faces —
-            kept for Relief Society use.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#directory">Browse apartments</a>
-            <a class="btn btn-ghost" href="#how-to-update">Add real members</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="directory" class="directory" aria-labelledby="directory-title">
-        <div class="section-head">
+    <div id="app" class="app" hidden>
+      <header class="site-header">
+        <div class="header-inner">
           <div>
-            <h2 id="directory-title">Apartment pods</h2>
-            <p class="section-lede">
-              Members grouped by address so you can find a whole roommate pod at
-              once.
-            </p>
+            <p class="wordmark">147th Ward</p>
+            <p class="last-edited" id="last-edited">Loading…</p>
           </div>
-          <div class="stats" id="stats" aria-live="polite"></div>
+          <nav class="header-nav" aria-label="Primary">
+            <a href="#directory">Directory</a>
+            <a href="#ministering">Ministering</a>
+            <a href="#legend">Legend</a>
+            <a href="#leader-tools">Leader tools</a>
+            <button type="button" class="linkish" id="sign-out">Sign out</button>
+          </nav>
         </div>
+      </header>
 
-        <div class="toolbar">
-          <label class="search-field">
-            <span class="sr-only">Search members or addresses</span>
-            <input
-              id="search"
-              type="search"
-              placeholder="Search name, calling, complex, or unit…"
-              autocomplete="off"
-            />
-          </label>
-          <label class="filter-field">
-            <span class="sr-only">Filter by complex</span>
-            <select id="complex-filter">
-              <option value="">All complexes</option>
-            </select>
-          </label>
-        </div>
+      <main>
+        <section class="hero compact-hero" aria-labelledby="hero-brand">
+          <div class="hero-copy">
+            <p class="hero-kicker">Young Single Adult · Provo YSA</p>
+            <h1 id="hero-brand">147th Ward</h1>
+            <p class="hero-lede">
+              Apartment pods, callings, ministering, and leader notes — refreshed
+              from the Church Directory PDF.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#directory">Browse members</a>
+              <a class="btn btn-ghost" href="#leader-tools">Upload new PDF</a>
+            </div>
+          </div>
+        </section>
 
-        <p class="sample-banner" id="sample-banner" hidden>
-          Showing sample placeholder members. Replace
-          <code>data/members.json</code> with your ward roster from the Church
-          Directory to go live.
-        </p>
+        <section id="legend" class="legend-section" aria-labelledby="legend-title">
+          <div class="section-head">
+            <div>
+              <h2 id="legend-title">Symbol legend</h2>
+              <p class="section-lede">Quick status markers used on every member.</p>
+            </div>
+          </div>
+          <ul class="legend-grid">
+            <li><span class="sym sym-rm" title="Returned Missionary">RM</span> Returned Missionary</li>
+            <li><span class="sym sym-lang" title="Languages">文</span> Speaks listed language(s)</li>
+            <li><span class="sym sym-calling" title="Calling">★</span> Has a calling</li>
+            <li><span class="sym sym-solid" title="Super-Solid">●</span> Super-Solid (active)</li>
+            <li><span class="sym sym-inactive" title="Inactive">○</span> Inactive</li>
+            <li><span class="sym sym-dnc" title="Do Not Contact">⊘</span> Do Not Contact</li>
+          </ul>
+        </section>
 
-        <div id="pod-list" class="pod-list"></div>
-        <p id="empty-state" class="empty-state" hidden>
-          No apartments match that search.
-        </p>
-      </section>
+        <section id="directory" class="directory" aria-labelledby="directory-title">
+          <div class="section-head">
+            <div>
+              <h2 id="directory-title">Apartment pods</h2>
+              <p class="section-lede">
+                Roomates grouped by address. Click anyone to view or edit details.
+              </p>
+            </div>
+            <div class="stats" id="stats" aria-live="polite"></div>
+          </div>
 
-      <section id="how-to-update" class="howto" aria-labelledby="howto-title">
-        <h2 id="howto-title">Keep the directory current</h2>
-        <p class="section-lede">
-          The official roster lives in the Church Directory. This site reads a
-          local JSON file so personal data stays under your control.
-        </p>
-        <ol class="howto-steps">
-          <li>
-            Open
-            <a
-              href="https://directory.churchofjesuschrist.org/266485"
-              target="_blank"
-              rel="noopener noreferrer"
-              >directory.churchofjesuschrist.org/266485</a
-            >
-            while signed in.
-          </li>
-          <li>
-            Copy
-            <code>data/members.sample.json</code> to
-            <code>data/members.json</code> and replace each apartment pod with
-            real names, addresses, and photo URLs.
-          </li>
-          <li>
-            Keep <code>members.json</code> private — it is gitignored so ward
-            PII is not committed by default.
-          </li>
-        </ol>
-      </section>
-    </main>
+          <div class="toolbar">
+            <label class="search-field">
+              <span class="sr-only">Search</span>
+              <input id="search" type="search" placeholder="Search name, calling, phone, email, unit…" autocomplete="off" />
+            </label>
+            <label class="filter-field">
+              <span class="sr-only">Complex</span>
+              <select id="complex-filter"><option value="">All complexes</option></select>
+            </label>
+            <label class="filter-field">
+              <span class="sr-only">Status filter</span>
+              <select id="flag-filter">
+                <option value="">All statuses</option>
+                <option value="calling">Has calling</option>
+                <option value="returnedMissionary">Returned missionaries</option>
+                <option value="superSolid">Super-Solid</option>
+                <option value="inactive">Inactive</option>
+                <option value="doNotContact">Do Not Contact</option>
+                <option value="languages">Speaks a language</option>
+              </select>
+            </label>
+          </div>
 
-    <footer class="site-footer">
-      <p>
-        Maintained by the Relief Society Secretary · 147th Orem YSA Ward · Unit
-        266485
-      </p>
-      <p class="footer-note">
-        For ward use only. Do not publish member addresses or photos publicly.
-      </p>
-    </footer>
+          <div id="pod-list" class="pod-list"></div>
+          <p id="empty-state" class="empty-state" hidden>No members match that search.</p>
+        </section>
+
+        <section id="ministering" class="ministering-section" aria-labelledby="ministering-title">
+          <div class="section-head">
+            <div>
+              <h2 id="ministering-title">Ministering</h2>
+              <p class="section-lede">
+                Sister and brother companionships and who they are assigned to.
+                Edit assignments from any member’s detail panel.
+              </p>
+            </div>
+          </div>
+          <div class="ministering-columns">
+            <div>
+              <h3>Ministering Sisters</h3>
+              <div id="ministering-sisters" class="ministering-list"></div>
+            </div>
+            <div>
+              <h3>Ministering Brothers</h3>
+              <div id="ministering-brothers" class="ministering-list"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="leader-tools" class="howto" aria-labelledby="tools-title">
+          <h2 id="tools-title">Leader tools</h2>
+          <p class="section-lede">
+            Upload a fresh Church Directory PDF to refresh names, phones, emails,
+            addresses, and callings. Leader notes, nicknames, photos, symbols, and
+            ministering assignments are preserved when names match.
+          </p>
+          <div class="tools-grid">
+            <label class="tool-card">
+              <strong>Upload directory PDF</strong>
+              <span>Exports from LDS Tools / Church Directory work best.</span>
+              <input id="pdf-upload" type="file" accept="application/pdf,.pdf" />
+            </label>
+            <div class="tool-card">
+              <strong>Photos</strong>
+              <span>
+                Upload a photo on each member’s detail panel. Social-media scraping
+                is not supported — please use consented photos only.
+              </span>
+            </div>
+            <div class="tool-card">
+              <strong>Autosave</strong>
+              <span>
+                Nickname, notes, symbols, and ministering edits save automatically
+                in this browser and update the “last edited” stamp.
+              </span>
+            </div>
+          </div>
+          <p id="import-status" class="import-status" aria-live="polite"></p>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Provo YSA 147th Ward · Unit 266485 · For Church use only</p>
+        <p class="footer-note">Confidential member information. Do not redistribute.</p>
+      </footer>
+    </div>
 
     <dialog id="member-dialog" class="member-dialog">
-      <form method="dialog" class="dialog-inner">
-        <button type="submit" class="dialog-close" aria-label="Close">×</button>
+      <div class="dialog-inner">
+        <button type="button" class="dialog-close" id="dialog-close" aria-label="Close">×</button>
         <div id="dialog-body"></div>
-      </form>
+      </div>
     </dialog>
 
+    <script src="pdf-import.js" type="module"></script>
     <script src="app.js" type="module"></script>
   </body>
 </html>
