@@ -1,19 +1,19 @@
 :root {
-  --ink: #1c2a24;
-  --ink-soft: #3d4f46;
-  --muted: #5f7268;
-  --paper: #f3f6f2;
-  --line: rgba(28, 42, 36, 0.12);
-  --sage: #3f6b56;
-  --sage-deep: #2a4a3b;
-  --moss: #6f8f78;
-  --dawn: #d9b48a;
-  --danger: #9b3b3b;
-  --sky-top: #9bb6c4;
-  --sky-mid: #c5d5ce;
-  --sky-low: #e8e2d4;
-  --white: #fbfdfb;
-  --shadow: 0 18px 50px rgba(28, 42, 36, 0.14);
+  --ink: #14352c;
+  --ink-soft: #2f5a4c;
+  --muted: #4d7a6c;
+  --paper: #eef9f4;
+  --line: rgba(20, 53, 44, 0.12);
+  --sage: #1fa97a;
+  --sage-deep: #0f7a58;
+  --moss: #3ecf98;
+  --dawn: #ffb703;
+  --danger: #d64545;
+  --sky-top: #6ec6ea;
+  --sky-mid: #9fe0d0;
+  --sky-low: #dff7ea;
+  --white: #ffffff;
+  --shadow: 0 18px 50px rgba(15, 122, 88, 0.14);
   --radius: 18px;
   --font-display: "Fraunces", Georgia, serif;
   --font-body: "Figtree", "Segoe UI", sans-serif;
@@ -38,6 +38,19 @@ body {
   background: var(--paper);
   line-height: 1.5;
   overflow-x: hidden;
+}
+
+/* Hard gate: app stays invisible until body.is-unlocked is set after auth */
+#app {
+  display: none !important;
+}
+
+body.is-unlocked #gate {
+  display: none !important;
+}
+
+body.is-unlocked #app {
+  display: block !important;
 }
 
 img {
@@ -79,9 +92,9 @@ textarea {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 50% at 70% 18%, rgba(217, 180, 138, 0.45), transparent 55%),
-    radial-gradient(ellipse 60% 40% at 15% 30%, rgba(155, 182, 196, 0.55), transparent 50%),
-    linear-gradient(180deg, var(--sky-top) 0%, var(--sky-mid) 42%, var(--sky-low) 72%, var(--paper) 100%);
+    radial-gradient(ellipse 80% 50% at 78% 12%, rgba(255, 183, 3, 0.42), transparent 55%),
+    radial-gradient(ellipse 60% 42% at 12% 28%, rgba(110, 198, 234, 0.55), transparent 52%),
+    linear-gradient(180deg, var(--sky-top) 0%, var(--sky-mid) 40%, var(--sky-low) 70%, var(--paper) 100%);
   animation: sky-shift 18s ease-in-out infinite alternate;
 }
 
@@ -91,18 +104,18 @@ textarea {
   right: -5%;
   height: 38vh;
   bottom: 28vh;
-  background: linear-gradient(180deg, #6d8a7d 0%, #4f6b5d 100%);
+  background: linear-gradient(180deg, #4db892 0%, #1fa97a 100%);
   clip-path: polygon(
     0% 70%, 8% 58%, 16% 64%, 28% 42%, 38% 55%, 48% 28%, 58% 48%, 70% 34%,
     82% 52%, 92% 40%, 100% 48%, 100% 100%, 0% 100%
   );
-  opacity: 0.28;
+  opacity: 0.34;
 }
 
 .ridge-far {
   bottom: 34vh;
-  opacity: 0.18;
-  background: linear-gradient(180deg, #7f9aa0 0%, #5d7a72 100%);
+  opacity: 0.22;
+  background: linear-gradient(180deg, #7fd0e8 0%, #5fb89a 100%);
   animation: ridge-drift 22s ease-in-out infinite alternate;
 }
 
@@ -116,7 +129,7 @@ textarea {
   position: absolute;
   inset: auto 0 0;
   height: 48vh;
-  background: linear-gradient(180deg, transparent, rgba(243, 246, 242, 0.85) 40%, var(--paper));
+  background: linear-gradient(180deg, transparent, rgba(238, 249, 244, 0.88) 40%, var(--paper));
 }
 
 @keyframes sky-shift {

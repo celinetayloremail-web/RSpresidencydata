@@ -1,10 +1,11 @@
 import { mergeDirectory, parseDirectoryPdf } from "./pdf-import.js";
 
-const STORAGE_KEY = "ward147-directory-state-v1";
-const SESSION_KEY = "ward147-leader-session-v1";
+const STORAGE_KEY = "ward147-directory-state-v2";
+const NAME_KEY = "ward147-leader-name-v1";
 /** SHA-256 of the ward leader password */
 const PASS_HASH =
   "dda9f750c8f6b1e33cbb22a3fd2970f236853237044c30d17a6f9d0174994042";
+let isUnlocked = false;
 
 const els = {
   gate: document.getElementById("gate"),
@@ -583,11 +584,67 @@ function enterApp() {
   if (!directoryReady || !directory?.apartments) {
     throw new Error("Directory data is still loading. Try again in a moment.");
   }
+  isUnlocked = true;
+  document.body.classList.add("is-unlocked");
   els.gate.hidden = true;
   els.app.hidden = false;
   populateFilters();
   updateLastEdited();
   renderPods();
+}
+
+function lockApp() {
+  isUnlocked = false;
+  document.body.classList.remove("is-unlocked");
+  els.app.hidden = true;
+  els.gate.hidden = false;
+  els.podList.innerHTML = "";
+  els.dialogBody.innerHTML = "";
+  if (els.dialog.open) els.dialog.close();
+  directory = null;
+  directoryReady = false;
+}
+
+function mergeLocalEdits(baseline, saved) {
+  if (!saved?.apartments) return baseline;
+  const prev = new Map(
+    saved.apartments.flatMap((a) => a.members.map((m) => [m.id, m]))
+  );
+  for (const apt of baseline.apartments) {
+    for (const m of apt.members) {
+      const old = prev.get(m.id);
+      if (!old) continue;
+      if (old.preferredName) m.preferredName = old.preferredName;
+      if (old.notes) m.notes = old.notes;
+      if (old.languages?.length) m.languages = old.languages;
+      if (old.flags) m.flags = { ...m.flags, ...old.flags };
+      if (old.ministering) m.ministering = old.ministering;
+      // Keep uploaded/local photo overrides; otherwise keep PDF photo
+      if (old.photoUrl?.startsWith("data:")) m.photoUrl = old.photoUrl;
+    }
+  }
+  if (saved.meta?.lastEditedBy) {
+    baseline.meta = baseline.meta || {};
+    baseline.meta.lastEditedBy = saved.meta.lastEditedBy;
+    baseline.meta.lastEditedAt = saved.meta.lastEditedAt;
+  }
+  return baseline;
+}
+
+async function loadBaseline() {
+  const res = await fetch("./data/members.json", { cache: "no-store" });
+  if (!res.ok) throw new Error("Could not load ward roster.");
+  let baseline = await res.json();
+  const savedRaw = localStorage.getItem(STORAGE_KEY);
+  if (savedRaw) {
+    try {
+      baseline = mergeLocalEdits(baseline, JSON.parse(savedRaw));
+    } catch {
+      /* ignore corrupt local edits */
+    }
+  }
+  directory = baseline;
+  directoryReady = true;
 }
 
 function bindEvents() {
@@ -609,26 +666,25 @@ function bindEvents() {
     els.enterDirectory.disabled = true;
     els.enterDirectory.textContent = "Checking…";
     try {
-      if (!directoryReady) {
-        await loadBaseline();
-      }
-      const hash = await sha256(els.leaderPassword.value);
-      if (hash !== PASS_HASH) {
-        showGateError("Incorrect password.");
-        return;
-      }
       currentLeader = els.leaderName.value.trim();
       if (!currentLeader) {
         showGateError("Please enter your name.");
         return;
       }
-      sessionStorage.setItem(
-        SESSION_KEY,
-        JSON.stringify({ name: currentLeader, at: Date.now() })
-      );
+      const hash = await sha256(els.leaderPassword.value);
+      if (hash !== PASS_HASH) {
+        showGateError("Incorrect password.");
+        els.leaderPassword.value = "";
+        els.leaderPassword.focus();
+        return;
+      }
+      // Only load confidential roster after password succeeds
+      await loadBaseline();
+      localStorage.setItem(NAME_KEY, currentLeader);
       enterApp();
     } catch (err) {
       console.error(err);
+      lockApp();
       showGateError(err.message || "Could not open the directory.");
     } finally {
       els.enterDirectory.disabled = false;
@@ -637,15 +693,24 @@ function bindEvents() {
   });
 
   els.signOut.addEventListener("click", () => {
-    sessionStorage.removeItem(SESSION_KEY);
-    location.reload();
+    lockApp();
+    els.leaderPassword.value = "";
+    showGateError("");
+    els.gateError.hidden = true;
   });
 
-  els.search.addEventListener("input", renderPods);
-  els.complexFilter.addEventListener("change", renderPods);
-  els.flagFilter.addEventListener("change", renderPods);
+  els.search.addEventListener("input", () => {
+    if (isUnlocked) renderPods();
+  });
+  els.complexFilter.addEventListener("change", () => {
+    if (isUnlocked) renderPods();
+  });
+  els.flagFilter.addEventListener("change", () => {
+    if (isUnlocked) renderPods();
+  });
 
   els.podList.addEventListener("click", (event) => {
+    if (!isUnlocked) return;
     const btn = event.target.closest(".member-btn");
     if (!btn) return;
     openMember(btn.dataset.memberId);
@@ -657,11 +722,13 @@ function bindEvents() {
   });
 
   els.dialogBody.addEventListener("input", (event) => {
+    if (!isUnlocked) return;
     if (event.target.matches("[data-field], [data-flag], [data-multi]")) {
       applyMemberEdits(event.target);
     }
   });
   els.dialogBody.addEventListener("change", (event) => {
+    if (!isUnlocked) return;
     if (event.target.matches("[data-field], [data-flag], [data-multi]")) {
       applyMemberEdits(event.target);
     }
@@ -671,6 +738,7 @@ function bindEvents() {
     }
   });
   els.dialogBody.addEventListener("click", (event) => {
+    if (!isUnlocked) return;
     if (event.target.matches("[data-clear-photo]")) {
       const found = findMember(activeMemberId);
       if (!found) return;
@@ -682,47 +750,18 @@ function bindEvents() {
   });
 
   els.pdfUpload.addEventListener("change", () => {
+    if (!isUnlocked) return;
     const file = els.pdfUpload.files?.[0];
     handlePdfUpload(file);
   });
 }
 
-async function loadBaseline() {
-  const saved = localStorage.getItem(STORAGE_KEY);
-  if (saved) {
-    try {
-      directory = JSON.parse(saved);
-      directoryReady = true;
-      return;
-    } catch {
-      /* fall through */
-    }
-  }
-  const res = await fetch("./data/members.json", { cache: "no-store" });
-  if (!res.ok) throw new Error("Could not load ward roster.");
-  directory = await res.json();
-  directoryReady = true;
-}
-
-async function init() {
+function init() {
   bindEvents();
-  await loadBaseline();
-
-  const sessionRaw = sessionStorage.getItem(SESSION_KEY);
-  if (sessionRaw) {
-    try {
-      const session = JSON.parse(sessionRaw);
-      currentLeader = session.name || "";
-      els.leaderName.value = currentLeader;
-      enterApp();
-      return;
-    } catch {
-      /* show gate */
-    }
-  }
+  // Prefill name only — never auto-unlock or fetch member data before password.
+  const remembered = localStorage.getItem(NAME_KEY);
+  if (remembered) els.leaderName.value = remembered;
+  lockApp();
 }
 
-init().catch((err) => {
-  console.error(err);
-  showGateError(err.message || "Failed to start directory.");
-});
+init();
