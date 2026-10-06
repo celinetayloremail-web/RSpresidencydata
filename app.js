@@ -287,7 +287,12 @@ function mergeLocalEdits(baseline, saved) {
     ...baseline.meta,
     latestConverts: saved.meta?.latestConverts || baseline.meta?.latestConverts || [],
     budget: saved.meta?.budget || baseline.meta?.budget,
-    findingLostNotes: saved.meta?.findingLostNotes || "",
+    findingLostNotes: saved.meta?.findingLostNotes || baseline.meta?.findingLostNotes || "",
+    lostMembers: saved.meta?.lostMembers || baseline.meta?.lostMembers || [],
+    movedOutRecords: saved.meta?.movedOutRecords || baseline.meta?.movedOutRecords || [],
+    quarterlyConvertStats: saved.meta?.quarterlyConvertStats || baseline.meta?.quarterlyConvertStats,
+    servingMissionaries: saved.meta?.servingMissionaries || baseline.meta?.servingMissionaries,
+    reportSources: saved.meta?.reportSources || baseline.meta?.reportSources || [],
     lastEditedBy: saved.meta?.lastEditedBy || baseline.meta?.lastEditedBy,
     lastEditedAt: saved.meta?.lastEditedAt || baseline.meta?.lastEditedAt,
   };
@@ -760,25 +765,121 @@ function showGameCard() {
   els.gameProgress.textContent = `Card ${gameIndex + 1} of ${gameDeck.length}`;
 }
 
+function renderMovedOut() {
+  const rosterOut = allMembers().filter((m) => m.moved?.status === "out");
+  const metaRows = directory.meta?.movedOutRecords || [];
+  if (!rosterOut.length && !metaRows.length) {
+    els.movedOutList.innerHTML = `<p class="empty-state">No moved-out members marked yet.</p>`;
+    return;
+  }
+  const rosterHtml = rosterOut
+    .map(
+      (m) => `<button type="button" class="simple-row" data-open-member="${escapeAttr(m.id)}">
+        ${avatarMarkup(m, "avatar tiny")}
+        <span><strong>${escapeHtml(m.preferredName || m.fullName)}</strong>
+        <em>${escapeHtml(m.moved?.date || "")}${m.moved?.notes ? ` · ${escapeHtml(m.moved.notes)}` : ""}</em></span>
+      </button>`
+    )
+    .join("");
+  const seen = new Set(rosterOut.map((m) => m.fullName.toLowerCase()));
+  const metaHtml = metaRows
+    .filter((r) => !seen.has(String(r.name || "").toLowerCase()) && !seen.has(
+      (() => {
+        const parts = String(r.name || "").split(",");
+        if (parts.length < 2) return "";
+        return `${parts[1].trim()} ${parts[0].trim()}`.toLowerCase();
+      })()
+    ))
+    .map(
+      (r) => `<div class="simple-row meta-row">
+        <span><strong>${escapeHtml(r.name)}</strong>
+        <em>${escapeHtml(r.date || "")}${r.newUnit ? ` · ${escapeHtml(r.newUnit)}` : ""}</em></span>
+      </div>`
+    )
+    .join("");
+  els.movedOutList.innerHTML = rosterHtml + metaHtml;
+}
+
+function renderLostMembers() {
+  const flagged = allMembers().filter((m) => m.lostMember);
+  const metaRows = directory.meta?.lostMembers || [];
+  if (!flagged.length && !metaRows.length) {
+    els.lostList.innerHTML = `<p class="empty-state">No lost-member follow-ups flagged yet.</p>`;
+    return;
+  }
+  const flaggedHtml = flagged
+    .map(
+      (m) => `<button type="button" class="simple-row" data-open-member="${escapeAttr(m.id)}">
+        ${avatarMarkup(m, "avatar tiny")}
+        <span><strong>${escapeHtml(m.preferredName || m.fullName)}</strong>
+        <em>${escapeHtml(m.phone || m.email || "Follow up")}</em></span>
+      </button>`
+    )
+    .join("");
+  const seen = new Set(flagged.map((m) => m.fullName.toLowerCase()));
+  const metaHtml = metaRows
+    .filter((r) => {
+      const name = String(r.name || "").toLowerCase();
+      if (seen.has(name)) return false;
+      const parts = String(r.name || "").split(",");
+      if (parts.length >= 2) {
+        const flipped = `${parts[1].trim()} ${parts[0].trim()}`.toLowerCase();
+        if (seen.has(flipped)) return false;
+      }
+      return true;
+    })
+    .map(
+      (r) => `<div class="simple-row meta-row">
+        <span><strong>${escapeHtml(r.name)}</strong>
+        <em>${escapeHtml([r.phone, r.email, r.dateAdded].filter(Boolean).join(" · "))}</em></span>
+      </div>`
+    )
+    .join("");
+  els.lostList.innerHTML = flaggedHtml + metaHtml;
+}
+
 function renderAll() {
   renderPods();
   renderMinistering();
   renderBirthdays();
   renderCovenant();
   renderSimpleMemberList(els.movedInList, (m) => m.moved?.status === "in", "No moved-in members marked yet.");
-  renderSimpleMemberList(els.movedOutList, (m) => m.moved?.status === "out", "No moved-out members marked yet.");
-  renderSimpleMemberList(els.lostList, (m) => m.lostMember, "No lost-member follow-ups flagged yet.");
+  renderMovedOut();
+  renderLostMembers();
   renderSimpleMemberList(els.nonOldMillList, (m) => !m.livesAtOldMill, "Everyone appears to live at Old Mill.");
   els.lostNotes.value = directory.meta?.findingLostNotes || "";
   renderBudget();
+}
+
+function importSummary(file, incoming) {
+  const kind = incoming.meta?.importKind || "directory";
+  const total = allMembers().length;
+  if (kind === "report") {
+    const bits = [];
+    if (incoming.meta?.budget) bits.push("budget");
+    if (incoming.meta?.latestConverts?.length) bits.push(`${incoming.meta.latestConverts.length} converts`);
+    if (incoming.meta?.birthdayImportCount) bits.push(`${incoming.meta.birthdayImportCount} birthdays`);
+    if (incoming.meta?.ministeringImportCount) bits.push(`${incoming.meta.ministeringImportCount} ministering`);
+    if (incoming.meta?.movedInImportCount) bits.push(`${incoming.meta.movedInImportCount} moved in`);
+    if (incoming.meta?.movedOutRecords?.length) bits.push(`${incoming.meta.movedOutRecords.length} moved out`);
+    if (incoming.meta?.lostMembers?.length) bits.push(`${incoming.meta.lostMembers.length} lost`);
+    if (incoming.meta?.organizationsImportCount) bits.push(`${incoming.meta.organizationsImportCount} callings`);
+    if (incoming.meta?.callingsImportCount) bits.push(`${incoming.meta.callingsImportCount} callings`);
+    if (incoming.meta?.servingMissionaries) bits.push("serving missionaries");
+    if (incoming.meta?.quarterlyConvertStats) bits.push("quarterly stats");
+    return `Merged ${file.name}${bits.length ? ` (${bits.join(", ")})` : ""} · ${total} members`;
+  }
+  return `Updated directory from ${file.name} · ${total} members total`;
 }
 
 async function handleDataUpload(file) {
   if (!file) return;
   els.importStatus.textContent = `Importing ${file.name}…`;
   try {
-    const incoming = await parseDirectoryFile(file);
-    if (!incoming.apartments?.length) throw new Error("No members found in that file.");
+    const incoming = await parseDirectoryFile(file, directory);
+    if (!incoming.apartments?.length) {
+      throw new Error("No directory data found in that file.");
+    }
     directory = mergeDirectory(directory, incoming);
     directory.meta.lastEditedBy = currentLeader;
     directory.meta.lastEditedAt = new Date().toISOString();
@@ -786,11 +887,36 @@ async function handleDataUpload(file) {
     populateFilters();
     updateLastEdited();
     renderAll();
-    els.importStatus.textContent = `Updated directory from ${file.name} · ${allMembers().length} members total.`;
+    els.importStatus.textContent = importSummary(file, incoming);
   } catch (err) {
     console.error(err);
     els.importStatus.textContent = `Import failed: ${err.message || err}`;
   }
+}
+
+async function handleDataUploads(fileList) {
+  const files = [...(fileList || [])];
+  if (!files.length) return;
+  const results = [];
+  for (const file of files) {
+    els.importStatus.textContent = `Importing ${file.name} (${results.length + 1}/${files.length})…`;
+    try {
+      const incoming = await parseDirectoryFile(file, directory);
+      if (!incoming.apartments?.length) throw new Error("No directory data found.");
+      directory = mergeDirectory(directory, incoming);
+      directory.meta.lastEditedBy = currentLeader;
+      directory.meta.lastEditedAt = new Date().toISOString();
+      results.push(importSummary(file, incoming));
+    } catch (err) {
+      console.error(err);
+      results.push(`${file.name}: failed — ${err.message || err}`);
+    }
+  }
+  persist(true);
+  populateFilters();
+  updateLastEdited();
+  renderAll();
+  els.importStatus.textContent = results.join(" · ");
 }
 
 function bindEvents() {
@@ -887,7 +1013,8 @@ function bindEvents() {
 
   els.dataUpload?.addEventListener("change", () => {
     if (!isUnlocked) return;
-    handleDataUpload(els.dataUpload.files?.[0]);
+    handleDataUploads(els.dataUpload.files);
+    els.dataUpload.value = "";
   });
 
   els.saveConverts?.addEventListener("click", () => {

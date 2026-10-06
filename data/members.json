@@ -10,22 +10,28 @@
     "stakeNumber": "511455"
   },
   "meta": {
-    "lastEditedBy": "PDF Import",
-    "lastEditedAt": "2026-10-05T12:00:00-06:00",
-    "memberCount": 197,
+    "lastEditedBy": "PDF Report Import",
+    "lastEditedAt": "2026-10-06T09:00:00-06:00",
+    "memberCount": 198,
     "apartmentCount": 98,
     "photoCount": 41,
-    "latestConverts": [],
+    "latestConverts": [
+      "Kathryn Henley",
+      "Marti Smith",
+      "Meg Smith",
+      "Angelina Whitehead"
+    ],
     "budget": {
-      "notes": "",
+      "asOf": "2026-10-06",
+      "notes": "Imported from Budget.pdf (Relief Society). Update other categories as needed.",
       "categories": [
         {
-          "name": "Activities",
-          "planned": 0,
-          "spent": 0
+          "name": "Relief Society",
+          "planned": 250.0,
+          "spent": 127.68
         },
         {
-          "name": "Relief Society",
+          "name": "Activities",
           "planned": 0,
           "spent": 0
         },
@@ -46,7 +52,934 @@
         }
       ]
     },
-    "findingLostNotes": ""
+    "findingLostNotes": "Members on this list are not counted in the ward. Contact via phone/email/social, family/friends, last known address, then obtain Bishop approval before returning records.",
+    "quarterlyConvertStats": {
+      "source": "Quarterly Report.pdf",
+      "note": "Only convert detail requested; names taken from Covenant Path Progress New Members (Quarterly Report lists 2 converts in past 12 months without names).",
+      "convertsPast12MonthsPotential": 2
+    },
+    "movedOutRecords": [
+      {
+        "name": "Reshetnikov, Matthew",
+        "birthday": "2004-09-24",
+        "date": "2026-09-27",
+        "newUnit": "Riverwood Ward"
+      },
+      {
+        "name": "Bryan, Ethan",
+        "birthday": "2001-04-20",
+        "date": "2026-09-20",
+        "newUnit": ""
+      },
+      {
+        "name": "Egan, Mia",
+        "birthday": "2004-08-31",
+        "date": "2026-09-13",
+        "newUnit": "Layton 31st Ward"
+      },
+      {
+        "name": "Fan, Jialu",
+        "birthday": "2001-09-28",
+        "date": "2026-09-13",
+        "newUnit": "Provo YSA 216th Ward (26-35)"
+      },
+      {
+        "name": "Gillmore, Logan Michael",
+        "birthday": "2004-03-02",
+        "date": "2026-09-13",
+        "newUnit": ""
+      },
+      {
+        "name": "Calderwood, Alex LaMar",
+        "birthday": "2002-04-15",
+        "date": "2026-09-13",
+        "newUnit": "Provo YSA 196th Ward (18-25)"
+      },
+      {
+        "name": "Gillmore, Sabrina",
+        "birthday": "2004-04-11",
+        "date": "2026-09-13",
+        "newUnit": ""
+      },
+      {
+        "name": "Cottle, Addison",
+        "birthday": "2004-04-12",
+        "date": "2026-09-12",
+        "newUnit": "Provo YSA 245th Ward"
+      },
+      {
+        "name": "Henderson, Rylee",
+        "birthday": "2003-08-06",
+        "date": "2026-09-06",
+        "newUnit": "Dallas YSA 2nd Ward"
+      },
+      {
+        "name": "Christensen, Logan",
+        "birthday": "2002-09-04",
+        "date": "2026-09-06",
+        "newUnit": "Bonneville 13th Ward"
+      },
+      {
+        "name": "Taniguchi, Juli",
+        "birthday": "2006-10-11",
+        "date": "2026-09-06",
+        "newUnit": "Orem YSA 38th Ward (18-25)"
+      },
+      {
+        "name": "Russell, Joy",
+        "birthday": "1999-07-13",
+        "date": "2026-09-05",
+        "newUnit": "Cliffside Ward"
+      },
+      {
+        "name": "Argyle, Sarah",
+        "birthday": "2000-03-13",
+        "date": "2026-09-05",
+        "newUnit": "Provo Peak 10th Ward"
+      },
+      {
+        "name": "Cramer, Owen",
+        "birthday": "2002-05-20",
+        "date": "2026-09-04",
+        "newUnit": ""
+      },
+      {
+        "name": "Cramer, Braeden",
+        "birthday": "2002-05-20",
+        "date": "2026-09-04",
+        "newUnit": ""
+      },
+      {
+        "name": "Otis, Noelle",
+        "birthday": "2002-12-20",
+        "date": "2026-08-31",
+        "newUnit": "Provo YSA 211th Ward (18-25)"
+      },
+      {
+        "name": "Onines, Jared Richard",
+        "birthday": "2002-01-25",
+        "date": "2026-08-30",
+        "newUnit": "Provo YSA 213th Ward (18-25)"
+      },
+      {
+        "name": "Maiwandi, Nattacia",
+        "birthday": "2003-09-08",
+        "date": "2026-08-28",
+        "newUnit": "Provo YSA 232nd Ward"
+      },
+      {
+        "name": "Huerta, Gabriel",
+        "birthday": "2002-06-28",
+        "date": "2026-08-24",
+        "newUnit": "Orem YSA 19th Ward (18-25)"
+      },
+      {
+        "name": "Pedraza, Ethan Douglas",
+        "birthday": "2003-11-25",
+        "date": "2026-08-23",
+        "newUnit": "Provo YSA 191st Ward"
+      },
+      {
+        "name": "Hagen, Chloe Lee",
+        "birthday": "2004-06-19",
+        "date": "2026-08-23",
+        "newUnit": "Hobble Creek 7th Ward"
+      },
+      {
+        "name": "Eaton, Grace",
+        "birthday": "2003-08-13",
+        "date": "2026-08-23",
+        "newUnit": "Orem YSA 39th Ward (18-25)"
+      },
+      {
+        "name": "Ericksen, Heidi",
+        "birthday": "2003-02-03",
+        "date": "2026-08-23",
+        "newUnit": "Heights YSA Ward (18-25)"
+      },
+      {
+        "name": "Bell, Jane",
+        "birthday": "2001-10-30",
+        "date": "2026-08-23",
+        "newUnit": "Provo YSA 215th Ward (18-25)"
+      },
+      {
+        "name": "Fisher, Ethan",
+        "birthday": "1997-07-31",
+        "date": "2026-08-23",
+        "newUnit": "Westfield YSA Ward (26-35)"
+      },
+      {
+        "name": "Rees, Remi",
+        "birthday": "2001-06-07",
+        "date": "2026-08-16",
+        "newUnit": "Berkeley YSA Ward"
+      },
+      {
+        "name": "Lewis, Raleigh",
+        "birthday": "2004-04-11",
+        "date": "2026-08-14",
+        "newUnit": "Provo YSA 16th Ward"
+      },
+      {
+        "name": "Christensen, Zachary",
+        "birthday": "2004-04-05",
+        "date": "2026-08-09",
+        "newUnit": "Provo YSA 197th Ward (18-25)"
+      },
+      {
+        "name": "Emerson, Ethan",
+        "birthday": "2000-09-21",
+        "date": "2026-08-09",
+        "newUnit": "Lehi YSA 1st Ward (18-25)"
+      },
+      {
+        "name": "Marble, Mckay",
+        "birthday": "2001-01-24",
+        "date": "2026-08-02",
+        "newUnit": "Gallatin Ward"
+      },
+      {
+        "name": "Stansel, Marc Joseph",
+        "birthday": "2005-11-15",
+        "date": "2026-07-30",
+        "newUnit": "East Mill Creek YSA Ward"
+      },
+      {
+        "name": "Shelley, Joseph",
+        "birthday": "2002-07-16",
+        "date": "2026-07-28",
+        "newUnit": "Orchard 7th Ward"
+      },
+      {
+        "name": "Richins, Cannon Courtney",
+        "birthday": "2001-12-04",
+        "date": "2026-07-27",
+        "newUnit": "Henefer 3rd Ward"
+      },
+      {
+        "name": "Jones, Seth William",
+        "birthday": "2002-07-26",
+        "date": "2026-07-26",
+        "newUnit": "Springville 8th Ward"
+      },
+      {
+        "name": "LaMunyon, Krista",
+        "birthday": "1999-04-19",
+        "date": "2026-07-26",
+        "newUnit": "Brighton YSA Ward (26-35)"
+      },
+      {
+        "name": "Jarvis, Will",
+        "birthday": "2005-12-19",
+        "date": "2026-07-26",
+        "newUnit": "Bentonville YSA Branch"
+      },
+      {
+        "name": "Bergmann, Mary",
+        "birthday": "2003-06-19",
+        "date": "2026-07-21",
+        "newUnit": "Provo YSA 86th Ward"
+      },
+      {
+        "name": "Hansen, Luke",
+        "birthday": "2001-06-29",
+        "date": "2026-07-19",
+        "newUnit": "Orem YSA 42nd Ward (18-25)"
+      },
+      {
+        "name": "Merriam, Rachel",
+        "birthday": "2000-09-29",
+        "date": "2026-07-19",
+        "newUnit": "Orem YSA 13th Ward (26-35)"
+      },
+      {
+        "name": "Allen, Jackson",
+        "birthday": "2002-11-04",
+        "date": "2026-07-15",
+        "newUnit": "Provo YSA 147th Ward"
+      },
+      {
+        "name": "Marshman, Adam",
+        "birthday": "2000-07-12",
+        "date": "2026-07-07",
+        "newUnit": "Suncrest 3rd Ward"
+      },
+      {
+        "name": "Griffitts, Abigail",
+        "birthday": "2004-12-31",
+        "date": "2026-07-06",
+        "newUnit": "Flagstaff YSA 1st Ward"
+      },
+      {
+        "name": "Gunther, Gwenyth",
+        "birthday": "2004-04-22",
+        "date": "2026-07-05",
+        "newUnit": "North Ogden 11th Ward"
+      },
+      {
+        "name": "Phares, Elliott",
+        "birthday": "2002-08-23",
+        "date": "2026-06-21",
+        "newUnit": "Franklin 1st Ward"
+      },
+      {
+        "name": "Phares, Natalie",
+        "birthday": "2001-12-31",
+        "date": "2026-06-21",
+        "newUnit": "Franklin 1st Ward"
+      },
+      {
+        "name": "Botello Salazar, Jesus Armando",
+        "birthday": "2003-07-12",
+        "date": "2026-06-16",
+        "newUnit": "Casa Linda Ward (Spanish)"
+      },
+      {
+        "name": "Araujo Mena, Linda Nikoll",
+        "birthday": "2001-11-25",
+        "date": "2026-06-15",
+        "newUnit": "Provo YSA 220th Ward (Tongan)"
+      },
+      {
+        "name": "Waite, Brooke",
+        "birthday": "1998-11-23",
+        "date": "2026-06-14",
+        "newUnit": "Harbor YSA Ward (26-35)"
+      },
+      {
+        "name": "Stewart, Dallin",
+        "birthday": "2000-01-22",
+        "date": "2026-06-07",
+        "newUnit": "Mapleton 37th Ward"
+      },
+      {
+        "name": "Allen, Lindsay",
+        "birthday": "2005-06-10",
+        "date": "2026-06-07",
+        "newUnit": "Belleview YSA Ward"
+      },
+      {
+        "name": "Jenkinson, Sydney",
+        "birthday": "2004-01-16",
+        "date": "2026-05-31",
+        "newUnit": "Orem YSA 9th Ward (18-25)"
+      },
+      {
+        "name": "Heredia Rojas, Gibson Augusto",
+        "birthday": "1998-05-11",
+        "date": "2026-05-31",
+        "newUnit": "Bonneville 7th Ward (Spanish)"
+      },
+      {
+        "name": "Young, Seth",
+        "birthday": "2003-02-25",
+        "date": "2026-05-27",
+        "newUnit": "Provo YSA 218th Ward (18-25)"
+      },
+      {
+        "name": "Karpowitz, McKay",
+        "birthday": "2003-03-15",
+        "date": "2026-05-27",
+        "newUnit": "Provo YSA 147th Ward"
+      },
+      {
+        "name": "Nichols, Timothy",
+        "birthday": "2003-10-02",
+        "date": "2026-05-26",
+        "newUnit": "Provo YSA 199th Ward (18-25)"
+      },
+      {
+        "name": "Kindall, Porter Alan",
+        "birthday": "2001-09-11",
+        "date": "2026-05-24",
+        "newUnit": "Cranston Ward"
+      },
+      {
+        "name": "Nichols, Alayna Jo",
+        "birthday": "2000-10-19",
+        "date": "2026-05-24",
+        "newUnit": "Provo YSA 199th Ward (18-25)"
+      },
+      {
+        "name": "Hausen, Elena Ann",
+        "birthday": "2001-11-12",
+        "date": "2026-05-21",
+        "newUnit": "Provo YSA 263rd Ward (26-35)"
+      },
+      {
+        "name": "Merten, Jonathan",
+        "birthday": "2002-03-13",
+        "date": "2026-05-17",
+        "newUnit": ""
+      },
+      {
+        "name": "Turetzky, Emalia",
+        "birthday": "2005-08-21",
+        "date": "2026-05-11",
+        "newUnit": "Jacob Lake Branch"
+      },
+      {
+        "name": "Phillips, Jordan",
+        "birthday": "2001-02-26",
+        "date": "2026-05-10",
+        "newUnit": "Sandpoint Ward"
+      },
+      {
+        "name": "Shelley, Bekah",
+        "birthday": "2004-11-02",
+        "date": "2026-05-10",
+        "newUnit": "Provo YSA 169th Ward"
+      },
+      {
+        "name": "Ward, Madelyn Riley",
+        "birthday": "2002-09-11",
+        "date": "2026-05-10",
+        "newUnit": "Sandpoint Ward"
+      },
+      {
+        "name": "Pratt, Davis",
+        "birthday": "1998-12-02",
+        "date": "2026-05-10",
+        "newUnit": "Orem YSA 16th Ward (26-35)"
+      },
+      {
+        "name": "Pereira, Kayla Rose",
+        "birthday": "2002-09-10",
+        "date": "2026-05-06",
+        "newUnit": "La Cañada Ward"
+      },
+      {
+        "name": "Crockett, Daniel",
+        "birthday": "2001-07-02",
+        "date": "2026-05-03",
+        "newUnit": ""
+      },
+      {
+        "name": "Hughes, Anna Lois",
+        "birthday": "2002-06-13",
+        "date": "2026-05-03",
+        "newUnit": ""
+      },
+      {
+        "name": "Hoffman, Samantha Brooke",
+        "birthday": "2005-02-09",
+        "date": "2026-05-03",
+        "newUnit": "Provo YSA 86th Ward"
+      },
+      {
+        "name": "Preece, Owen",
+        "birthday": "2003-08-22",
+        "date": "2026-05-03",
+        "newUnit": "Provo YSA 147th Ward"
+      },
+      {
+        "name": "Alfaro Carpio, David",
+        "birthday": "1990-06-05",
+        "date": "2026-05-02",
+        "newUnit": "Provo YSA 263rd Ward (26-35)"
+      },
+      {
+        "name": "Mowrey, Ben",
+        "birthday": "2000-08-01",
+        "date": "2026-04-26",
+        "newUnit": "Centennial Hills YSA Ward"
+      },
+      {
+        "name": "Autry, Noah",
+        "birthday": "1998-10-04",
+        "date": "2026-04-20",
+        "newUnit": "Orem YSA 16th Ward (26-35)"
+      },
+      {
+        "name": "Lowry, Hannah",
+        "birthday": "2005-12-16",
+        "date": "2026-04-19",
+        "newUnit": "Lakeridge 8th Ward"
+      },
+      {
+        "name": "Dean, Brooke",
+        "birthday": "2003-11-07",
+        "date": "2026-04-19",
+        "newUnit": "Oakridge Ward"
+      },
+      {
+        "name": "Baldwin, Olivia",
+        "birthday": "2000-08-09",
+        "date": "2026-04-12",
+        "newUnit": "Hurricane YSA Ward (18-25)"
+      },
+      {
+        "name": "Leavitt, Lyndsie Ann",
+        "birthday": "1998-10-29",
+        "date": "2026-04-12",
+        "newUnit": "Parleys YSA Ward"
+      }
+    ],
+    "lostMembers": [
+      {
+        "name": "Enkhbaator, Yesukhei",
+        "phone": "(703) 944-2208",
+        "email": "Yesukhei0822@yahoo.com",
+        "dateAdded": "19 Dec 2016"
+      },
+      {
+        "name": "Suechee, Shaywn",
+        "phone": "(720) 760-1222",
+        "email": "shaywnsuechee@gmail.com",
+        "dateAdded": "4 Jan 2023"
+      },
+      {
+        "name": "Greenberg, Autumn",
+        "phone": "(801) 448-5848",
+        "email": "13symphony13@gmail.com",
+        "dateAdded": "23 Apr 2023"
+      },
+      {
+        "name": "Abendroth, Alyssa",
+        "phone": "(801) 719-1394",
+        "email": "alyssa.abendroth@yahoo.com",
+        "dateAdded": "23 Apr 2023"
+      },
+      {
+        "name": "Paul, Ambria Nicole",
+        "phone": "(657) 296-5057",
+        "email": "ambriapaul18@gmail.com",
+        "dateAdded": "23 Apr 2023"
+      },
+      {
+        "name": "Morrison, Cassidy",
+        "phone": "(503) 856-2147",
+        "email": "camo64mae@gmail.com",
+        "dateAdded": "23 Apr 2023"
+      },
+      {
+        "name": "Leppert, Macy",
+        "phone": "(509) 851-3260",
+        "email": "macy.a.leppert@gmail.com",
+        "dateAdded": "23 Apr 2023"
+      },
+      {
+        "name": "Suazo, Jasmine",
+        "phone": "(857) 313-9952",
+        "email": "jasminesuazo17@gmail.com",
+        "dateAdded": "24 Apr 2023"
+      },
+      {
+        "name": "Wolters, Lauren",
+        "phone": "(918) 342-4302",
+        "email": "lwolt101@gmail.com",
+        "dateAdded": "24 Apr 2023"
+      },
+      {
+        "name": "Estrada,",
+        "phone": "(469) 900-9513",
+        "email": "ricardo.j.aguilar53@gmail.com",
+        "dateAdded": "21 May 2023"
+      },
+      {
+        "name": "Peterson, Keegan",
+        "phone": "(208) 590-3113",
+        "email": "peterson.keegan1@gmail.com",
+        "dateAdded": "21 May 2023"
+      },
+      {
+        "name": "McKendrick, George",
+        "phone": "(801) 836-9625",
+        "email": "trenton.mckendrick@missionary.org",
+        "dateAdded": "21 May 2023"
+      },
+      {
+        "name": "Cubete, Corben",
+        "phone": "(951) 973-4054",
+        "email": "",
+        "dateAdded": "21 May 2023"
+      },
+      {
+        "name": "Lartey, Adeline Noelle",
+        "phone": "(385) 241-8966",
+        "email": "adelinelartey13@gmail.com",
+        "dateAdded": "17 Dec 2023"
+      },
+      {
+        "name": "Reynolds, Isabella",
+        "phone": "(801) 230-2701",
+        "email": "aimreynolds@gmail.com",
+        "dateAdded": "17 Dec 2023"
+      },
+      {
+        "name": "Boley, Andrew",
+        "phone": "(602) 327-4024",
+        "email": "andrewboley@outlook.com",
+        "dateAdded": "3 Mar 2024"
+      },
+      {
+        "name": "Rodgers, Ammon",
+        "phone": "(385) 231-6851",
+        "email": "rodgersammon@gmail.com",
+        "dateAdded": "3 Mar 2024"
+      },
+      {
+        "name": "Lind, Chelsea",
+        "phone": "(406) 570-3882",
+        "email": "chelseanlind@gmail.com",
+        "dateAdded": "24 Mar 2024"
+      },
+      {
+        "name": "Kondru, Kalyan",
+        "phone": "(385) 219-6122",
+        "email": "",
+        "dateAdded": "21 Jul 2024"
+      },
+      {
+        "name": "Chu, Felix",
+        "phone": "(469) 428-4103",
+        "email": "wunfungc@yahoo.com.hk",
+        "dateAdded": "21 Jul 2024"
+      },
+      {
+        "name": "Kuzlev, Kirill",
+        "phone": "(385) 985-0330",
+        "email": "wildmustang87@gmail.com",
+        "dateAdded": "21 Jul 2024"
+      },
+      {
+        "name": "Campos, Omar",
+        "phone": "(509) 531-0355",
+        "email": "camposomar876@gmail.com",
+        "dateAdded": "25 Aug 2024"
+      },
+      {
+        "name": "Burnett, Isabel",
+        "phone": "(435) 749-4010",
+        "email": "hedgehog.18011@gmail.com",
+        "dateAdded": "25 Aug 2024"
+      },
+      {
+        "name": "Olsen, Ayden",
+        "phone": "(385) 267-8898",
+        "email": "ay.olsen888@gmail.com",
+        "dateAdded": "25 Aug 2024"
+      },
+      {
+        "name": "Wright, Jessa Marie",
+        "phone": "(775) 870-6133",
+        "email": "clickchick00@gmail.com",
+        "dateAdded": "15 Dec 2024"
+      },
+      {
+        "name": "Stringham, Alyson",
+        "phone": "(385) 254-1375",
+        "email": "alyson.stringham@gmail.com",
+        "dateAdded": "15 Dec 2024"
+      },
+      {
+        "name": "Dickey, Camille",
+        "phone": "(385) 498-2146",
+        "email": "dickecam@gmail.com",
+        "dateAdded": "15 Dec 2024"
+      },
+      {
+        "name": "Glod, Rebekah",
+        "phone": "(385) 630-0702",
+        "email": "rebekahglod@gmail.com",
+        "dateAdded": "11 May 2025"
+      },
+      {
+        "name": "Beck, Alyssa",
+        "phone": "(801) 860-1491",
+        "email": "alyssahazelbeck@gmail.com",
+        "dateAdded": "11 May 2025"
+      },
+      {
+        "name": "Petersen, Thora",
+        "phone": "(515) 723-1052",
+        "email": "thora278@gmail.com",
+        "dateAdded": "11 May 2025"
+      },
+      {
+        "name": "Murray, Shannon",
+        "phone": "(801) 209-5534",
+        "email": "shannon_e66@icloud.com",
+        "dateAdded": "11 May 2025"
+      },
+      {
+        "name": "Dressel, Jessica",
+        "phone": "(334) 464-0205",
+        "email": "jessicadressel.jd@gmail.com",
+        "dateAdded": "11 May 2025"
+      },
+      {
+        "name": "Chang, Yi Shun",
+        "phone": "(385) 250-9880",
+        "email": "shun980204@gmail.com",
+        "dateAdded": "22 Jun 2025"
+      },
+      {
+        "name": "Bennett, Cedar Ann",
+        "phone": "(623) 547-5497",
+        "email": "shoffman2023@gmail.com",
+        "dateAdded": "17 Aug 2025"
+      },
+      {
+        "name": "Mann, Shane",
+        "phone": "(404) 955-0454",
+        "email": "shanemann78@gmail.com",
+        "dateAdded": "26 Oct 2025"
+      },
+      {
+        "name": "Robins, Luke",
+        "phone": "(208) 715-0828",
+        "email": "Lukearobins@Hotmail.com",
+        "dateAdded": "26 Oct 2025"
+      },
+      {
+        "name": "Walker, Tanner",
+        "phone": "(928) 241-2840",
+        "email": "Tannerwalker1997@gmail.com",
+        "dateAdded": "26 Oct 2025"
+      },
+      {
+        "name": "McGhie, Blake",
+        "phone": "",
+        "email": "mcghie.blake@gmail.com",
+        "dateAdded": "26 Oct 2025"
+      },
+      {
+        "name": "Plantz, Julia",
+        "phone": "(760) 705-6712",
+        "email": "juliagraceplantz@gmail.com",
+        "dateAdded": "26 Oct 2025"
+      },
+      {
+        "name": "Hebdon, Noah",
+        "phone": "(801) 636-0667",
+        "email": "noahebdon@gmail.com",
+        "dateAdded": "26 Oct 2025"
+      },
+      {
+        "name": "Tons, Richard",
+        "phone": "(661) 373-5333",
+        "email": "Ricky.tons22@gmail.com",
+        "dateAdded": "14 Dec 2025"
+      },
+      {
+        "name": "Alia, Julio Facundo",
+        "phone": "(208) 803-4650",
+        "email": "facualia@gmail.com",
+        "dateAdded": "14 Dec 2025"
+      },
+      {
+        "name": "Goodin, Warren",
+        "phone": "(949) 374-0556",
+        "email": "Warrengoodin101@gmail.com",
+        "dateAdded": "14 Dec 2025"
+      },
+      {
+        "name": "Brewer, Enoch",
+        "phone": "(702) 844-9035",
+        "email": "motorcross501@gmail.com",
+        "dateAdded": "14 Dec 2025"
+      },
+      {
+        "name": "Martinez, Bryce",
+        "phone": "(801) 628-7222",
+        "email": "brallmart24@gmail.com",
+        "dateAdded": "14 Dec 2025"
+      },
+      {
+        "name": "Whittier, Xander",
+        "phone": "(602) 739-2384",
+        "email": "Xander.Whittier@gmail.com",
+        "dateAdded": "14 Dec 2025"
+      },
+      {
+        "name": "Tippetts, Lindsey",
+        "phone": "(801) 372-5117",
+        "email": "lindseytippetts@yahoo.com",
+        "dateAdded": "11 Jan 2026"
+      },
+      {
+        "name": "Singer, Joshua",
+        "phone": "(908) 798-9446",
+        "email": "jjsinger02@gmail.com",
+        "dateAdded": "11 Jan 2026"
+      },
+      {
+        "name": "Robinson, Brady",
+        "phone": "(801) 369-9302",
+        "email": "bradyrobinson1@gmail.com",
+        "dateAdded": "11 Jan 2026"
+      },
+      {
+        "name": "Craven, Tanner",
+        "phone": "(757) 971-3549",
+        "email": "tannerhc1@gmail.com",
+        "dateAdded": "11 Jan 2026"
+      },
+      {
+        "name": "Bria, Justine",
+        "phone": "(480) 320-0692",
+        "email": "justine.bria@gmail.com",
+        "dateAdded": "11 Jan 2026"
+      },
+      {
+        "name": "Farnsworth, Lizzy",
+        "phone": "(661) 369-1257",
+        "email": "angelcake10023@gmail.com",
+        "dateAdded": "11 Jan 2026"
+      },
+      {
+        "name": "Forrest, Paige Kailey",
+        "phone": "(775) 722-8630",
+        "email": "grey4est@gmail.com",
+        "dateAdded": "11 Jan 2026"
+      },
+      {
+        "name": "Boyer, Sabrina",
+        "phone": "(585) 414-8776",
+        "email": "sabrinaaboyer@gmail.com",
+        "dateAdded": "11 Jan 2026"
+      },
+      {
+        "name": "Eden, Lana Rain",
+        "phone": "(520) 217-9805",
+        "email": "Lanaeden12@gmail.com",
+        "dateAdded": "11 Jan 2026"
+      },
+      {
+        "name": "Veylupek, Jenna",
+        "phone": "(830) 765-8735",
+        "email": "",
+        "dateAdded": "11 Jan 2026"
+      },
+      {
+        "name": "Stills, Ruth",
+        "phone": "(423) 202-0110",
+        "email": "ivanastills9@gmail.com",
+        "dateAdded": "11 Jan 2026"
+      },
+      {
+        "name": "Cabazos, Ian",
+        "phone": "(937) 607-6333",
+        "email": "iancrediblehulk@gmail.com",
+        "dateAdded": "11 Jan 2026"
+      },
+      {
+        "name": "Covington,",
+        "phone": "(801) 783-7543",
+        "email": "Marshmallow051403@gmail.com",
+        "dateAdded": "11 Jan 2026"
+      },
+      {
+        "name": "Webster, Brenna",
+        "phone": "(209) 288-9819",
+        "email": "brenna.lynn00@gmail.com",
+        "dateAdded": "11 Jan 2026"
+      },
+      {
+        "name": "Jorgensen, Autumn",
+        "phone": "(801) 471-5728",
+        "email": "autumnjorgensen@gmail.com",
+        "dateAdded": "11 Jan 2026"
+      },
+      {
+        "name": "Conrad, Macy Almeda",
+        "phone": "(209) 761-6744",
+        "email": "macyaconrad@gmail.com",
+        "dateAdded": "11 Jan 2026"
+      },
+      {
+        "name": "Dutcher, Emma",
+        "phone": "(503) 440-8963",
+        "email": "emmardutcher@gmail.com",
+        "dateAdded": "11 Jan 2026"
+      },
+      {
+        "name": "Miller, Cobe",
+        "phone": "(208) 521-9789",
+        "email": "cobemiller@gmail.com",
+        "dateAdded": "11 Jan 2026"
+      },
+      {
+        "name": "Arnoldsen, Abilene",
+        "phone": "(801) 615-3011",
+        "email": "Abileneheather@gmail.com",
+        "dateAdded": "11 Jan 2026"
+      },
+      {
+        "name": "Nelson, Isaiah Dane",
+        "phone": "(775) 385-9276",
+        "email": "Isaiah.nelson014@gmail.com",
+        "dateAdded": "11 Jan 2026"
+      },
+      {
+        "name": "Dana, Audrey Marie",
+        "phone": "(480) 698-2200",
+        "email": "audreymdana@gmail.com",
+        "dateAdded": "11 Jan 2026"
+      },
+      {
+        "name": "Lewis, Abby",
+        "phone": "(801) 472-5777",
+        "email": "Chocolatemerabs@gmail.com",
+        "dateAdded": "18 Jan 2026"
+      },
+      {
+        "name": "Layadi, MJ",
+        "phone": "",
+        "email": "mjlayadi10@gmail.com",
+        "dateAdded": "18 Jan 2026"
+      },
+      {
+        "name": "Murray, Conner",
+        "phone": "(801) 397-1992",
+        "email": "cmurrmail@gmail.com",
+        "dateAdded": "25 Jan 2026"
+      },
+      {
+        "name": "Utley, Cooper",
+        "phone": "(435) 313-6663",
+        "email": "Cooputley@gmail.com",
+        "dateAdded": "25 Jan 2026"
+      },
+      {
+        "name": "Barrera, Sebastian",
+        "phone": "(385) 842-3270",
+        "email": "Sbarreragiuffra@gmail.com",
+        "dateAdded": "25 Jan 2026"
+      },
+      {
+        "name": "Bray, Kolby",
+        "phone": "",
+        "email": "",
+        "dateAdded": "25 Jan 2026"
+      },
+      {
+        "name": "Adsit, Zachary",
+        "phone": "(801) 499-1715",
+        "email": "zacharyadsit@gmail.com",
+        "dateAdded": "25 Jan 2026"
+      },
+      {
+        "name": "Elliott, Malique",
+        "phone": "",
+        "email": "",
+        "dateAdded": "31 Jan 2026"
+      }
+    ],
+    "reportSources": [
+      "Budget.pdf",
+      "Covenant Path Progress.pdf",
+      "Elders Birthday List.pdf",
+      "Ministering Brothers.pdf",
+      "Ministering Sisters.pdf",
+      "Members Moved In.pdf",
+      "Members Moved Out.pdf",
+      "Finding Lost Members.pdf",
+      "Quarterly Report.pdf",
+      "Organizations / EQ / RS / SS / Temple / Ward Missionaries / YSA / Other Callings PDFs"
+    ]
   },
   "mission": {
     "name": "Utah Provo Mission",
@@ -58,9 +991,9 @@
   "apartments": [
     {
       "id": "apt-e984247bc9",
-      "complex": "0",
+      "complex": "Bishopric / Leaders",
       "unit": "—",
-      "address": "0",
+      "address": "Bishop household",
       "city": "",
       "members": [
         {
@@ -75,7 +1008,7 @@
           "address": "0, Lori",
           "street": "0",
           "unit": "",
-          "complex": "0",
+          "complex": "Bishopric / Leaders",
           "city": "",
           "coords": "40.296150, -111.639893",
           "callings": [
@@ -96,8 +1029,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "F",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "1963-01-29",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "ward-directory",
@@ -109,8 +1042,60 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-03-16",
+            "notes": ""
+          },
+          "lostMember": false,
+          "livesAtOldMill": false
+        },
+        {
+          "id": "m-b08e519f4f",
+          "lastName": "Berrett",
+          "legalFirst": "Lori",
+          "preferredName": "Lori",
+          "fullName": "Lori Berrett",
+          "photoUrl": "",
+          "phone": "(214) 529-0512",
+          "email": "loriberrett@sbcglobal.net",
+          "address": "Bishop household",
+          "street": "Bishop household",
+          "unit": "—",
+          "complex": "Bishopric / Leaders",
+          "city": "",
+          "coords": "40.296150, -111.639893",
+          "callings": [],
+          "languages": [],
+          "flags": {
+            "returnedMissionary": false,
+            "inactive": false,
+            "doNotContact": false,
+            "endowed": false,
+            "solid": false
+          },
+          "ministering": {
+            "role": "sister",
+            "companions": [],
+            "ministeringTo": [
+              "m-0dc015cd94",
+              "m-d236133983",
+              "m-811f6ca418"
+            ]
+          },
+          "notes": "",
+          "gender": "F",
+          "birthday": "",
+          "photoSource": "missing",
+          "covenantPath": {
+            "baptized": false,
+            "confirmed": false,
+            "endowed": false,
+            "latestConvert": false,
+            "notes": ""
+          },
+          "moved": {
+            "status": "in",
+            "date": "2026-03-16",
             "notes": ""
           },
           "lostMember": false,
@@ -158,7 +1143,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2003-05-01",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -170,8 +1155,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-09",
             "notes": ""
           },
           "lostMember": false,
@@ -276,7 +1261,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2004-11-28",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -288,8 +1273,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-09-27",
             "notes": ""
           },
           "lostMember": false,
@@ -325,8 +1310,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2004-01-17",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -338,8 +1323,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-09-27",
             "notes": ""
           },
           "lostMember": false,
@@ -382,13 +1367,18 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "brother",
+            "companions": [
+              "m-f62acf2357"
+            ],
+            "ministeringTo": [
+              "m-bc57e84d42",
+              "m-6c53c36d8a"
+            ]
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2001-12-18",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "ward-directory",
@@ -459,8 +1449,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-03-08",
             "notes": ""
           },
           "lostMember": false,
@@ -623,8 +1613,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "1996-01-03",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -697,8 +1687,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-04-12",
             "notes": ""
           },
           "lostMember": false,
@@ -756,8 +1746,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2025-12-14",
             "notes": ""
           },
           "lostMember": false,
@@ -911,8 +1901,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "1992-08-13",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -1015,7 +2005,8 @@
           "city": "Orem UT 84058-3130",
           "coords": "40.285536, -111.699158",
           "callings": [
-            "Relief Society Secretary"
+            "Relief Society Secretary",
+            "Relief Society Secretary Orem UT 84058-3130"
           ],
           "languages": [],
           "flags": {
@@ -1044,8 +2035,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2025-11-09",
             "notes": ""
           },
           "lostMember": false,
@@ -1090,8 +2081,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2003-05-28",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -1211,7 +2202,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2001-10-08",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "ward-directory",
@@ -1260,8 +2251,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2002-07-29",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -1273,8 +2264,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-09-13",
             "notes": ""
           },
           "lostMember": false,
@@ -1313,7 +2304,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "1999-01-16",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -1365,7 +2356,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2002-03-23",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -1377,8 +2368,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-30",
             "notes": ""
           },
           "lostMember": false,
@@ -1473,9 +2464,14 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "sister",
+            "companions": [
+              "m-77666e4792"
+            ],
+            "ministeringTo": [
+              "m-19cb018fb7",
+              "m-82430a9e99"
+            ]
           },
           "notes": "",
           "gender": "F",
@@ -1653,7 +2649,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2003-09-27",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "ward-directory",
@@ -1665,8 +2661,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-23",
             "notes": ""
           },
           "lostMember": false,
@@ -1703,7 +2699,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2004-04-23",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -1715,8 +2711,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-23",
             "notes": ""
           },
           "lostMember": false,
@@ -1753,7 +2749,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2003-12-20",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -1765,8 +2761,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-23",
             "notes": ""
           },
           "lostMember": false,
@@ -1803,7 +2799,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2003-10-17",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -1815,8 +2811,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-23",
             "notes": ""
           },
           "lostMember": false,
@@ -1921,15 +2917,15 @@
           "notEndowed": true,
           "photoSource": "ward-directory",
           "covenantPath": {
-            "baptized": false,
-            "confirmed": false,
+            "baptized": true,
+            "confirmed": true,
             "endowed": false,
-            "latestConvert": false,
-            "notes": ""
+            "latestConvert": true,
+            "notes": "Listed under New Members on Covenant Path Progress"
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-01-11",
             "notes": ""
           },
           "lostMember": false,
@@ -1978,8 +2974,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2025-10-26",
             "notes": ""
           },
           "lostMember": false,
@@ -2037,8 +3033,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-09-13",
             "notes": ""
           },
           "lostMember": false,
@@ -2130,9 +3126,14 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "sister",
+            "companions": [
+              "m-11bb149e5d"
+            ],
+            "ministeringTo": [
+              "m-19cb018fb7",
+              "m-82430a9e99"
+            ]
           },
           "notes": "",
           "gender": "F",
@@ -2148,8 +3149,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-09-13",
             "notes": ""
           },
           "lostMember": false,
@@ -2298,9 +3299,14 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "sister",
+            "companions": [
+              "m-0258477e8f"
+            ],
+            "ministeringTo": [
+              "m-47ab9bc813",
+              "m-8d418377cb"
+            ]
           },
           "notes": "",
           "gender": "F",
@@ -2316,8 +3322,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-04-26",
             "notes": ""
           },
           "lostMember": false,
@@ -2363,7 +3369,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2005-01-28",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -2375,8 +3381,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-30",
             "notes": ""
           },
           "lostMember": false,
@@ -2412,8 +3418,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2003-06-20",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -2425,8 +3431,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-09-13",
             "notes": ""
           },
           "lostMember": false,
@@ -2475,8 +3481,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-30",
             "notes": ""
           },
           "lostMember": false,
@@ -2568,9 +3574,15 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "sister",
+            "companions": [
+              "m-f6206408c0",
+              "m-03fdb41b5a"
+            ],
+            "ministeringTo": [
+              "m-39eba01f9a",
+              "m-a9108cd7d6"
+            ]
           },
           "notes": "",
           "gender": "F",
@@ -2670,9 +3682,15 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "sister",
+            "companions": [
+              "m-ba422a303c",
+              "m-03fdb41b5a"
+            ],
+            "ministeringTo": [
+              "m-39eba01f9a",
+              "m-a9108cd7d6"
+            ]
           },
           "notes": "",
           "gender": "F",
@@ -2688,8 +3706,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-23",
             "notes": ""
           },
           "lostMember": false,
@@ -2734,8 +3752,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2004-08-20",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -2747,8 +3765,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-30",
             "notes": ""
           },
           "lostMember": false,
@@ -2793,8 +3811,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2005-06-27",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -2979,8 +3997,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-01-11",
             "notes": ""
           },
           "lostMember": false,
@@ -3026,7 +4044,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2003-10-29",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -3038,8 +4056,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-30",
             "notes": ""
           },
           "lostMember": false,
@@ -3075,8 +4093,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2004-01-03",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -3088,8 +4106,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-30",
             "notes": ""
           },
           "lostMember": false,
@@ -3125,8 +4143,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2005-02-03",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -3138,8 +4156,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-30",
             "notes": ""
           },
           "lostMember": false,
@@ -3175,8 +4193,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2003-02-23",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -3188,8 +4206,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-23",
             "notes": ""
           },
           "lostMember": false,
@@ -3285,7 +4303,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2002-04-12",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -3297,8 +4315,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2025-11-23",
             "notes": ""
           },
           "lostMember": false,
@@ -3356,8 +4374,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-09-01",
             "notes": ""
           },
           "lostMember": false,
@@ -3406,8 +4424,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-23",
             "notes": ""
           },
           "lostMember": false,
@@ -3465,8 +4483,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-23",
             "notes": ""
           },
           "lostMember": false,
@@ -3683,8 +4701,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-09-27",
             "notes": ""
           },
           "lostMember": false,
@@ -3769,9 +4787,14 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "sister",
+            "companions": [
+              "m-19cb018fb7"
+            ],
+            "ministeringTo": [
+              "m-5d13f6a73b",
+              "m-ffbebce6ea"
+            ]
           },
           "notes": "",
           "gender": "F",
@@ -3787,8 +4810,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-01-18",
             "notes": ""
           },
           "lostMember": false,
@@ -3828,9 +4851,15 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "sister",
+            "companions": [
+              "m-9bdb1c5cf5"
+            ],
+            "ministeringTo": [
+              "m-5d1c652616",
+              "m-70d051f02f",
+              "m-68cecc5366"
+            ]
           },
           "notes": "",
           "gender": "F",
@@ -3839,15 +4868,15 @@
           "notEndowed": true,
           "photoSource": "missing",
           "covenantPath": {
-            "baptized": false,
-            "confirmed": false,
+            "baptized": true,
+            "confirmed": true,
             "endowed": false,
-            "latestConvert": false,
-            "notes": ""
+            "latestConvert": true,
+            "notes": "Listed under New Members on Covenant Path Progress"
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-01-04",
             "notes": ""
           },
           "lostMember": false,
@@ -3887,12 +4916,17 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "sister",
+            "companions": [
+              "m-82430a9e99"
+            ],
+            "ministeringTo": [
+              "m-5d13f6a73b",
+              "m-ffbebce6ea"
+            ]
           },
           "notes": "",
-          "gender": "",
+          "gender": "F",
           "birthday": "",
           "endowed": false,
           "notEndowed": true,
@@ -3964,8 +4998,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-30",
             "notes": ""
           },
           "lostMember": false,
@@ -4014,8 +5048,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-23",
             "notes": ""
           },
           "lostMember": false,
@@ -4048,9 +5082,14 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "sister",
+            "companions": [
+              "m-6db2076aa0"
+            ],
+            "ministeringTo": [
+              "m-77666e4792",
+              "m-11bb149e5d"
+            ]
           },
           "notes": "",
           "gender": "F",
@@ -4125,8 +5164,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-30",
             "notes": ""
           },
           "lostMember": false,
@@ -4243,8 +5282,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2025-11-02",
             "notes": ""
           },
           "lostMember": false,
@@ -4275,9 +5314,16 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "sister",
+            "companions": [
+              "m-3aa3692065",
+              "m-8dd5a434e4"
+            ],
+            "ministeringTo": [
+              "m-b61db9b48d",
+              "m-6db102e6a1",
+              "m-a2a0a13192"
+            ]
           },
           "notes": "",
           "gender": "F",
@@ -4293,8 +5339,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-23",
             "notes": ""
           },
           "lostMember": false,
@@ -4384,9 +5430,16 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "sister",
+            "companions": [
+              "m-3aa3692065",
+              "m-13838c3bac"
+            ],
+            "ministeringTo": [
+              "m-b61db9b48d",
+              "m-6db102e6a1",
+              "m-a2a0a13192"
+            ]
           },
           "notes": "",
           "gender": "F",
@@ -4402,8 +5455,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-16",
             "notes": ""
           },
           "lostMember": false,
@@ -4563,8 +5616,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-09-20",
             "notes": ""
           },
           "lostMember": false,
@@ -4735,8 +5788,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-09-13",
             "notes": ""
           },
           "lostMember": false,
@@ -4769,9 +5822,14 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "sister",
+            "companions": [
+              "m-93d40fbb1b"
+            ],
+            "ministeringTo": [
+              "m-47ab9bc813",
+              "m-8d418377cb"
+            ]
           },
           "notes": "",
           "gender": "F",
@@ -4821,9 +5879,15 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "sister",
+            "companions": [
+              "m-b5497c5a52"
+            ],
+            "ministeringTo": [
+              "m-5d1c652616",
+              "m-70d051f02f",
+              "m-68cecc5366"
+            ]
           },
           "notes": "",
           "gender": "F",
@@ -4871,9 +5935,15 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "sister",
+            "companions": [
+              "m-0dc015cd94",
+              "m-811f6ca418"
+            ],
+            "ministeringTo": [
+              "m-ee8bc28b11",
+              "m-c06bff2a8b"
+            ]
           },
           "notes": "",
           "gender": "F",
@@ -4889,8 +5959,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-30",
             "notes": ""
           },
           "lostMember": false,
@@ -4921,9 +5991,15 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "sister",
+            "companions": [
+              "m-0dc015cd94",
+              "m-d236133983"
+            ],
+            "ministeringTo": [
+              "m-ee8bc28b11",
+              "m-c06bff2a8b"
+            ]
           },
           "notes": "",
           "gender": "F",
@@ -4939,8 +6015,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-30",
             "notes": ""
           },
           "lostMember": false,
@@ -5035,8 +6111,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2003-05-05",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -5048,8 +6124,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-30",
             "notes": ""
           },
           "lostMember": false,
@@ -5161,8 +6237,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-02-10",
             "notes": ""
           },
           "lostMember": false,
@@ -5193,26 +6269,31 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "sister",
+            "companions": [
+              "m-36cf4fb9c0"
+            ],
+            "ministeringTo": [
+              "m-77666e4792",
+              "m-11bb149e5d"
+            ]
           },
           "notes": "",
-          "gender": "",
+          "gender": "F",
           "birthday": "",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
           "covenantPath": {
-            "baptized": false,
-            "confirmed": false,
+            "baptized": true,
+            "confirmed": true,
             "endowed": false,
-            "latestConvert": false,
-            "notes": ""
+            "latestConvert": true,
+            "notes": "Listed under New Members on Covenant Path Progress"
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-16",
             "notes": ""
           },
           "lostMember": false,
@@ -5263,8 +6344,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-04-25",
             "notes": ""
           },
           "lostMember": false,
@@ -5452,8 +6533,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2005-06-24",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -5499,9 +6580,15 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "sister",
+            "companions": [
+              "m-ba422a303c",
+              "m-f6206408c0"
+            ],
+            "ministeringTo": [
+              "m-39eba01f9a",
+              "m-a9108cd7d6"
+            ]
           },
           "notes": "",
           "gender": "F",
@@ -5510,15 +6597,15 @@
           "notEndowed": true,
           "photoSource": "ward-directory",
           "covenantPath": {
-            "baptized": false,
-            "confirmed": false,
+            "baptized": true,
+            "confirmed": true,
             "endowed": false,
-            "latestConvert": false,
-            "notes": ""
+            "latestConvert": true,
+            "notes": "Listed under New Members on Covenant Path Progress"
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2025-11-30",
             "notes": ""
           },
           "lostMember": false,
@@ -5619,13 +6706,19 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "brother",
+            "companions": [
+              "m-0c59b38989"
+            ],
+            "ministeringTo": [
+              "m-9f5423b890",
+              "m-0cf10732db",
+              "m-ab753ec1d6"
+            ]
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2002-11-18",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -5637,8 +6730,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-01-11",
             "notes": ""
           },
           "lostMember": false,
@@ -5676,8 +6769,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2003-08-22",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -5689,9 +6782,9 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
-            "notes": ""
+            "status": "out",
+            "date": "2026-05-03",
+            "notes": "Provo YSA 147th Ward"
           },
           "lostMember": false,
           "livesAtOldMill": true
@@ -5789,12 +6882,18 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "sister",
+            "companions": [
+              "m-43db0d7ca6"
+            ],
+            "ministeringTo": [
+              "m-ba422a303c",
+              "m-f6206408c0",
+              "m-03fdb41b5a"
+            ]
           },
           "notes": "",
-          "gender": "",
+          "gender": "F",
           "birthday": "",
           "endowed": false,
           "notEndowed": true,
@@ -5807,8 +6906,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-30",
             "notes": ""
           },
           "lostMember": false,
@@ -5841,12 +6940,18 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "sister",
+            "companions": [
+              "m-1cf05d8e3a"
+            ],
+            "ministeringTo": [
+              "m-ba422a303c",
+              "m-f6206408c0",
+              "m-03fdb41b5a"
+            ]
           },
           "notes": "",
-          "gender": "",
+          "gender": "F",
           "birthday": "",
           "endowed": false,
           "notEndowed": true,
@@ -5859,8 +6964,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-04-26",
             "notes": ""
           },
           "lostMember": false,
@@ -5959,12 +7064,18 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "sister",
+            "companions": [
+              "m-d236133983",
+              "m-811f6ca418"
+            ],
+            "ministeringTo": [
+              "m-ee8bc28b11",
+              "m-c06bff2a8b"
+            ]
           },
           "notes": "",
-          "gender": "",
+          "gender": "F",
           "birthday": "",
           "endowed": false,
           "notEndowed": true,
@@ -5977,8 +7088,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-09-02",
             "notes": ""
           },
           "lostMember": false,
@@ -6038,8 +7149,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-20",
             "notes": ""
           },
           "lostMember": false,
@@ -6081,13 +7192,21 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "brother",
+            "companions": [
+              "m-c58748b2ad",
+              "m-86ebba318a"
+            ],
+            "ministeringTo": [
+              "m-b1778444e4",
+              "m-23976b2a6b",
+              "m-d48ba647ca",
+              "m-250bb31bd6"
+            ]
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2002-06-06",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -6099,8 +7218,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-05-03",
             "notes": ""
           },
           "lostMember": false,
@@ -6145,8 +7264,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2003-12-05",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -6198,7 +7317,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2003-03-16",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "ward-directory",
@@ -6319,8 +7438,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-05-17",
             "notes": ""
           },
           "lostMember": false,
@@ -6428,8 +7547,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-09-13",
             "notes": ""
           },
           "lostMember": false,
@@ -6478,8 +7597,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-09-13",
             "notes": ""
           },
           "lostMember": false,
@@ -6519,13 +7638,19 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "brother",
+            "companions": [
+              "m-633d7f72aa"
+            ],
+            "ministeringTo": [
+              "m-9f5423b890",
+              "m-0cf10732db",
+              "m-ab753ec1d6"
+            ]
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2004-10-12",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -6584,7 +7709,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2002-02-04",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -6636,7 +7761,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2005-04-04",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "ward-directory",
@@ -6648,8 +7773,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-01-04",
             "notes": ""
           },
           "lostMember": false,
@@ -6685,8 +7810,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2006-07-29",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -6698,8 +7823,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-09-27",
             "notes": ""
           },
           "lostMember": false,
@@ -6735,8 +7860,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2004-06-07",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -6748,8 +7873,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-09-27",
             "notes": ""
           },
           "lostMember": false,
@@ -6797,7 +7922,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2000-09-11",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "ward-directory",
@@ -6858,7 +7983,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2001-12-28",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "ward-directory",
@@ -6917,7 +8042,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2001-08-25",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -6929,8 +8054,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-01-11",
             "notes": ""
           },
           "lostMember": false,
@@ -6975,8 +8100,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2003-08-03",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -7037,7 +8162,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2002-07-31",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "ward-directory",
@@ -7086,8 +8211,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2000-04-18",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -7136,8 +8261,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2003-05-22",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -7200,7 +8325,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "1998-07-02",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "ward-directory",
@@ -7259,7 +8384,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2003-11-20",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -7309,7 +8434,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2002-11-04",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -7321,9 +8446,9 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
-            "notes": ""
+            "status": "out",
+            "date": "2026-07-15",
+            "notes": "Provo YSA 147th Ward"
           },
           "lostMember": false,
           "livesAtOldMill": true
@@ -7359,7 +8484,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2005-08-22",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -7418,7 +8543,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2002-01-27",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -7541,8 +8666,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2025-11-09",
             "notes": ""
           },
           "lostMember": false,
@@ -7580,8 +8705,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2004-06-05",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -7593,8 +8718,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-09-13",
             "notes": ""
           },
           "lostMember": false,
@@ -7636,13 +8761,21 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "brother",
+            "companions": [
+              "m-ec3790970a",
+              "m-86ebba318a"
+            ],
+            "ministeringTo": [
+              "m-b1778444e4",
+              "m-23976b2a6b",
+              "m-d48ba647ca",
+              "m-250bb31bd6"
+            ]
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2003-08-20",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -7703,7 +8836,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2002-11-05",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -7715,8 +8848,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-04-12",
             "notes": ""
           },
           "lostMember": false,
@@ -7749,13 +8882,18 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "brother",
+            "companions": [
+              "m-923ffaa8c6"
+            ],
+            "ministeringTo": [
+              "m-7f23be984c",
+              "m-001e309c12"
+            ]
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2002-03-02",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "ward-directory",
@@ -7767,8 +8905,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-30",
             "notes": ""
           },
           "lostMember": false,
@@ -7811,13 +8949,18 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "brother",
+            "companions": [
+              "m-f044af235b"
+            ],
+            "ministeringTo": [
+              "m-7f23be984c",
+              "m-001e309c12"
+            ]
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2001-08-21",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "ward-directory",
@@ -7870,13 +9013,19 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "brother",
+            "companions": [
+              "m-5fd71c1bc3"
+            ],
+            "ministeringTo": [
+              "m-b81dd7fddb",
+              "m-c33a445898",
+              "m-29a0eb1295"
+            ]
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "1998-08-04",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -7922,13 +9071,19 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "brother",
+            "companions": [
+              "m-3124ad4855"
+            ],
+            "ministeringTo": [
+              "m-b81dd7fddb",
+              "m-c33a445898",
+              "m-29a0eb1295"
+            ]
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2004-03-19",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "ward-directory",
@@ -7977,8 +9132,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2007-05-29",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -7990,8 +9145,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-09-27",
             "notes": ""
           },
           "lostMember": false,
@@ -8039,7 +9194,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "1994-02-10",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "ward-directory",
@@ -8088,8 +9243,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2002-12-14",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -8148,7 +9303,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "1999-06-16",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -8198,7 +9353,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2000-08-21",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -8247,8 +9402,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2002-04-24",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -8260,8 +9415,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-30",
             "notes": ""
           },
           "lostMember": false,
@@ -8349,8 +9504,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2004-05-16",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -8362,8 +9517,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-30",
             "notes": ""
           },
           "lostMember": false,
@@ -8403,9 +9558,15 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "sister",
+            "companions": [
+              "m-90fe229b61"
+            ],
+            "ministeringTo": [
+              "m-d3cd000cfc",
+              "m-af347c0453",
+              "m-5acf9b0590"
+            ]
           },
           "notes": "",
           "gender": "M",
@@ -8421,8 +9582,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-30",
             "notes": ""
           },
           "lostMember": false,
@@ -8453,13 +9614,21 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "brother",
+            "companions": [
+              "m-ec3790970a",
+              "m-c58748b2ad"
+            ],
+            "ministeringTo": [
+              "m-b1778444e4",
+              "m-23976b2a6b",
+              "m-d48ba647ca",
+              "m-250bb31bd6"
+            ]
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2006-03-12",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -8471,8 +9640,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2025-10-23",
             "notes": ""
           },
           "lostMember": false,
@@ -8505,9 +9674,15 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "sister",
+            "companions": [
+              "m-9676d16f1a"
+            ],
+            "ministeringTo": [
+              "m-d3cd000cfc",
+              "m-af347c0453",
+              "m-5acf9b0590"
+            ]
           },
           "notes": "",
           "gender": "F",
@@ -8523,8 +9698,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-23",
             "notes": ""
           },
           "lostMember": false,
@@ -8575,8 +9750,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-30",
             "notes": ""
           },
           "lostMember": false,
@@ -8625,8 +9800,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-23",
             "notes": ""
           },
           "lostMember": false,
@@ -8674,7 +9849,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2005-12-14",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "ward-directory",
@@ -8686,8 +9861,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-07-26",
             "notes": ""
           },
           "lostMember": false,
@@ -8723,8 +9898,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2004-02-16",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -8736,8 +9911,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-07-26",
             "notes": ""
           },
           "lostMember": false,
@@ -8782,8 +9957,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2005-04-05",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -8795,8 +9970,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-09-27",
             "notes": ""
           },
           "lostMember": false,
@@ -8832,8 +10007,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2005-06-07",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -8882,8 +10057,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2004-03-12",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -8895,8 +10070,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-09-27",
             "notes": ""
           },
           "lostMember": false,
@@ -8936,13 +10111,20 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "brother",
+            "companions": [
+              "m-f0857f03ca"
+            ],
+            "ministeringTo": [
+              "m-dd3f89a5b3",
+              "m-54ffa130d8",
+              "m-56811c0fc9",
+              "m-748ccd656f"
+            ]
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2005-09-07",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -8954,8 +10136,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-18",
             "notes": ""
           },
           "lostMember": false,
@@ -8995,13 +10177,18 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "brother",
+            "companions": [
+              "m-d48ba647ca"
+            ],
+            "ministeringTo": [
+              "m-ef13f03e44",
+              "m-07ab486f93"
+            ]
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2004-07-14",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -9013,8 +10200,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-18",
             "notes": ""
           },
           "lostMember": false,
@@ -9054,13 +10241,18 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "brother",
+            "companions": [
+              "m-23976b2a6b"
+            ],
+            "ministeringTo": [
+              "m-ef13f03e44",
+              "m-07ab486f93"
+            ]
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "1998-03-05",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -9072,8 +10264,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-30",
             "notes": ""
           },
           "lostMember": false,
@@ -9109,8 +10301,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2001-06-02",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -9162,7 +10354,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2002-03-03",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "ward-directory",
@@ -9174,8 +10366,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-05-03",
             "notes": ""
           },
           "lostMember": false,
@@ -9206,13 +10398,20 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "brother",
+            "companions": [
+              "m-b1778444e4"
+            ],
+            "ministeringTo": [
+              "m-dd3f89a5b3",
+              "m-54ffa130d8",
+              "m-56811c0fc9",
+              "m-748ccd656f"
+            ]
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2003-10-29",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -9224,8 +10423,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-23",
             "notes": ""
           },
           "lostMember": false,
@@ -9326,13 +10525,19 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "brother",
+            "companions": [
+              "m-54ffa130d8"
+            ],
+            "ministeringTo": [
+              "m-ddc1c0e07c",
+              "m-08e5514642",
+              "m-725a9dba99"
+            ]
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2002-11-01",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -9344,8 +10549,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-16",
             "notes": ""
           },
           "lostMember": false,
@@ -9378,13 +10583,19 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "brother",
+            "companions": [
+              "m-dd3f89a5b3"
+            ],
+            "ministeringTo": [
+              "m-ddc1c0e07c",
+              "m-08e5514642",
+              "m-725a9dba99"
+            ]
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2002-09-04",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "ward-directory",
@@ -9419,7 +10630,8 @@
           "city": "provo UT 84042",
           "coords": "40.258131, -111.671790",
           "callings": [
-            "Ward Missionary"
+            "Ward Missionary",
+            "Ward Missionary apt 317"
           ],
           "languages": [],
           "flags": {
@@ -9430,13 +10642,18 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "brother",
+            "companions": [
+              "m-748ccd656f"
+            ],
+            "ministeringTo": [
+              "m-d05a83ab14",
+              "m-a66baea119"
+            ]
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2002-10-26",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -9480,13 +10697,18 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "brother",
+            "companions": [
+              "m-56811c0fc9"
+            ],
+            "ministeringTo": [
+              "m-d05a83ab14",
+              "m-a66baea119"
+            ]
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2004-02-06",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -9544,8 +10766,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2002-08-14",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -9557,8 +10779,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-06-14",
             "notes": ""
           },
           "lostMember": false,
@@ -9595,7 +10817,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2002-12-11",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -9647,7 +10869,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2003-03-15",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "ward-directory",
@@ -9659,9 +10881,9 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
-            "notes": ""
+            "status": "out",
+            "date": "2026-05-27",
+            "notes": "Provo YSA 147th Ward"
           },
           "lostMember": false,
           "livesAtOldMill": true
@@ -9696,8 +10918,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2001-03-28",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -9752,9 +10974,16 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "sister",
+            "companions": [
+              "m-13838c3bac",
+              "m-8dd5a434e4"
+            ],
+            "ministeringTo": [
+              "m-b61db9b48d",
+              "m-6db102e6a1",
+              "m-a2a0a13192"
+            ]
           },
           "notes": "",
           "gender": "F",
@@ -9770,8 +10999,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-08-23",
             "notes": ""
           },
           "lostMember": false,
@@ -9816,8 +11045,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "1997-06-20",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -9829,8 +11058,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-03-08",
             "notes": ""
           },
           "lostMember": false,
@@ -9949,8 +11178,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-04-19",
             "notes": ""
           },
           "lostMember": false,
@@ -9986,8 +11215,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2004-12-01",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -9999,8 +11228,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-09-05",
             "notes": ""
           },
           "lostMember": false,
@@ -10045,8 +11274,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2003-01-13",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -10058,8 +11287,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-09-28",
             "notes": ""
           },
           "lostMember": false,
@@ -10117,8 +11346,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-01-02",
             "notes": ""
           },
           "lostMember": false,
@@ -10158,13 +11387,18 @@
             "solid": false
           },
           "ministering": {
-            "role": "",
-            "companions": [],
-            "ministeringTo": []
+            "role": "brother",
+            "companions": [
+              "m-b17a81976a"
+            ],
+            "ministeringTo": [
+              "m-bc57e84d42",
+              "m-6c53c36d8a"
+            ]
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2003-09-18",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -10267,7 +11501,8 @@
           "city": "Orem UT",
           "coords": "40.315890, -111.703222",
           "callings": [
-            "Relief Society Activity Committee Member"
+            "Relief Society Activity Committee Member",
+            "Relief Society Activity Committee Member Orem UT"
           ],
           "languages": [],
           "flags": {
@@ -10296,8 +11531,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2025-12-16",
             "notes": ""
           },
           "lostMember": false,
@@ -10393,7 +11628,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "2003-04-08",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -10443,7 +11678,7 @@
           },
           "notes": "",
           "gender": "M",
-          "birthday": "",
+          "birthday": "1959-11-09",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -10592,8 +11827,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2003-11-06",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -10642,8 +11877,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2004-09-27",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -10655,8 +11890,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2025-10-09",
             "notes": ""
           },
           "lostMember": false,
@@ -10748,8 +11983,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "2000-12-25",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -10761,8 +11996,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2025-10-09",
             "notes": ""
           },
           "lostMember": false,
@@ -10798,8 +12033,8 @@
             "ministeringTo": []
           },
           "notes": "",
-          "gender": "",
-          "birthday": "",
+          "gender": "M",
+          "birthday": "1996-02-20",
           "endowed": false,
           "notEndowed": true,
           "photoSource": "missing",
@@ -10811,8 +12046,8 @@
             "notes": ""
           },
           "moved": {
-            "status": "",
-            "date": "",
+            "status": "in",
+            "date": "2026-03-22",
             "notes": ""
           },
           "lostMember": false,

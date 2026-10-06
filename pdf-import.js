@@ -1,6 +1,7 @@
 /**
- * Client-side Church Directory PDF text parser.
- * Mirrors scripts/parse_directory_pdf.py enough for roster refreshes.
+ * Client-side Church Directory + ward report PDF/JSON/CSV importer.
+ * Mirrors scripts/parse_directory_pdf.py and scripts/import_all_reports.py
+ * so leaders can refresh the site from uploaded LDS Tools exports.
  */
 
 const PHONE_RE =
@@ -13,38 +14,21 @@ const LETTER_RE = /^[A-Z]$/;
 const CITY_RE = /^(?:[A-Za-z .]+)\s+(?:UT|Utah)\s*\d{0,5}(?:-\d{4})?$/i;
 const APT_RE = /^(?:Apt|Apartment|APT)\s*.+/i;
 
+const MONTHS = {
+  jan: 1, january: 1, feb: 2, february: 2, mar: 3, march: 3,
+  apr: 4, april: 4, may: 5, jun: 6, june: 6, jul: 7, july: 7,
+  aug: 8, august: 8, sep: 9, sept: 9, september: 9,
+  oct: 10, october: 10, nov: 11, november: 11, dec: 12, december: 12,
+};
+
 const CALLING_HINTS = [
-  "President",
-  "Counselor",
-  "Secretary",
-  "Clerk",
-  "Bishop",
-  "Teacher",
-  "Missionary",
-  "Committee",
-  "Coordinator",
-  "Leader",
-  "Consultant",
-  "Specialist",
-  "Worker",
-  "Volunteer",
-  "Accompanist",
-  "Auditor",
-  "Councilor",
-  "Quorum",
-  "Relief Society",
-  "Sunday School",
-  "Temple",
-  "Activities",
-  "Music",
-  "Sacrament",
-  "Linger Longer",
-  "Serving outside",
-  "Priests",
-  "High Council",
-  "Executive",
-  "Chair",
-  "Co-chair",
+  "President", "Counselor", "Secretary", "Clerk", "Bishop", "Teacher",
+  "Missionary", "Committee", "Coordinator", "Leader", "Consultant",
+  "Specialist", "Worker", "Volunteer", "Accompanist", "Auditor",
+  "Councilor", "Quorum", "Relief Society", "Sunday School", "Temple",
+  "Activities", "Music", "Sacrament", "Linger Longer", "Serving outside",
+  "Priests", "High Council", "Executive", "Chair", "Co-chair",
+  "Representative", "Social Media",
 ];
 
 const SKIP_PREFIXES = [
@@ -87,6 +71,127 @@ function hashId(text, prefix) {
   let h = 0;
   for (let i = 0; i < text.length; i += 1) h = (h * 31 + text.charCodeAt(i)) >>> 0;
   return `${prefix}-${h.toString(16).padStart(8, "0")}`;
+}
+
+function cloneDirectory(dir) {
+  return JSON.parse(JSON.stringify(dir));
+}
+
+function allMembersFrom(dir) {
+  return (dir.apartments || []).flatMap((a) => a.members || []);
+}
+
+function indexMembers(dir) {
+  const idx = new Map();
+  for (const m of allMembersFrom(dir)) {
+    idx.set(m.fullName.toLowerCase(), m);
+    idx.set(`${m.lastName.toLowerCase()}, ${(m.legalFirst || "").toLowerCase()}`, m);
+    idx.set(`${m.lastName.toLowerCase()}, ${(m.preferredName || "").toLowerCase()}`, m);
+    const first = (m.legalFirst || "").split(/\s+/)[0].toLowerCase();
+    if (first) idx.set(`${m.lastName.toLowerCase()}, ${first}`, m);
+    idx.set(m.lastName.toLowerCase(), m);
+  }
+  return idx;
+}
+
+function parseNameLastFirst(raw) {
+  const cleaned = String(raw || "").replace(/\s+/g, " ").replace(/^[, ]+|[, ]+$/g, "");
+  if (cleaned.includes(",")) {
+    const [last, first] = cleaned.split(",", 2);
+    return { last: last.trim(), first: (first || "").trim() };
+  }
+  const parts = cleaned.split(/\s+/).filter(Boolean);
+  if (parts.length >= 2) {
+    return { last: parts[parts.length - 1], first: parts.slice(0, -1).join(" ") };
+  }
+  return { last: cleaned, first: "" };
+}
+
+function findMember(idx, last, first = "") {
+  last = (last || "").trim();
+  first = (first || "").trim();
+  const keys = [];
+  if (first) {
+    keys.push(`${first} ${last}`.toLowerCase());
+    keys.push(`${last}, ${first}`.toLowerCase());
+    keys.push(`${last}, ${first.split(/\s+/)[0]}`.toLowerCase());
+  }
+  keys.push(last.toLowerCase());
+  for (const k of keys) {
+    if (!idx.has(k)) continue;
+    const m = idx.get(k);
+    if (first && !last.toLowerCase().includes(m.lastName.toLowerCase()) && m.lastName.toLowerCase() !== last.toLowerCase()) {
+      continue;
+    }
+    if (first) {
+      const blob = `${m.legalFirst} ${m.preferredName} ${m.fullName}`.toLowerCase();
+      const tok = first.split(/\s+/)[0].toLowerCase();
+      if (!blob.includes(tok) && !blob.includes(first.toLowerCase())) continue;
+    }
+    return m;
+  }
+  const firstTok = first.split(/\s+/)[0]?.toLowerCase() || "";
+  const unique = [...new Map([...idx.values()].map((m) => [m.id, m])).values()];
+  for (const m of unique) {
+    if (m.lastName.toLowerCase() !== last.toLowerCase()) continue;
+    if (!firstTok || m.fullName.toLowerCase().includes(firstTok) || (m.legalFirst || "").toLowerCase().includes(firstTok)) {
+      return m;
+    }
+  }
+  return null;
+}
+
+function monthNum(mon) {
+  const key = String(mon || "").toLowerCase();
+  return MONTHS[key] || MONTHS[key.slice(0, 3)] || null;
+}
+
+function birthYearFromAge(month, day, age, asOf = new Date()) {
+  let candidate = asOf.getFullYear() - age;
+  const bdayThisYear = new Date(asOf.getFullYear(), month - 1, day);
+  if (bdayThisYear > asOf) candidate -= 1;
+  return candidate;
+}
+
+function normalizeFileKey(name) {
+  return String(name || "")
+    .toLowerCase()
+    .replace(/\.pdf$/i, "")
+    .replace(/[_]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/** Classify LDS Tools / Leader report PDFs by filename, then content. */
+export function classifyReport(filename, text = "") {
+  const n = normalizeFileKey(filename);
+  const head = String(text || "").slice(0, 2500);
+
+  if (/\bbudget\b/.test(n) || /^Budget\b/m.test(head)) return "budget";
+  if (/covenant\s*path/.test(n) || /Covenant Path Progress/.test(head)) return "covenant";
+  if (/birthday/.test(n) || /Birthday List/.test(head)) return "birthday";
+  if (/ministering\s*brother/.test(n) || /^Ministering Brothers/m.test(head)) return "ministering-brothers";
+  if (/ministering\s*sister/.test(n) || /^Ministering Sisters/m.test(head)) return "ministering-sisters";
+  if (/members?\s*moved\s*in|moved\s*in/.test(n) || /^Members Moved In/m.test(head)) return "moved-in";
+  if (/members?\s*moved\s*out|moved\s*out/.test(n) || /^Members Moved Out/m.test(head)) return "moved-out";
+  if (/finding\s*lost|lost\s*member/.test(n) || /^Finding Lost Members/m.test(head)) return "lost";
+  if (/quarterly\s*report/.test(n) || /^Quarterly Report/m.test(head)) return "quarterly";
+  if (/serving\s*missionar/.test(n) || /Serving Missionaries/.test(head)) return "serving-missionaries";
+
+  // Organizations.pdf (calling table) vs Organizations … Ward Directory and Map (roster)
+  if (
+    (/^organizations$/.test(n) || /^organizations\b/.test(n)) &&
+    !/directory\s*and\s*map/.test(n) &&
+    (/Calling Name Sustained/.test(head) || /^Organizations\b/m.test(head))
+  ) {
+    return "organizations-table";
+  }
+  if (/Calling Name Sustained/.test(head) && !/Ward Directory and Map/.test(head)) {
+    return "organizations-table";
+  }
+
+  // Org / EQ / RS / SS / Temple / Ward Missionaries / YSA / Other Callings directory maps
+  return "directory";
 }
 
 function parseMemberLines(allLines) {
@@ -237,7 +342,7 @@ function groupApartments(members) {
   );
 }
 
-export async function parseDirectoryPdf(file) {
+async function extractPdfContent(file) {
   const pdfjs = await import(
     "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.8.69/pdf.min.mjs"
   );
@@ -247,11 +352,10 @@ export async function parseDirectoryPdf(file) {
   const data = new Uint8Array(await file.arrayBuffer());
   const pdf = await pdfjs.getDocument({ data }).promise;
   const lines = [];
+  const pageTexts = [];
   for (let i = 1; i <= pdf.numPages; i += 1) {
     const page = await pdf.getPage(i);
     const content = await page.getTextContent();
-    const pageText = content.items.map((item) => item.str).join(" ");
-    // pdf.js often loses newlines; re-split on form patterns using raw items by Y
     const byLine = new Map();
     for (const item of content.items) {
       const y = Math.round(item.transform[5]);
@@ -260,22 +364,27 @@ export async function parseDirectoryPdf(file) {
       byLine.set(y, prev);
     }
     const sortedYs = [...byLine.keys()].sort((a, b) => b - a);
+    const pageLines = [];
     for (const y of sortedYs) {
       const line = byLine.get(y).join(" ").replace(/\s+/g, " ").trim();
-      if (isSkip(line) || LETTER_RE.test(line)) continue;
-      lines.push(line);
+      if (!line) continue;
+      pageLines.push(line);
+      if (!(isSkip(line) || LETTER_RE.test(line))) lines.push(line);
     }
-    void pageText;
+    pageTexts.push(pageLines.join("\n"));
   }
+  return { lines, text: pageTexts.join("\n") };
+}
 
-  const members = parseMemberLines(lines);
-  const apartments = groupApartments(members);
+function directoryPayload(file, members) {
+  const apartments = groupApartments(members.map(normalizeMember));
   return {
     ward: {
       name: "Provo YSA 147th Ward",
       shortName: "147th Ward",
       unitNumber: "266485",
-      stake: "Provo YSA",
+      stake: "Provo Utah YSA 10th Stake",
+      stakeNumber: "511455",
       source: file.name,
       sourceDate: new Date().toISOString().slice(0, 10),
       note: "Parsed from Church Directory PDF. For Church use only — confidential.",
@@ -285,9 +394,509 @@ export async function parseDirectoryPdf(file) {
       lastEditedAt: new Date().toISOString(),
       memberCount: members.length,
       apartmentCount: apartments.length,
+      importKind: "directory",
+      reportSources: [file.name],
     },
     apartments,
   };
+}
+
+export async function parseDirectoryPdf(file) {
+  const { lines } = await extractPdfContent(file);
+  const members = parseMemberLines(lines);
+  return directoryPayload(file, members);
+}
+
+/* ---------- Specialized report importers (apply onto a directory clone) ---------- */
+
+function touchReportSource(dir, fileName) {
+  dir.meta = dir.meta || {};
+  const sources = new Set(dir.meta.reportSources || []);
+  sources.add(fileName);
+  dir.meta.reportSources = [...sources];
+  dir.meta.importKind = "report";
+  dir.meta.lastEditedAt = new Date().toISOString();
+}
+
+function importBudget(dir, text, fileName) {
+  const flat = text.replace(/\n/g, " ");
+  const spentM = flat.match(/\$(\d+\.\d{2})\s*Spent\s*of\s*\$(\d+\.\d{2})/);
+  const spentVal = spentM ? Number(spentM[1]) : 0;
+  const plannedVal = spentM ? Number(spentM[2]) : 0;
+  dir.meta = dir.meta || {};
+  const categories = dir.meta.budget?.categories?.length
+    ? dir.meta.budget.categories.map((c) => ({ ...c }))
+    : [
+        { name: "Relief Society", planned: 0, spent: 0 },
+        { name: "Activities", planned: 0, spent: 0 },
+        { name: "Elders Quorum", planned: 0, spent: 0 },
+        { name: "Missionary", planned: 0, spent: 0 },
+        { name: "Other", planned: 0, spent: 0 },
+      ];
+  const rs = categories.find((c) => /relief society/i.test(c.name));
+  if (rs) {
+    rs.planned = plannedVal;
+    rs.spent = spentVal;
+  } else {
+    categories.unshift({ name: "Relief Society", planned: plannedVal, spent: spentVal });
+  }
+  dir.meta.budget = {
+    asOf: new Date().toISOString().slice(0, 10),
+    notes: `Imported from ${fileName}. Update other categories as needed.`,
+    categories,
+  };
+  touchReportSource(dir, fileName);
+  return dir;
+}
+
+function importCovenant(dir, text, fileName) {
+  const idx = indexMembers(dir);
+  const known = ["Angelina Whitehead", "Kathryn Henley", "Marti Smith", "Meg Smith"];
+  const names = [];
+  for (const n of known) {
+    if (text.includes(n) && !names.includes(n)) names.push(n);
+  }
+  // Capture "First Last" lines under New Members style pages
+  for (const m of text.matchAll(/^([A-Z][a-zA-ZÀ-ÿ'’\-]+(?:\s+[A-Z][a-zA-ZÀ-ÿ'’\-]+)+)\s*$/gm)) {
+    const n = m[1];
+    if (/Covenant|Members|Sacrament|Friends|View Details|Guide|Returning|Taught/i.test(n)) continue;
+    if (n.split(/\s+/).length >= 2 && !names.includes(n)) names.push(n);
+  }
+  const marked = [];
+  for (const full of names) {
+    const parts = full.split(/\s+/);
+    const first = parts.slice(0, -1).join(" ");
+    const last = parts[parts.length - 1];
+    const member = findMember(idx, last, first);
+    if (member) {
+      member.covenantPath = {
+        ...(member.covenantPath || {}),
+        baptized: true,
+        confirmed: true,
+        latestConvert: true,
+        notes: "Listed under New Members on Covenant Path Progress",
+      };
+      marked.push(member.fullName);
+    }
+  }
+  dir.meta = dir.meta || {};
+  dir.meta.latestConverts = marked.length ? marked : names;
+  touchReportSource(dir, fileName);
+  return dir;
+}
+
+function importBirthday(dir, text, fileName) {
+  const idx = indexMembers(dir);
+  const lines = text.split(/\n/).map((l) => l.trim()).filter(Boolean);
+  let count = 0;
+  for (let i = 0; i < lines.length; i += 1) {
+    const m2 = lines[i].match(/^(\d{1,2})\s+([A-Za-z]{3,9})\s+(.*)$/);
+    if (!m2) continue;
+    const [, dayS, monS, rest] = m2;
+    const month = monthNum(monS);
+    if (!month) continue;
+    let age = null;
+    let namePart = rest;
+    const am = rest.match(/^(\d{1,3})\s+(.*)$/);
+    if (am && Number(am[1]) < 120) {
+      age = Number(am[1]);
+      namePart = am[2];
+    }
+    const am2 = namePart.match(/\b(\d{2})\b\s*(?:\(|$)/);
+    if (age == null && am2) {
+      age = Number(am2[1]);
+      namePart = namePart.slice(0, am2.index).trim();
+    }
+    namePart = namePart.replace(/\s*\(\d{3}.*$/, "").replace(/^[, ]+|[, ]+$/g, "");
+    if (!namePart.includes(",") && i + 1 < lines.length) {
+      const nxt = lines[i + 1];
+      if (!/^\d{1,2}\s+[A-Za-z]{3}/.test(nxt) && !/Count:|Birthday/i.test(nxt)
+        && /[A-Za-z]/.test(nxt) && !/Provo|Orem|Apt|UT\b/.test(nxt)) {
+        namePart = `${namePart} ${nxt}`.trim();
+        i += 1;
+        const am3 = namePart.match(/\b(\d{2})\b/);
+        if (age == null && am3) {
+          age = Number(am3[1]);
+          namePart = namePart.slice(0, am3.index).trim();
+        }
+      }
+    }
+    namePart = namePart.replace(/\s+\d{2}$/, "").replace(/^[, ]+|[, ]+$/g, "");
+    if (!namePart || /Count:/i.test(namePart)) continue;
+    const { last, first } = parseNameLastFirst(namePart);
+    if (!last || /^(phone|name|birthday)$/i.test(last)) continue;
+    if (age == null) {
+      for (let j = i + 1; j < Math.min(i + 3, lines.length); j += 1) {
+        const am4 = lines[j].match(/\b(\d{2})\b/);
+        if (am4 && Number(am4[1]) < 100) {
+          age = Number(am4[1]);
+          break;
+        }
+      }
+    }
+    if (age == null) continue;
+    const year = birthYearFromAge(month, Number(dayS), age);
+    const bday = `${year}-${String(month).padStart(2, "0")}-${String(Number(dayS)).padStart(2, "0")}`;
+    const member = findMember(idx, last, first);
+    if (member) {
+      member.birthday = bday;
+      member.gender = member.gender || "M";
+      count += 1;
+    }
+  }
+  dir.meta = dir.meta || {};
+  dir.meta.birthdayImportCount = count;
+  touchReportSource(dir, fileName);
+  return dir;
+}
+
+function parseMinisteringBlocks(text, role) {
+  const comps = [];
+  const blocks = text.split(/MINISTERING (?:BROTHERS|SISTERS)/i);
+  for (const block of blocks.slice(1)) {
+    if (!/ASSIGNED/i.test(block)) continue;
+    const parts = block.split(/ASSIGNED (?:HOUSEHOLDS|SISTERS)/i);
+    if (parts.length < 2) continue;
+    const [before, after] = parts;
+    const companions = [];
+    for (const ln of before.split(/\n/)) {
+      const line = ln.trim();
+      if (!line || /^(OCT|QUARTER|NOV|DEC|District|Presidency|Select|Count|\d)/i.test(line)) continue;
+      if (line.includes(",") && !/^assigned/i.test(line)) {
+        companions.push(line.split("(")[0].trim());
+      }
+    }
+    const assigned = [];
+    for (const ln of after.split(/\n/)) {
+      const line = ln.trim();
+      if (!line || /^(OCT|QUARTER|Count|District|Add |Move|Companionships|Presidency|Select|MINISTERING|00%|0 \/)/i.test(line)) continue;
+      if (line.includes(",")) assigned.push(line.split("(")[0].trim());
+    }
+    if (companions.length) comps.push({ companions, assigned, role });
+  }
+  return comps;
+}
+
+function applyMinistering(dir, comps) {
+  const idx = indexMembers(dir);
+  const resolve = (nameLf) => {
+    const { last, first } = parseNameLastFirst(nameLf);
+    return findMember(idx, last, first);
+  };
+  let applied = 0;
+  for (const c of comps) {
+    const companionMembers = c.companions.map(resolve).filter(Boolean);
+    const assignedMembers = c.assigned.map(resolve).filter(Boolean);
+    const companionIds = companionMembers.map((m) => m.id);
+    const assignedIds = assignedMembers.map((m) => m.id);
+    for (const m of companionMembers) {
+      m.ministering = {
+        role: c.role,
+        companions: companionIds.filter((id) => id !== m.id),
+        ministeringTo: assignedIds,
+      };
+      m.gender = m.gender || (c.role === "sister" ? "F" : "M");
+      applied += 1;
+    }
+  }
+  return applied;
+}
+
+function importMinistering(dir, text, role, fileName) {
+  const comps = parseMinisteringBlocks(text, role);
+  const applied = applyMinistering(dir, comps);
+  dir.meta = dir.meta || {};
+  dir.meta.ministeringImportCount = (dir.meta.ministeringImportCount || 0) + applied;
+  touchReportSource(dir, fileName);
+  return dir;
+}
+
+function importMovedIn(dir, text, fileName) {
+  const idx = indexMembers(dir);
+  let count = 0;
+  for (const ln of text.split(/\n/)) {
+    const line = ln.trim();
+    const mm = line.match(
+      /^([A-Z][A-Za-zÀ-ÿ'’\-]+,\s+[A-Za-zÀ-ÿ'’\-\s]+?)\s+(\d{1,3})\s+(\d{1,2})\s+([A-Za-z]{3,9})\s+(\d{4})$/
+    );
+    if (!mm) continue;
+    const [, name, , day, mon, year] = mm;
+    const month = monthNum(mon);
+    if (!month) continue;
+    const iso = `${year}-${String(month).padStart(2, "0")}-${String(Number(day)).padStart(2, "0")}`;
+    const { last, first } = parseNameLastFirst(name);
+    const member = findMember(idx, last, first);
+    if (member) {
+      member.moved = { status: "in", date: iso, notes: "" };
+      count += 1;
+    }
+  }
+  dir.meta = dir.meta || {};
+  dir.meta.movedInImportCount = count;
+  touchReportSource(dir, fileName);
+  return dir;
+}
+
+function importMovedOut(dir, text, fileName) {
+  const lines = text.split(/\n/).map((l) => l.trim()).filter(Boolean);
+  const rows = [];
+  for (let i = 0; i < lines.length; i += 1) {
+    const ln = lines[i];
+    if (/^\d{1,2}\s+[A-Za-z]{3}\s+\d{4}/.test(ln) || /^(Count:|Members Moved|Print|Name )/i.test(ln)) continue;
+    const combined2 = i + 1 < lines.length ? `${ln} ${lines[i + 1]}` : ln;
+    let mm = combined2.match(
+      /^([A-Z][A-Za-zÀ-ÿ'’\-\s]+?)\s+(\d{1,2}\s+[A-Za-z]{3,9}\s+\d{4})\s+(\d{1,2}\s+[A-Za-z]{3,9}\s+\d{4})\s+(.*)$/
+    );
+    if (!mm) {
+      mm = ln.match(
+        /^([A-Z][A-Za-zÀ-ÿ'’\-, ]+?)\s+(\d{1,2}\s+[A-Za-z]{3,9}\s+\d{4})\s+(\d{1,2}\s+[A-Za-z]{3,9}\s+\d{4})\s*(.*)$/
+      );
+    }
+    if (!mm) continue;
+    const [, nameRaw, birth, move, unit] = mm;
+    const name = nameRaw.replace(/^[, ]+|[, ]+$/g, "");
+    if (!name.includes(",") && name.split(/\s+/).length > 5) continue;
+
+    const toIso = (s) => {
+      const [day, mon, year] = s.split(/\s+/);
+      const month = monthNum(mon);
+      return `${year}-${String(month).padStart(2, "0")}-${String(Number(day)).padStart(2, "0")}`;
+    };
+    rows.push({
+      name,
+      birthday: toIso(birth),
+      date: toIso(move),
+      newUnit: (unit || "").trim(),
+    });
+  }
+  dir.meta = dir.meta || {};
+  dir.meta.movedOutRecords = rows;
+  const idx = indexMembers(dir);
+  let marked = 0;
+  for (const r of rows) {
+    const { last, first } = parseNameLastFirst(r.name);
+    const member = findMember(idx, last, first);
+    if (member) {
+      member.moved = { status: "out", date: r.date, notes: r.newUnit };
+      if (!member.birthday) member.birthday = r.birthday;
+      marked += 1;
+    }
+  }
+  dir.meta.movedOutImportCount = marked;
+  touchReportSource(dir, fileName);
+  return dir;
+}
+
+function importLost(dir, text, fileName) {
+  let rows = [];
+  const lines = text.split(/\n/).map((l) => l.trim());
+  for (let i = 0; i < lines.length; i += 1) {
+    const ln = lines[i];
+    if (!ln.includes(",") || /^(Finding|When |Phone|Name|Count|The members)/i.test(ln) || /^\d\./.test(ln)) {
+      continue;
+    }
+    let chunk = ln;
+    let j = i + 1;
+    while (j < lines.length && !/\d{1,2}\s+[A-Za-z]{3}\s+\d{4}/.test(chunk) && j < i + 4) {
+      chunk += ` ${lines[j]}`;
+      j += 1;
+    }
+    const mm = chunk.match(
+      /^([A-Z][A-Za-zÀ-ÿ'’\-\s]+,\s*[A-Za-zÀ-ÿ'’\-\s]+?)\s*(?:\((\d{3})\)\s*(\d{3}-\d{4}))?\s*([A-Za-z0-9._%+\-]+@[^\s]+)?\s*(\d{1,2}\s+[A-Za-z]{3}\s+\d{4})/
+    );
+    if (mm) {
+      const [, name, a, b, email, added] = mm;
+      rows.push({
+        name: name.replace(/\s+/g, " ").trim(),
+        phone: a && b ? `(${a}) ${b}` : "",
+        email: email || "",
+        dateAdded: added,
+      });
+      i = j - 1;
+    }
+  }
+  const seen = new Set();
+  const uniq = [];
+  for (const r of rows) {
+    const k = r.name.toLowerCase();
+    if (seen.has(k)) continue;
+    seen.add(k);
+    uniq.push(r);
+  }
+  dir.meta = dir.meta || {};
+  dir.meta.lostMembers = uniq;
+  dir.meta.findingLostNotes =
+    "Members on this list are not counted in the ward. Contact via phone/email/social, "
+    + "family/friends, last known address, then obtain Bishop approval before returning records.";
+  const idx = indexMembers(dir);
+  for (const r of uniq) {
+    const { last, first } = parseNameLastFirst(r.name);
+    const member = findMember(idx, last, first);
+    if (member) {
+      member.lostMember = true;
+      if (r.phone && !member.phone) member.phone = r.phone;
+      if (r.email && !member.email) member.email = r.email;
+    }
+  }
+  touchReportSource(dir, fileName);
+  return dir;
+}
+
+function importQuarterly(dir, text, fileName) {
+  dir.meta = dir.meta || {};
+  const pot = text.match(/Converts attending[\s\S]*?(\d+)\s+(\d+)/i);
+  dir.meta.quarterlyConvertStats = {
+    source: fileName,
+    note:
+      "Convert names come from Covenant Path Progress New Members when available. "
+      + "Quarterly Report lists convert counts without names.",
+    convertsPast12MonthsPotential: pot ? Number(pot[2]) : dir.meta.quarterlyConvertStats?.convertsPast12MonthsPotential || 2,
+  };
+  touchReportSource(dir, fileName);
+  return dir;
+}
+
+function importServingMissionaries(dir, text, fileName) {
+  dir.meta = dir.meta || {};
+  const none = /No serving missionaries/i.test(text);
+  dir.meta.servingMissionaries = {
+    source: fileName,
+    asOf: new Date().toISOString().slice(0, 10),
+    note: none ? "No serving missionaries at this time." : "See Serving Missionaries PDF for details.",
+    empty: none,
+  };
+  touchReportSource(dir, fileName);
+  return dir;
+}
+
+function importOrganizationsTable(dir, text, fileName) {
+  const idx = indexMembers(dir);
+  const lines = text.split(/\n/).map((l) => l.trim()).filter(Boolean);
+  let applied = 0;
+  // "Bishop Berrett, Britt 26 Apr 2026" or "Elders Quorum President Atkinson, Joshua Farr 2 Aug 2026"
+  const rowRe =
+    /^(.+?)\s+([A-ZÀ-ÿ][A-Za-zÀ-ÿ'’\-]+(?:\s+[A-ZÀ-ÿ][A-Za-zÀ-ÿ'’\-]+)*),\s+([A-Za-zÀ-ÿ'’\-\s]+?)\s+(\d{1,2}\s+[A-Za-z]{3,9}\s+\d{4})\s*$/;
+  for (const ln of lines) {
+    if (/^Calling Name|^Count:|Presidency$|^Organizations$/i.test(ln)) continue;
+    const mm = ln.match(rowRe);
+    if (!mm) continue;
+    const calling = mm[1].trim();
+    const last = mm[2].trim();
+    const first = mm[3].trim();
+    if (!CALLING_HINTS.some((h) => calling.toLowerCase().includes(h.toLowerCase()))
+      && !/bishop|clerk|secretary|president|counselor|teacher|missionary|coordinator|leader|specialist|representative|accompanist|auditor|committee/i.test(calling)) {
+      continue;
+    }
+    const member = findMember(idx, last, first);
+    if (!member) continue;
+    member.callings = member.callings || [];
+    if (!member.callings.includes(calling)) member.callings.push(calling);
+    if (/relief society|young women|primary/i.test(calling)) member.gender = member.gender || "F";
+    if (/elders quorum|bishop|priests|deacons|teachers quorum/i.test(calling)) member.gender = member.gender || "M";
+    applied += 1;
+  }
+  dir.meta = dir.meta || {};
+  dir.meta.organizationsImportCount = applied;
+  touchReportSource(dir, fileName);
+  return dir;
+}
+
+function importOrgDirectoryCallings(dir, lines, fileName) {
+  // Partial org directory maps: upsert callings/gender onto existing members without full roster replace
+  const idx = indexMembers(dir);
+  const gender = /elders.?quorum/i.test(fileName)
+    ? "M"
+    : /relief.?society/i.test(fileName)
+      ? "F"
+      : "";
+  let applied = 0;
+  for (let i = 0; i < lines.length; i += 1) {
+    const ln = lines[i];
+    if (!ln.includes(",") || ln.startsWith("©") || ln.includes("|")) continue;
+    let last = "";
+    let first = "";
+    const mm = ln.match(
+      /^([A-Z][A-Za-zÀ-ÿ'’\-]+),\s+([A-Za-zÀ-ÿ'’\-\s]+?)(?:\s+\d|\s+Apt|\s+apt|\s+Individual|\s+Provo|\s+Orem|\s*$)/
+    );
+    if (mm) {
+      last = mm[1];
+      first = mm[2].trim();
+    } else if (/^[A-Z].*,/.test(ln)) {
+      const [l, rest] = ln.split(",", 2);
+      last = l;
+      const firstTokens = [];
+      for (const tok of (rest || "").split(/\s+/)) {
+        if (/^\d/.test(tok) || /^(apt|apartment|individual|provo|orem)$/i.test(tok)) break;
+        firstTokens.push(tok);
+      }
+      first = firstTokens.join(" ");
+    } else continue;
+
+    let calling = "";
+    if (i + 1 < lines.length) {
+      const nxt = lines[i + 1];
+      if (CALLING_HINTS.some((h) => nxt.includes(h))) {
+        calling = nxt.split(/\d{2}\.\d+|Apt |\(\d|PROVO|Provo|Individual/)[0].trim();
+      }
+    }
+    const member = findMember(idx, last, first);
+    if (member && calling) {
+      member.callings = member.callings || [];
+      if (!member.callings.includes(calling)) member.callings.push(calling);
+      if (gender) member.gender = gender;
+      if (/Relief.?Society/i.test(fileName)) member.gender = "F";
+      if (/Elders.?Quorum/i.test(fileName)) member.gender = "M";
+      applied += 1;
+    }
+  }
+  dir.meta = dir.meta || {};
+  dir.meta.callingsImportCount = (dir.meta.callingsImportCount || 0) + applied;
+  touchReportSource(dir, fileName);
+  return dir;
+}
+
+function isOrgSubsetDirectory(fileName) {
+  const n = normalizeFileKey(fileName);
+  return (
+    /elders\s*quorum|relief\s*society|sunday\s*school|temple|ward\s*missionar|young\s*single|other\s*callings|organizations\s*147|assigned\s*missionar/.test(n)
+    && /directory|map|ward/.test(n)
+  );
+}
+
+function applySpecializedReport(previous, kind, text, lines, file) {
+  const dir = cloneDirectory(previous);
+  switch (kind) {
+    case "budget":
+      return importBudget(dir, text, file.name);
+    case "covenant":
+      return importCovenant(dir, text, file.name);
+    case "birthday":
+      return importBirthday(dir, text, file.name);
+    case "ministering-brothers":
+      return importMinistering(dir, text, "brother", file.name);
+    case "ministering-sisters":
+      return importMinistering(dir, text, "sister", file.name);
+    case "moved-in":
+      return importMovedIn(dir, text, file.name);
+    case "moved-out":
+      return importMovedOut(dir, text, file.name);
+    case "lost":
+      return importLost(dir, text, file.name);
+    case "quarterly":
+      return importQuarterly(dir, text, file.name);
+    case "serving-missionaries":
+      return importServingMissionaries(dir, text, file.name);
+    case "organizations-table":
+      return importOrganizationsTable(dir, text, file.name);
+    default:
+      return dir;
+  }
+}
+
+/** Apply a classified report from extracted text (for tests / offline import). */
+export function applyReportFromText(previous, kind, text, fileName = "report.pdf") {
+  const lines = String(text).split(/\n/).map((l) => l.trim()).filter(Boolean);
+  return applySpecializedReport(previous, kind, text, lines, { name: fileName });
 }
 
 export function mergeDirectory(previous, incoming) {
@@ -296,13 +905,19 @@ export function mergeDirectory(previous, incoming) {
   const byPrevName = new Map(prevMembers.map((m) => [m.fullName.toLowerCase(), m]));
   const byPrevId = new Map(prevMembers.map((m) => [m.id, m]));
 
+  // Report patches already contain the full roster with updates applied
+  const reportPatch = incoming.meta?.importKind === "report";
   // Full roster replace when import is large (typical Church Directory PDF/JSON dump)
-  const fullReplace = incomingMembers.length >= Math.max(20, prevMembers.length * 0.5);
+  const fullReplace =
+    reportPatch
+    || incomingMembers.length >= Math.max(20, prevMembers.length * 0.5);
 
   const upserted = new Map();
 
   const mergeOne = (incomingMember, prev) => {
     if (!prev) return normalizeMember(incomingMember);
+    // For report patches, incoming already has leader edits + new report fields
+    if (reportPatch) return normalizeMember(incomingMember);
     return normalizeMember({
       ...incomingMember,
       id: prev.id || incomingMember.id,
@@ -316,22 +931,26 @@ export function mergeDirectory(previous, incoming) {
           ? incomingMember.photoSource || "ward-directory"
           : prev.photoSource || "missing",
       languages: prev.languages?.length ? prev.languages : incomingMember.languages,
-      gender: prev.gender || incomingMember.gender || "",
-      birthday: prev.birthday || incomingMember.birthday || "",
+      gender: incomingMember.gender || prev.gender || "",
+      birthday: incomingMember.birthday || prev.birthday || "",
       flags: { ...defaultFlags(), ...incomingMember.flags, ...prev.flags },
-      ministering: prev.ministering || incomingMember.ministering,
+      ministering: incomingMember.ministering?.role
+        ? incomingMember.ministering
+        : prev.ministering || incomingMember.ministering,
       notes: prev.notes || "",
       covenantPath: {
         ...defaultCovenant(),
-        ...incomingMember.covenantPath,
         ...prev.covenantPath,
+        ...incomingMember.covenantPath,
       },
-      moved: prev.moved || incomingMember.moved || { status: "", date: "", notes: "" },
-      lostMember: prev.lostMember ?? incomingMember.lostMember ?? false,
+      moved: incomingMember.moved?.status
+        ? incomingMember.moved
+        : prev.moved || incomingMember.moved || { status: "", date: "", notes: "" },
+      lostMember: incomingMember.lostMember || prev.lostMember || false,
       phone: incomingMember.phone || prev.phone || "",
       email: incomingMember.email || prev.email || "",
       callings: incomingMember.callings?.length
-        ? incomingMember.callings
+        ? Array.from(new Set([...(prev.callings || []), ...incomingMember.callings]))
         : prev.callings || [],
       address: incomingMember.address || prev.address || "",
       street: incomingMember.street || prev.street || "",
@@ -347,7 +966,6 @@ export function mergeDirectory(previous, incoming) {
       upserted.set(m.fullName.toLowerCase(), mergeOne(m, prev));
     }
   } else {
-    // Partial CSV/JSON: keep previous roster and upsert rows
     for (const m of prevMembers) {
       upserted.set(m.fullName.toLowerCase(), normalizeMember(m));
     }
@@ -360,6 +978,14 @@ export function mergeDirectory(previous, incoming) {
 
   const members = [...upserted.values()];
   const apartments = groupApartments(members);
+
+  const reportSources = [
+    ...new Set([
+      ...(previous.meta?.reportSources || []),
+      ...(incoming.meta?.reportSources || []),
+      incoming.ward?.source,
+    ].filter(Boolean)),
+  ];
 
   return {
     ward: {
@@ -375,9 +1001,17 @@ export function mergeDirectory(previous, incoming) {
       ...incoming.meta,
       memberCount: members.length,
       apartmentCount: apartments.length,
-      latestConverts: previous.meta?.latestConverts || [],
-      budget: previous.meta?.budget || incoming.meta?.budget,
-      findingLostNotes: previous.meta?.findingLostNotes || "",
+      latestConverts: incoming.meta?.latestConverts ?? previous.meta?.latestConverts ?? [],
+      budget: incoming.meta?.budget ?? previous.meta?.budget,
+      findingLostNotes:
+        incoming.meta?.findingLostNotes || previous.meta?.findingLostNotes || "",
+      lostMembers: incoming.meta?.lostMembers ?? previous.meta?.lostMembers ?? [],
+      movedOutRecords: incoming.meta?.movedOutRecords ?? previous.meta?.movedOutRecords ?? [],
+      quarterlyConvertStats:
+        incoming.meta?.quarterlyConvertStats ?? previous.meta?.quarterlyConvertStats,
+      servingMissionaries:
+        incoming.meta?.servingMissionaries ?? previous.meta?.servingMissionaries,
+      reportSources,
     },
     mission: previous.mission || incoming.mission,
     apartments,
@@ -471,7 +1105,11 @@ function groupFromMembers(members) {
   return groupApartments(members.map(normalizeMember));
 }
 
-export async function parseDirectoryFile(file) {
+/**
+ * Parse an uploaded ward file. Pass the current directory so specialized
+ * report PDFs (budget, ministering, moved, lost, etc.) can upsert into it.
+ */
+export async function parseDirectoryFile(file, previous = null) {
   const name = file.name.toLowerCase();
   if (name.endsWith(".json") || file.type === "application/json") {
     const text = await file.text();
@@ -481,6 +1119,7 @@ export async function parseDirectoryFile(file) {
         ...apt,
         members: (apt.members || []).map(normalizeMember),
       }));
+      data.meta = { ...(data.meta || {}), importKind: "directory", reportSources: [file.name] };
       return data;
     }
     if (Array.isArray(data)) {
@@ -498,6 +1137,8 @@ export async function parseDirectoryFile(file) {
         meta: {
           lastEditedAt: new Date().toISOString(),
           memberCount: members.length,
+          importKind: "directory",
+          reportSources: [file.name],
         },
         apartments: groupFromMembers(members),
       };
@@ -523,13 +1164,45 @@ export async function parseDirectoryFile(file) {
       meta: {
         lastEditedAt: new Date().toISOString(),
         memberCount: members.length,
+        importKind: "directory",
+        reportSources: [file.name],
       },
       apartments: groupFromMembers(members),
     };
   }
 
-  // Default: PDF
-  return parseDirectoryPdf(file);
+  // PDF — classify and route
+  const { lines, text } = await extractPdfContent(file);
+  const kind = classifyReport(file.name, text);
+
+  if (kind !== "directory") {
+    if (!previous?.apartments?.length) {
+      throw new Error(
+        `${file.name} is a ${kind} report. Load the ward directory first, then upload this report to update it.`
+      );
+    }
+    return applySpecializedReport(previous, kind, text, lines, file);
+  }
+
+  // Subset org directories (EQ/RS/etc.): merge callings into current roster instead of wiping
+  if (previous?.apartments?.length && isOrgSubsetDirectory(file.name)) {
+    const members = parseMemberLines(lines);
+    if (members.length > 0 && members.length < Math.max(30, allMembersFrom(previous).length * 0.4)) {
+      return importOrgDirectoryCallings(cloneDirectory(previous), lines, file.name);
+    }
+  }
+
+  const members = parseMemberLines(lines);
+  if (!members.length && previous?.apartments?.length) {
+    // Fallback: try organizations-table parse if no roster names found
+    if (/Calling Name Sustained/.test(text) || /Organizations/.test(text.slice(0, 200))) {
+      return importOrganizationsTable(cloneDirectory(previous), text, file.name);
+    }
+  }
+  if (!members.length) {
+    throw new Error(`No members found in ${file.name}.`);
+  }
+  return directoryPayload(file, members);
 }
 
 function parseCsv(text) {
@@ -542,7 +1215,6 @@ function parseCsv(text) {
     headers.forEach((h, i) => {
       row[h] = cols[i] ?? "";
     });
-    // normalize common header aliases
     return {
       fullName: row.fullName || row.name || row.Name || "",
       preferredName: row.preferredName || row.preferred || row.Nickname || "",
